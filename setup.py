@@ -3,7 +3,10 @@ from setuptools import setup, find_packages
 
 install_requires = []
 
-tests_require = []
+tests_require = [
+    'nose',
+    'coverage'
+]
 
 setup(
     name="chessmaster",
@@ -24,5 +27,8 @@ setup(
     dependency_links=[],
     tests_require=tests_require,
     test_suite='tests',
-    install_requires=install_requires
+    install_requires=install_requires,
+    entry_points="""[console_scripts]
+    playchess=masterchess.playchess:main
+    """
 )

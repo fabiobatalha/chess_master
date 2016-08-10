@@ -94,21 +94,13 @@ class Pieces(object):
         self.position = position
 
 
-class Bishop(Pieces):
+class Pawn(Pieces):
 
-    NAME = 'bishop'
-
-    def __str__(self):
-
-        return self.NAME
-
-class Kinight(Pieces):
-
-    NAME = 'kinight'
+    NAME = 'pawn'
 
     def __str__(self):
 
-        return self.NAME
+        return self.NAME[0].upper()
 
 class King(Pieces):
 
@@ -116,15 +108,7 @@ class King(Pieces):
 
     def __str__(self):
 
-        return self.NAME
-
-class Pawn(Pieces):
-
-    NAME = 'pawn'
-
-    def __str__(self):
-
-        return self.NAME
+        return self.NAME[0].upper()
 
 class Queen(Pieces):
 
@@ -132,7 +116,7 @@ class Queen(Pieces):
 
     def __str__(self):
 
-        return self.NAME
+        return self.NAME[0].upper()
 
 class Rook(Pieces):
 
@@ -140,4 +124,20 @@ class Rook(Pieces):
 
     def __str__(self):
 
-        return self.NAME
+        return self.NAME[0].upper()
+
+class Bishop(Pieces):
+
+    NAME = 'bishop'
+
+    def __str__(self):
+
+        return self.NAME[0].upper()
+
+class Kinight(Pieces):
+
+    NAME = 'kinight'
+
+    def __str__(self):
+
+        return self.NAME[0].upper()
