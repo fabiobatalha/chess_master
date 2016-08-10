@@ -79,6 +79,74 @@ class Pieces(object):
 
         self.set_position(position or (0, 0))
 
+    def _se_positions(self, max_size):
+        """
+            Retrieve the south east positions of as given position
+        """
+        ne_positions = []
+
+        x, y = self.position
+        rg = range(max_size)
+        while True:
+            x += 1
+            y -= 1
+            if x not in rg or y not in rg:
+                break
+            ne_positions.append((x, y))
+
+        return ne_positions
+
+    def _ne_positions(self, max_size):
+        """
+            Retrieve the north east positions of as given position
+        """
+        ne_positions = []
+
+        x, y = self.position
+        rg = range(max_size)
+        while True:
+            x += 1
+            y += 1
+            if x not in rg or y not in rg:
+                break
+            ne_positions.append((x, y))
+
+        return ne_positions
+
+    def _nw_positions(self, max_size):
+        """
+            Retrieve the south weast positions of as given position
+        """
+        ne_positions = []
+
+        x, y = self.position
+        rg = range(max_size)
+        while True:
+            x -= 1
+            y += 1
+            if x not in rg or y not in rg:
+                break
+            ne_positions.append((x, y))
+
+        return ne_positions
+
+    def _sw_positions(self, max_size):
+        """
+            Retrieve the south weast positions of as given position
+        """
+        ne_positions = []
+
+        x, y = self.position
+        rg = range(max_size)
+        while True:
+            x -= 1
+            y -= 1
+            if x not in rg or y not in rg:
+                break
+            ne_positions.append((x, y))
+
+        return ne_positions
+
     def set_position(self, position):
         """
         Set the x,y position of the piece on the board.
@@ -113,7 +181,14 @@ class Bishop(Pieces):
         Arguments:
         max_size -- integer that defines de boundary limits of the board.
         """
-        pass
+        zone = []
+
+        zone += self._se_positions(max_size)
+        zone += self._ne_positions(max_size)
+        zone += self._nw_positions(max_size)
+        zone += self._sw_positions(max_size)
+
+        return zone
 
 
 class Kinight(Pieces):

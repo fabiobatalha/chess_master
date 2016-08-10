@@ -1,4 +1,3 @@
-# coding: utf-8
 import unittest
 
 from masterchess import chess
@@ -162,6 +161,92 @@ class TestsChessMasterPiece(unittest.TestCase):
 
         self.assertEqual(
             sorted(pawn.threatening_zone(8)), sorted(expected)
+        )
+
+    def test_se_positions(self):
+
+        piece = chess.Pieces((3, 4))
+
+        expected = [
+            (4, 3),
+            (5, 2),
+            (6, 1),
+            (7, 0),
+        ]
+
+        self.assertEqual(
+            sorted(piece._se_positions(8)), sorted(expected)
+        )
+
+    def test_ne_positions(self):
+
+        piece = chess.Pieces((3, 4))
+
+        expected = [
+            (4, 5),
+            (5, 6),
+            (6, 7)
+        ]
+
+        self.assertEqual(
+            sorted(piece._ne_positions(8)), sorted(expected)
+        )
+
+    def test_nw_positions(self):
+
+        piece = chess.Pieces((3, 4))
+
+        expected = [
+            (2, 5),
+            (1, 6),
+            (0, 7)
+        ]
+
+        self.assertEqual(
+            sorted(piece._nw_positions(8)), sorted(expected)
+        )
+
+    def test_sw_positions(self):
+
+        piece = chess.Pieces((3, 4))
+
+        expected = [
+            (2, 3),
+            (1, 2),
+            (0, 1)
+        ]
+
+        self.assertEqual(
+            sorted(piece._sw_positions(8)), sorted(expected)
+        )
+
+
+    def test_bishop_threatening_zone(self):
+        """
+        Testing bishop moves when the piece is able to threatening other pieces
+        in all directions.
+        """
+
+        bishop = chess.Bishop((3, 4))
+
+        expected = [
+            (0, 1),
+            (0, 7),
+            (1, 2),
+            (1, 6),
+            (2, 3),
+            (2, 5),
+            (4, 3),
+            (4, 5),
+            (5, 2),
+            (5, 6),
+            (6, 1),
+            (6, 7),
+            (7, 0)
+        ]
+
+        self.assertEqual(
+            sorted(bishop.threatening_zone(8)), sorted(expected)
         )
 
 
