@@ -375,6 +375,134 @@ class TestsChessMasterPiece(unittest.TestCase):
             sorted(queen.threatening_zone(8)), sorted(expected)
         )
 
+    def test_king_threatening_zone(self):
+        """
+        Testing gather the king allowed moves
+        """
+
+        king = chess.King((3, 4))
+
+        expected = [
+            (2, 5),
+            (3, 5),
+            (4, 5),
+            (2, 4),
+            (4, 4),
+            (2, 3),
+            (3, 3),
+            (4, 3)
+        ]
+
+        self.assertEqual(
+            sorted(king.threatening_zone(8)), sorted(expected)
+        )
+
+    def test_king_threatening_zone_boundary_bottom(self):
+        """
+        Testing gather the king allowed moves
+        """
+
+        king = chess.King((3, 0))
+
+        expected = [
+            (2, 1),
+            (3, 1),
+            (4, 1),
+            (2, 0),
+            (4, 0)
+        ]
+
+        self.assertEqual(
+            sorted(king.threatening_zone(8)), sorted(expected)
+        )
+
+    def test_king_threatening_zone_boundary_top(self):
+        """
+        Testing gather the king allowed moves
+        """
+
+        king = chess.King((3, 7))
+
+        expected = [
+            (2, 7),
+            (4, 7),
+            (2, 6),
+            (3, 6),
+            (4, 6)
+        ]
+
+        self.assertEqual(
+            sorted(king.threatening_zone(8)), sorted(expected)
+        )
+
+    def test_king_threatening_zone_boundary_top_left(self):
+        """
+        Testing gather the king allowed moves
+        """
+
+        king = chess.King((0, 7))
+
+        expected = [
+            (1, 7),
+            (0, 6),
+            (1, 6)
+        ]
+
+        self.assertEqual(
+            sorted(king.threatening_zone(8)), sorted(expected)
+        )
+
+    def test_king_threatening_zone_boundary_top_right(self):
+        """
+        Testing gather the king allowed moves
+        """
+
+        king = chess.King((7, 7))
+
+        expected = [
+            (6, 7),
+            (6, 6),
+            (7, 6)
+        ]
+
+        self.assertEqual(
+            sorted(king.threatening_zone(8)), sorted(expected)
+        )
+
+    def test_king_threatening_zone_boundary_bottom_left(self):
+        """
+        Testing gather the king allowed moves
+        """
+
+        king = chess.King((0, 0))
+
+        expected = [
+            (0, 1),
+            (1, 1),
+            (1, 0)
+        ]
+
+        self.assertEqual(
+            sorted(king.threatening_zone(8)), sorted(expected)
+        )
+
+    def test_king_threatening_zone_boundary_bottom_right(self):
+        """
+        Testing gather the king allowed moves
+        """
+
+        king = chess.King((7, 0))
+
+        expected = [
+            (6, 0),
+            (6, 1),
+            (7, 1)
+        ]
+
+        self.assertEqual(
+            sorted(king.threatening_zone(8)), sorted(expected)
+        )
+
 class TestsChessMasterBoard(unittest.TestCase):
 
     def test_put_1_piece(self):
