@@ -343,7 +343,6 @@ class Queen(Pieces):
         zone += self._nw_positions(max_size)
         zone += self._sw_positions(max_size)
 
-
         return zone
 
 

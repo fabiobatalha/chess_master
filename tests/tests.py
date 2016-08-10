@@ -334,6 +334,47 @@ class TestsChessMasterPiece(unittest.TestCase):
             sorted(rook.threatening_zone(8)), sorted(expected)
         )
 
+    def test_queen_threatening_zone(self):
+        """
+        Testing gather the rook allowed moves
+        """
+
+        queen = chess.Queen((3, 4))
+
+        expected = [
+            (0, 4),
+            (1, 4),
+            (2, 4),
+            (4, 4),
+            (5, 4),
+            (6, 4),
+            (7, 4),
+            (3, 0),
+            (3, 1),
+            (3, 2),
+            (3, 3),
+            (3, 5),
+            (3, 6),
+            (3, 7),
+            (0, 1),
+            (0, 7),
+            (1, 2),
+            (1, 6),
+            (2, 3),
+            (2, 5),
+            (4, 3),
+            (4, 5),
+            (5, 2),
+            (5, 6),
+            (6, 1),
+            (6, 7),
+            (7, 0)
+        ]
+
+        self.assertEqual(
+            sorted(queen.threatening_zone(8)), sorted(expected)
+        )
+
 class TestsChessMasterBoard(unittest.TestCase):
 
     def test_put_1_piece(self):
