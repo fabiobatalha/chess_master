@@ -1,7 +1,10 @@
 #!/usr/bin/env python
 from setuptools import setup, find_packages
 
-install_requires = []
+install_requires = [
+    'nose',
+    'coverage'
+]
 
 tests_require = [
     'nose',
