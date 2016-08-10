@@ -1,7 +1,7 @@
 # coding: utf-8
 import unittest
 
-import chess
+from masterchess import chess
 
 
 class TestsChessMasterPiece(unittest.TestCase):
