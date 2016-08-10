@@ -79,9 +79,73 @@ class Pieces(object):
 
         self.set_position(position or (0, 0))
 
+    def _w_positions(self, max_size):
+        """
+            Retrieve the west positions of a given position
+        """
+        ne_positions = []
+
+        x, y = self.position
+        rg = range(max_size)
+        while True:
+            x -= 1
+            if x not in rg:
+                break
+            ne_positions.append((x, y))
+
+        return ne_positions
+
+    def _l_positions(self, max_size):
+        """
+            Retrieve the lest positions of a given position
+        """
+        ne_positions = []
+
+        x, y = self.position
+        rg = range(max_size)
+        while True:
+            x += 1
+            if x not in rg:
+                break
+            ne_positions.append((x, y))
+
+        return ne_positions
+
+    def _n_positions(self, max_size):
+        """
+            Retrieve the south positions of a given position
+        """
+        ne_positions = []
+
+        x, y = self.position
+        rg = range(max_size)
+        while True:
+            y += 1
+            if y not in rg:
+                break
+            ne_positions.append((x, y))
+
+        return ne_positions
+
+    def _s_positions(self, max_size):
+        """
+            Retrieve the south positions of a given position
+        """
+        ne_positions = []
+
+        x, y = self.position
+        rg = range(max_size)
+        while True:
+            y -= 1
+            if y not in rg:
+                break
+            ne_positions.append((x, y))
+
+        return ne_positions
+
     def _se_positions(self, max_size):
         """
-            Retrieve the south east positions of as given position
+            Retrieve the south east positions of a given position
         """
         ne_positions = []
 
@@ -98,7 +162,7 @@ class Pieces(object):
 
     def _ne_positions(self, max_size):
         """
-            Retrieve the north east positions of as given position
+            Retrieve the north east positions of a given position
         """
         ne_positions = []
 
@@ -115,7 +179,7 @@ class Pieces(object):
 
     def _nw_positions(self, max_size):
         """
-            Retrieve the south weast positions of as given position
+            Retrieve the south weast positions of a given position
         """
         ne_positions = []
 
@@ -132,7 +196,7 @@ class Pieces(object):
 
     def _sw_positions(self, max_size):
         """
-            Retrieve the south weast positions of as given position
+            Retrieve the south weast positions of a given position
         """
         ne_positions = []
 
@@ -276,10 +340,21 @@ class Rook(Pieces):
 
         return self.NAME
 
-    def threatening_zone():
+    def threatening_zone(self, max_size):
         """
         Get the current position of the piece and produce a list of threathening
         places in the board.
+
+        Arguments:
+        max_size -- integer that defines de boundary limits of the board.
         """
 
-        pass
+        zone = []
+
+        zone += self._s_positions(max_size)
+        zone += self._n_positions(max_size)
+        zone += self._l_positions(max_size)
+        zone += self._w_positions(max_size)
+
+        return zone
+

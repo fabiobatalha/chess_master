@@ -163,6 +163,64 @@ class TestsChessMasterPiece(unittest.TestCase):
             sorted(pawn.threatening_zone(8)), sorted(expected)
         )
 
+    def test_w_positions(self):
+
+        piece = chess.Pieces((3, 4))
+
+        expected = [
+            (2, 4),
+            (1, 4),
+            (0, 4)
+        ]
+
+        self.assertEqual(
+            sorted(piece._w_positions(8)), sorted(expected)
+        )
+
+    def test_l_positions(self):
+
+        piece = chess.Pieces((3, 4))
+
+        expected = [
+            (4, 4),
+            (5, 4),
+            (6, 4),
+            (7, 4)
+        ]
+
+        self.assertEqual(
+            sorted(piece._l_positions(8)), sorted(expected)
+        )
+
+    def test_n_positions(self):
+
+        piece = chess.Pieces((3, 4))
+
+        expected = [
+            (3, 5),
+            (3, 6),
+            (3, 7)
+        ]
+
+        self.assertEqual(
+            sorted(piece._n_positions(8)), sorted(expected)
+        )
+
+    def test_s_positions(self):
+
+        piece = chess.Pieces((3, 4))
+
+        expected = [
+            (3, 3),
+            (3, 2),
+            (3, 1),
+            (3, 0),
+        ]
+
+        self.assertEqual(
+            sorted(piece._s_positions(8)), sorted(expected)
+        )
+
     def test_se_positions(self):
 
         piece = chess.Pieces((3, 4))
@@ -223,8 +281,7 @@ class TestsChessMasterPiece(unittest.TestCase):
 
     def test_bishop_threatening_zone(self):
         """
-        Testing bishop moves when the piece is able to threatening other pieces
-        in all directions.
+        Testing gather the bishop allowed moves
         """
 
         bishop = chess.Bishop((3, 4))
@@ -249,6 +306,33 @@ class TestsChessMasterPiece(unittest.TestCase):
             sorted(bishop.threatening_zone(8)), sorted(expected)
         )
 
+    def test_rook_threatening_zone(self):
+        """
+        Testing gather the rook allowed moves
+        """
+
+        rook = chess.Rook((3, 4))
+
+        expected = [
+            (0, 4),
+            (1, 4),
+            (2, 4),
+            (4, 4),
+            (5, 4),
+            (6, 4),
+            (7, 4),
+            (3, 0),
+            (3, 1),
+            (3, 2),
+            (3, 3),
+            (3, 5),
+            (3, 6),
+            (3, 7)
+        ]
+
+        self.assertEqual(
+            sorted(rook.threatening_zone(8)), sorted(expected)
+        )
 
 class TestsChessMasterBoard(unittest.TestCase):
 
