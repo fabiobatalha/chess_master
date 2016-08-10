@@ -1,12 +1,15 @@
 # coding: utf-8
 
+
 class BoardExceptions(Exception):
     pass
+
 
 class OccupiedSquare(BoardExceptions):
 
     def __init__(self, value):
         self.value = value
+
 
 class Board(object):
 
@@ -17,7 +20,7 @@ class Board(object):
 
     def _setup_board(self, size):
         """
-        This method will setup the size of the board setting up a 2 dimension 
+        This method will setup the size of the board setting up a 2 dimension
         list in self.board.
 
         Arguments:
@@ -25,13 +28,13 @@ class Board(object):
         """
 
         if not isinstance(size, int):
-            raise ValueError ('board size must be integer')
+            raise ValueError('board size must be integer')
 
         self.board = [[None for i in range(size)] for i in range(size)]
 
     def _update_board(self):
         """
-        Update the self.board with the position of each piece available in 
+        Update the self.board with the position of each piece available in
         self.pieces.
         """
 
@@ -63,7 +66,7 @@ class Board(object):
         """
         x, y = piece.position
 
-        if self.picture[x][y] != None:
+        if self.picture[x][y] is not None:
             raise OccupiedSquare(str(piece.position))
 
         self.pieces.append(piece)
@@ -74,7 +77,7 @@ class Pieces(object):
 
     def __init__(self, position=None):
 
-        self.set_position(position or (0,0))
+        self.set_position(position or (0, 0))
 
     def set_position(self, position):
         """
@@ -94,45 +97,24 @@ class Pieces(object):
         self.position = position
 
 
-class Pawn(Pieces):
-
-    NAME = 'pawn'
-
-    def __str__(self):
-
-        return self.NAME[0].upper()
-
-class King(Pieces):
-
-    NAME = 'king'
-
-    def __str__(self):
-
-        return self.NAME[0].upper()
-
-class Queen(Pieces):
-
-    NAME = 'queen'
-
-    def __str__(self):
-
-        return self.NAME[0].upper()
-
-class Rook(Pieces):
-
-    NAME = 'rook'
-
-    def __str__(self):
-
-        return self.NAME[0].upper()
-
 class Bishop(Pieces):
 
     NAME = 'bishop'
 
     def __str__(self):
 
-        return self.NAME[0].upper()
+        return self.NAME
+
+    def threatening_zone(self, max_size):
+        """
+        Get the current position of the piece and produce a list of threathening
+        places in the board.
+
+        Arguments:
+        max_size -- integer that defines de boundary limits of the board.
+        """
+        pass
+
 
 class Kinight(Pieces):
 
@@ -140,4 +122,89 @@ class Kinight(Pieces):
 
     def __str__(self):
 
-        return self.NAME[0].upper()
+        return self.NAME
+
+    def threatening_zone():
+        """
+        Get the current position of the piece and produce a list of threathening
+        places in the board.
+        """
+
+        pass
+
+
+class King(Pieces):
+
+    NAME = 'king'
+
+    def __str__(self):
+
+        return self.NAME
+
+    def threatening_zone(self):
+        """
+        Get the current position of the piece and produce a list of threathening
+        places in the board.
+        """
+
+        pass
+
+
+class Pawn(Pieces):
+
+    NAME = 'pawn'
+
+    def __str__(self):
+
+        return self.NAME
+
+    def threatening_zone(self, max_size):
+        """
+        Get the current position of the piece and produce a list of threathening
+        places in the board.
+
+        Arguments:
+        max_size -- integer that defines de boundary limits of the board.
+        """
+        zone = []
+
+        x, y = self.position
+
+        zone.append((x+1, y+1))
+        zone.append((x-1, y+1))
+
+        return [(x, y) for x, y in zone if x in range(max_size) and y in range(max_size)]
+
+
+class Queen(Pieces):
+
+    NAME = 'queen'
+
+    def __str__(self):
+
+        return self.NAME
+
+    def threatening_zone():
+        """
+        Get the current position of the piece and produce a list of threathening
+        places in the board.
+        """
+
+        pass
+
+
+class Rook(Pieces):
+
+    NAME = 'rook'
+
+    def __str__(self):
+
+        return self.NAME
+
+    def threatening_zone():
+        """
+        Get the current position of the piece and produce a list of threathening
+        places in the board.
+        """
+
+        pass

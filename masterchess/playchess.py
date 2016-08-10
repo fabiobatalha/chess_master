@@ -31,6 +31,7 @@ LOGGING = {
 
 logging.config.dictConfig(LOGGING)
 
+
 def run(board_size, bishops, kinights, kings, pawns, queens, rooks):
 
     logger.info('Playing Chess')
@@ -41,6 +42,7 @@ def run(board_size, bishops, kinights, kings, pawns, queens, rooks):
     logger.info('Pieces of pawns: %d' % pawns)
     logger.info('Pieces of queens: %d' % queens)
     logger.info('Pieces of rooks: %d' % rooks)
+
 
 def main():
 
@@ -106,7 +108,8 @@ def main():
 
     args = parser.parse_args()
 
-    pieces = sum([args.bishops,
+    pieces = sum([
+        args.bishops,
         args.kinights,
         args.kings,
         args.pawns,
