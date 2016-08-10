@@ -95,7 +95,7 @@ class Pieces(object):
 
         return ne_positions
 
-    def _l_positions(self, max_size):
+    def _e_positions(self, max_size):
         """
             Retrieve the lest positions of a given position
         """
@@ -323,13 +323,28 @@ class Queen(Pieces):
 
         return self.NAME
 
-    def threatening_zone():
+    def threatening_zone(self, max_size):
         """
         Get the current position of the piece and produce a list of threathening
         places in the board.
+
+        Arguments:
+        max_size -- integer that defines de boundary limits of the board.
         """
 
-        pass
+        zone = []
+
+        zone += self._s_positions(max_size)
+        zone += self._n_positions(max_size)
+        zone += self._e_positions(max_size)
+        zone += self._w_positions(max_size)
+        zone += self._se_positions(max_size)
+        zone += self._ne_positions(max_size)
+        zone += self._nw_positions(max_size)
+        zone += self._sw_positions(max_size)
+
+
+        return zone
 
 
 class Rook(Pieces):
@@ -353,7 +368,7 @@ class Rook(Pieces):
 
         zone += self._s_positions(max_size)
         zone += self._n_positions(max_size)
-        zone += self._l_positions(max_size)
+        zone += self._e_positions(max_size)
         zone += self._w_positions(max_size)
 
         return zone

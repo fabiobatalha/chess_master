@@ -177,7 +177,7 @@ class TestsChessMasterPiece(unittest.TestCase):
             sorted(piece._w_positions(8)), sorted(expected)
         )
 
-    def test_l_positions(self):
+    def test_e_positions(self):
 
         piece = chess.Pieces((3, 4))
 
@@ -189,7 +189,7 @@ class TestsChessMasterPiece(unittest.TestCase):
         ]
 
         self.assertEqual(
-            sorted(piece._l_positions(8)), sorted(expected)
+            sorted(piece._e_positions(8)), sorted(expected)
         )
 
     def test_n_positions(self):
