@@ -375,6 +375,692 @@ class TestsChessMasterPiece(unittest.TestCase):
             sorted(queen.threatening_zone(8)), sorted(expected)
         )
 
+    def test_kinight_threatening_zone(self):
+        """
+        Testing gather the kinight allowed moves
+        """
+
+        kinight = chess.Kinight((3, 4))
+
+        expected = [
+            (2, 6),
+            (4, 6),
+            (1, 5),
+            (5, 5),
+            (1, 3),
+            (5, 3),
+            (2, 2),
+            (4, 2)
+        ]
+
+        self.assertEqual(
+            sorted(kinight.threatening_zone(8)), sorted(expected)
+        )
+
+    def test_kinight_threatening_zone_boundary_0_0(self):
+        """
+        Kinight Boundary Testing
+        """
+
+        kinight = chess.Kinight((0, 0))
+
+        expected = [
+            (1, 2),
+            (2, 1)
+        ]
+
+        self.assertEqual(
+            sorted(kinight.threatening_zone(8)), sorted(expected)
+        )
+
+    def test_kinight_threatening_zone_boundary_1_0(self):
+        """
+        Kinight Boundary Testing
+        """
+
+        kinight = chess.Kinight((1, 0))
+
+        expected = [
+            (0, 2),
+            (2, 2),
+            (3, 1),
+        ]
+
+        self.assertEqual(
+            sorted(kinight.threatening_zone(8)), sorted(expected)
+        )
+
+    def test_kinight_threatening_zone_boundary_2_0(self):
+        """
+        Kinight Boundary Testing
+        """
+
+        kinight = chess.Kinight((2, 0))
+
+        expected = [
+            (1, 2),
+            (3, 2),
+            (0, 1),
+            (4, 1)
+        ]
+
+        self.assertEqual(
+            sorted(kinight.threatening_zone(8)), sorted(expected)
+        )
+
+    def test_kinight_threatening_zone_boundary_7_0(self):
+        """
+        Kinight Boundary Testing
+        """
+
+        kinight = chess.Kinight((7, 0))
+
+        expected = [
+            (6, 2),
+            (5, 1)
+        ]
+
+        self.assertEqual(
+            sorted(kinight.threatening_zone(8)), sorted(expected)
+        )
+
+    def test_kinight_threatening_zone_boundary_6_0(self):
+        """
+        Kinight Boundary Testing
+        """
+
+        kinight = chess.Kinight((6, 0))
+
+        expected = [
+            (5, 2),
+            (7, 2),
+            (4, 1)
+        ]
+
+        self.assertEqual(
+            sorted(kinight.threatening_zone(8)), sorted(expected)
+        )
+
+    def test_kinight_threatening_zone_boundary_5_0(self):
+        """
+        Kinight Boundary Testing
+        """
+
+        kinight = chess.Kinight((5, 0))
+
+        expected = [
+            (4, 2),
+            (6, 2),
+            (3, 1),
+            (7, 1)
+        ]
+
+        self.assertEqual(
+            sorted(kinight.threatening_zone(8)), sorted(expected)
+        )
+
+    def test_kinight_threatening_zone_boundary_0_1(self):
+        """
+        Kinight Boundary Testing
+        """
+
+        kinight = chess.Kinight((0, 1))
+
+        expected = [
+            (1, 3),
+            (2, 2),
+            (2, 0)
+        ]
+
+        self.assertEqual(
+            sorted(kinight.threatening_zone(8)), sorted(expected)
+        )
+
+    def test_kinight_threatening_zone_boundary_1_1(self):
+        """
+        Kinight Boundary Testing
+        """
+
+        kinight = chess.Kinight((1, 1))
+
+        expected = [
+            (0, 3),
+            (2, 3),
+            (3, 2),
+            (3, 0),
+        ]
+
+        self.assertEqual(
+            sorted(kinight.threatening_zone(8)), sorted(expected)
+        )
+
+    def test_kinight_threatening_zone_boundary_2_1(self):
+        """
+        Kinight Boundary Testing
+        """
+
+        kinight = chess.Kinight((2, 1))
+
+        expected = [
+            (1, 3),
+            (3, 3),
+            (0, 2),
+            (4, 2),
+            (0, 0),
+            (4, 0)
+        ]
+
+        self.assertEqual(
+            sorted(kinight.threatening_zone(8)), sorted(expected)
+        )
+
+    def test_kinight_threatening_zone_boundary_7_1(self):
+        """
+        Kinight Boundary Testing
+        """
+
+        kinight = chess.Kinight((7, 1))
+
+        expected = [
+            (6, 3),
+            (5, 2),
+            (5, 0)
+        ]
+
+        self.assertEqual(
+            sorted(kinight.threatening_zone(8)), sorted(expected)
+        )
+
+    def test_kinight_threatening_zone_boundary_6_1(self):
+        """
+        Kinight Boundary Testing
+        """
+
+        kinight = chess.Kinight((6, 1))
+
+        expected = [
+            (5, 3),
+            (7, 3),
+            (4, 2),
+            (4, 0)
+        ]
+
+        self.assertEqual(
+            sorted(kinight.threatening_zone(8)), sorted(expected)
+        )
+
+    def test_kinight_threatening_zone_boundary_5_1(self):
+        """
+        Kinight Boundary Testing
+        """
+
+        kinight = chess.Kinight((5, 1))
+
+        expected = [
+            (4, 3),
+            (6, 3),
+            (3, 2),
+            (7, 2),
+            (3, 0),
+            (7, 0)
+        ]
+
+        self.assertEqual(
+            sorted(kinight.threatening_zone(8)), sorted(expected)
+        )
+
+    def test_kinight_threatening_zone_boundary_0_2(self):
+        """
+        Kinight Boundary Testing
+        """
+
+        kinight = chess.Kinight((0, 2))
+
+        expected = [
+            (1, 4),
+            (2, 3),
+            (2, 1),
+            (1, 0)
+        ]
+
+        self.assertEqual(
+            sorted(kinight.threatening_zone(8)), sorted(expected)
+        )
+
+    def test_kinight_threatening_zone_boundary_1_2(self):
+        """
+        Kinight Boundary Testing
+        """
+
+        kinight = chess.Kinight((1, 2))
+
+        expected = [
+            (0, 4),
+            (2, 4),
+            (3, 3),
+            (3, 1),
+            (2, 0),
+            (0, 0)
+        ]
+
+        self.assertEqual(
+            sorted(kinight.threatening_zone(8)), sorted(expected)
+        )
+
+    def test_kinight_threatening_zone_boundary_2_2(self):
+        """
+        Kinight Boundary Testing
+        """
+
+        kinight = chess.Kinight((2, 2))
+
+        expected = [
+            (1, 4),
+            (3, 4),
+            (0, 3),
+            (4, 3),
+            (0, 1),
+            (4, 1),
+            (1, 0),
+            (3, 0)
+        ]
+
+        self.assertEqual(
+            sorted(kinight.threatening_zone(8)), sorted(expected)
+        )
+
+    def test_kinight_threatening_zone_boundary_7_2(self):
+        """
+        Kinight Boundary Testing
+        """
+
+        kinight = chess.Kinight((7, 2))
+
+        expected = [
+            (6, 4),
+            (5, 3),
+            (5, 1),
+            (6, 0),
+        ]
+
+        self.assertEqual(
+            sorted(kinight.threatening_zone(8)), sorted(expected)
+        )
+
+    def test_kinight_threatening_zone_boundary_6_2(self):
+        """
+        Kinight Boundary Testing
+        """
+
+        kinight = chess.Kinight((6, 2))
+
+        expected = [
+            (5, 4),
+            (7, 4),
+            (4, 3),
+            (4, 1),
+            (5, 0),
+            (7, 0)
+        ]
+
+        self.assertEqual(
+            sorted(kinight.threatening_zone(8)), sorted(expected)
+        )
+
+    def test_kinight_threatening_zone_boundary_5_2(self):
+        """
+        Kinight Boundary Testing
+        """
+
+        kinight = chess.Kinight((5, 2))
+
+        expected = [
+            (4, 4),
+            (6, 4),
+            (3, 3),
+            (7, 3),
+            (3, 1),
+            (7, 1),
+            (4, 0),
+            (6, 0)
+        ]
+
+        self.assertEqual(
+            sorted(kinight.threatening_zone(8)), sorted(expected)
+        )
+
+    def test_kinight_threatening_zone_boundary_0_7(self):
+        """
+        Kinight Boundary Testing
+        """
+
+        kinight = chess.Kinight((0, 7))
+
+        expected = [
+            (2, 6),
+            (1, 5)
+        ]
+
+        self.assertEqual(
+            sorted(kinight.threatening_zone(8)), sorted(expected)
+        )
+
+    def test_kinight_threatening_zone_boundary_1_7(self):
+        """
+        Kinight Boundary Testing
+        """
+
+        kinight = chess.Kinight((1, 7))
+
+        expected = [
+            (3, 6),
+            (0, 5),
+            (2, 5)
+        ]
+
+        self.assertEqual(
+            sorted(kinight.threatening_zone(8)), sorted(expected)
+        )
+
+    def test_kinight_threatening_zone_boundary_2_7(self):
+        """
+        Kinight Boundary Testing
+        """
+
+        kinight = chess.Kinight((2, 7))
+
+        expected = [
+            (0, 6),
+            (4, 6),
+            (1, 5),
+            (3, 5)
+        ]
+
+        self.assertEqual(
+            sorted(kinight.threatening_zone(8)), sorted(expected)
+        )
+
+    def test_kinight_threatening_zone_boundary_7_7(self):
+        """
+        Kinight Boundary Testing
+        """
+
+        kinight = chess.Kinight((7, 7))
+
+        expected = [
+            (5, 6),
+            (6, 5)
+        ]
+
+        self.assertEqual(
+            sorted(kinight.threatening_zone(8)), sorted(expected)
+        )
+
+    def test_kinight_threatening_zone_boundary_6_7(self):
+        """
+        Kinight Boundary Testing
+        """
+
+        kinight = chess.Kinight((6, 7))
+
+        expected = [
+            (4, 6),
+            (5, 5),
+            (7, 5)
+        ]
+
+        self.assertEqual(
+            sorted(kinight.threatening_zone(8)), sorted(expected)
+        )
+
+    def test_kinight_threatening_zone_boundary_5_7(self):
+        """
+        Kinight Boundary Testing
+        """
+
+        kinight = chess.Kinight((5, 7))
+
+        expected = [
+            (3, 6),
+            (7, 6),
+            (4, 5),
+            (6, 5)
+        ]
+
+        self.assertEqual(
+            sorted(kinight.threatening_zone(8)), sorted(expected)
+        )
+
+    def test_kinight_threatening_zone_boundary_0_6(self):
+        """
+        Kinight Boundary Testing
+        """
+
+        kinight = chess.Kinight((0, 6))
+
+        expected = [
+            (2, 7),
+            (2, 5),
+            (1, 4)
+        ]
+
+        self.assertEqual(
+            sorted(kinight.threatening_zone(8)), sorted(expected)
+        )
+
+    def test_kinight_threatening_zone_boundary_1_6(self):
+        """
+        Kinight Boundary Testing
+        """
+
+        kinight = chess.Kinight((1, 6))
+
+        expected = [
+            (3, 7),
+            (3, 5),
+            (0, 4),
+            (2, 4)
+        ]
+
+        self.assertEqual(
+            sorted(kinight.threatening_zone(8)), sorted(expected)
+        )
+
+    def test_kinight_threatening_zone_boundary_2_6(self):
+        """
+        Kinight Boundary Testing
+        """
+
+        kinight = chess.Kinight((2, 6))
+
+        expected = [
+            (0, 7),
+            (4, 7),
+            (0, 5),
+            (4, 5),
+            (1, 4),
+            (3, 4)
+        ]
+
+        self.assertEqual(
+            sorted(kinight.threatening_zone(8)), sorted(expected)
+        )
+
+    def test_kinight_threatening_zone_boundary_7_6(self):
+        """
+        Kinight Boundary Testing
+        """
+
+        kinight = chess.Kinight((7, 6))
+
+        expected = [
+            (5, 7),
+            (5, 5),
+            (6, 4)
+        ]
+
+        self.assertEqual(
+            sorted(kinight.threatening_zone(8)), sorted(expected)
+        )
+
+    def test_kinight_threatening_zone_boundary_6_6(self):
+        """
+        Kinight Boundary Testing
+        """
+
+        kinight = chess.Kinight((6, 6))
+
+        expected = [
+            (4, 7),
+            (4, 5),
+            (5, 4),
+            (7, 4)
+        ]
+
+        self.assertEqual(
+            sorted(kinight.threatening_zone(8)), sorted(expected)
+        )
+
+    def test_kinight_threatening_zone_boundary_5_6(self):
+        """
+        Kinight Boundary Testing
+        """
+
+        kinight = chess.Kinight((5, 6))
+
+        expected = [
+            (3, 7),
+            (7, 7),
+            (3, 5),
+            (7, 5),
+            (4, 4),
+            (6, 4)
+        ]
+
+        self.assertEqual(
+            sorted(kinight.threatening_zone(8)), sorted(expected)
+        )
+
+    def test_kinight_threatening_zone_boundary_0_5(self):
+        """
+        Kinight Boundary Testing
+        """
+
+        kinight = chess.Kinight((0, 5))
+
+        expected = [
+            (1, 7),
+            (2, 6),
+            (2, 4),
+            (1, 3)
+        ]
+
+        self.assertEqual(
+            sorted(kinight.threatening_zone(8)), sorted(expected)
+        )
+
+    def test_kinight_threatening_zone_boundary_1_5(self):
+        """
+        Kinight Boundary Testing
+        """
+
+        kinight = chess.Kinight((1, 5))
+
+        expected = [
+            (0, 7),
+            (2, 7),
+            (3, 6),
+            (3, 4),
+            (0, 3),
+            (2, 3)
+        ]
+
+        self.assertEqual(
+            sorted(kinight.threatening_zone(8)), sorted(expected)
+        )
+
+    def test_kinight_threatening_zone_boundary_2_5(self):
+        """
+        Kinight Boundary Testing
+        """
+
+        kinight = chess.Kinight((2, 5))
+
+        expected = [
+            (1, 7),
+            (3, 7),
+            (0, 6),
+            (4, 6),
+            (0, 4),
+            (4, 4),
+            (1, 3),
+            (3, 3)
+        ]
+
+        self.assertEqual(
+            sorted(kinight.threatening_zone(8)), sorted(expected)
+        )
+
+    def test_kinight_threatening_zone_boundary_7_5(self):
+        """
+        Kinight Boundary Testing
+        """
+
+        kinight = chess.Kinight((7, 5))
+
+        expected = [
+            (6, 7),
+            (5, 6),
+            (5, 4),
+            (6, 3)
+        ]
+
+        self.assertEqual(
+            sorted(kinight.threatening_zone(8)), sorted(expected)
+        )
+
+    def test_kinight_threatening_zone_boundary_6_5(self):
+        """
+        Kinight Boundary Testing
+        """
+
+        kinight = chess.Kinight((6, 5))
+
+        expected = [
+            (5, 7),
+            (7, 7),
+            (4, 6),
+            (4, 4),
+            (5, 3),
+            (7, 3)
+        ]
+
+        self.assertEqual(
+            sorted(kinight.threatening_zone(8)), sorted(expected)
+        )
+
+    def test_kinight_threatening_zone_boundary_5_5(self):
+        """
+        Kinight Boundary Testing
+        """
+
+        kinight = chess.Kinight((5, 5))
+
+        expected = [
+            (4, 7),
+            (6, 7),
+            (3, 6),
+            (7, 6),
+            (3, 4),
+            (7, 4),
+            (4, 3),
+            (6, 3)
+        ]
+
+        self.assertEqual(
+            sorted(kinight.threatening_zone(8)), sorted(expected)
+        )
+
     def test_king_threatening_zone(self):
         """
         Testing gather the king allowed moves
