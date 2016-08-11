@@ -280,13 +280,29 @@ class King(Pieces):
 
         return self.NAME
 
-    def threatening_zone(self):
+    def threatening_zone(self, max_size):
         """
         Get the current position of the piece and produce a list of threathening
         places in the board.
+
+        Arguments:
+        max_size -- integer that defines de boundary limits of the board.
         """
 
-        pass
+        zone = []
+
+        x, y = self.position
+        zone.append((x-1, y+1))
+        zone.append((x, y+1))
+        zone.append((x+1, y+1))
+        zone.append((x-1, y))
+        zone.append((x+1, y))
+        zone.append((x-1, y-1))
+        zone.append((x, y-1))
+        zone.append((x+1, y-1))
+
+        rg = range(max_size)
+        return [(x, y) for x, y in zone if x in rg and y in rg]
 
 
 class Pawn(Pieces):
