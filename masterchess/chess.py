@@ -1,4 +1,5 @@
 # coding: utf-8
+from masterchess import utils
 
 
 class BoardExceptions(Exception):
@@ -28,7 +29,7 @@ class Board(object):
     def __init__(self, size):
         self.board = None
         self.pieces = {}
-        self._size = size
+        self.size = size
         self._setup_board()
 
     def _setup_board(self):
@@ -40,10 +41,10 @@ class Board(object):
         size -- integer
         """
 
-        if not isinstance(self._size, int):
+        if not isinstance(self.size, int):
             raise ValueError('board size must be integer')
 
-        rg = range(self._size)
+        rg = range(self.size)
         self.board = [[None for i in rg] for i in rg]
 
     def _update_board(self):
@@ -57,16 +58,19 @@ class Board(object):
             x, y = piece.position
             self.board[x][y] = piece
 
-    @property
-    def picture(self):
+    def picture(self, pretty_print=False):
         """
         Return a 2 dimension list with a picture of the current state of the
         board and pieces position.
         """
-        return [[(str(x) if x else x) for x in i] for i in self.board]
+        board = [[(str(x) if x else x) for x in i] for i in self.board]
 
-    @property
-    def picture_threat(self):
+        if pretty_print:
+            return utils.pretty_print(board)
+
+        return board
+
+    def picture_threat(self, pretty_print=False):
         """
         Return a 2 dimension list with a picture of the current state of the
         board and pieces position.
@@ -75,12 +79,15 @@ class Board(object):
         piece name where the pieces are allocated.
         """
 
-        board = self.picture
+        board = self.picture()
 
         for piece in self.pieces.values():
-            for threat in piece.threatening_zone(self._size):
+            for threat in piece.threatening_zone(self.size):
                 x, y = threat
                 board[x][y] = 'T' if board[x][y] is None else board[x][y]
+
+        if pretty_print:
+            return utils.pretty_print(board)
 
         return board
 
@@ -106,16 +113,16 @@ class Board(object):
         x, y = piece.position
 
         # Rule (1)
-        if self.picture[x][y] is not None:
+        if self.picture()[x][y] is not None:
             raise OccupiedSquare(str(piece.position))
 
         # Rule (2)
-        if self.picture_threat[x][y] is not None and self.picture_threat[x][y] == 'T':
+        if self.picture_threat()[x][y] is not None and self.picture_threat()[x][y] == 'T':
             raise Threatened(str(piece.position))
 
         # Rule (3)
         pieces_on_board = [i.position for i in self.pieces.values()]
-        if len(set(piece.threatening_zone(self._size)).intersection(pieces_on_board)) >= 1:
+        if len(set(piece.threatening_zone(self.size)).intersection(pieces_on_board)) >= 1:
             raise Threatening(str(piece.position))
 
         self.pieces[piece.__hash__()] = piece

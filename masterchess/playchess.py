@@ -32,6 +32,18 @@ LOGGING = {
 logging.config.dictConfig(LOGGING)
 
 
+def find_place(board, piece):
+
+    for x in range(board.size):
+        for y in range(board.size):
+            try:
+                piece.set_position((x, y))
+                board.place_piece(piece)
+                return True
+            except chess.BoardExceptions:
+                continue
+
+
 def run(board_size, pieces):
 
     logger.info('Playing Chess')
@@ -43,9 +55,14 @@ def run(board_size, pieces):
     logger.info('Pieces of queens: %s' % len([piece for piece in pieces if str(piece) == 'queen']))
     logger.info('Pieces of rooks: %s' % len([piece for piece in pieces if str(piece) == 'rook']))
 
-    while True:
-        board = chess.Board()
+    total_pieces = len(pieces)
+    placed_pieces = 0
+    board = chess.Board(board_size)
+    for piece in pieces:
+        if find_place(board, piece):
+            continue
 
+    import pdb; pdb.set_trace()
 
 def main():
 
