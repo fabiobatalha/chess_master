@@ -10,10 +10,12 @@ class OccupiedSquare(BoardExceptions):
     def __init__(self, value):
         self.value = value
 
+
 class Threatening(BoardExceptions):
 
     def __init__(self, value):
         self.value = value
+
 
 class Threatened(BoardExceptions):
 
@@ -25,11 +27,11 @@ class Board(object):
 
     def __init__(self, size):
         self.board = None
-        self.pieces = []
+        self.pieces = {}
         self._size = size
-        self._setup_board(size)
+        self._setup_board()
 
-    def _setup_board(self, size):
+    def _setup_board(self):
         """
         This method will setup the size of the board setting up a 2 dimension
         list in self.board.
@@ -50,7 +52,8 @@ class Board(object):
         self.pieces.
         """
 
-        for piece in self.pieces:
+        self._setup_board()
+        for piece in self.pieces.values():
             x, y = piece.position
             self.board[x][y] = piece
 
@@ -68,13 +71,13 @@ class Board(object):
         Return a 2 dimension list with a picture of the current state of the
         board and pieces position.
 
-        It will display T on places where pieces will be threatened and the 
+        It will display T on places where pieces will be threatened and the
         piece name where the pieces are allocated.
         """
 
         board = self.picture
 
-        for piece in self.pieces:
+        for piece in self.pieces.values():
             for threat in piece.threatening_zone(self._size):
                 x, y = threat
                 board[x][y] = 'T' if board[x][y] is None else board[x][y]
@@ -83,18 +86,19 @@ class Board(object):
 
     def place_piece(self, piece):
         """
-        Put a given piece on the board.
+        Put a given piece on the board or move it if it is already in the board.
 
-        (Rule 1) The piece position must not match with the position of any other piece
-        already available in the board. If so, it will raise OccupiedSquare
+        (Rule 1) The piece position must not match with the position of any
+        other piece already available in the board. If so, it will raise
+        OccupiedSquare
         Exception.
 
-        (Rule 2) The piece position must not be threatened by other pieces already safe
-        disposed in the board. If so, it will raise Threatened Exception.
+        (Rule 2) The piece position must not be threatened by other pieces
+        already safe disposed in the board. If so, it will raise Threatened
         Exception.
 
-        (Rule 3) The piece must not threatening any other piece already available in
-        the board. If so, it will raise Threatening Exception.
+        (Rule 3) The piece must not threatening any other piece already
+        available in the board. If so, it will raise Threatening Exception.
 
         Arguments:
         piece -- a instance o Pieces (Pawn, King, Bishop, Queen, Rook, Kinight)
@@ -110,11 +114,11 @@ class Board(object):
             raise Threatened(str(piece.position))
 
         # Rule (3)
-        pieces_on_board = [i.position for i in self.pieces]
+        pieces_on_board = [i.position for i in self.pieces.values()]
         if len(set(piece.threatening_zone(self._size)).intersection(pieces_on_board)) >= 1:
             raise Threatening(str(piece.position))
 
-        self.pieces.append(piece)
+        self.pieces[piece.__hash__()] = piece
         self._update_board()
 
 
@@ -327,7 +331,7 @@ class Kinight(Pieces):
         zone.append((x+2, y+1))
         zone.append((x-2, y-1))
         zone.append((x+2, y-1))
-        zone.append((x-1, y-2))        
+        zone.append((x-1, y-2))
         zone.append((x+1, y-2))
 
         rg = range(max_size)

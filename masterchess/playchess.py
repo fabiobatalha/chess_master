@@ -32,16 +32,19 @@ LOGGING = {
 logging.config.dictConfig(LOGGING)
 
 
-def run(board_size, bishops, kinights, kings, pawns, queens, rooks):
+def run(board_size, pieces):
 
     logger.info('Playing Chess')
     logger.info('Board size: %d' % board_size)
-    logger.info('Pieces of bishops: %d' % bishops)
-    logger.info('Pieces of kinights: %d' % kinights)
-    logger.info('Pieces of kings: %d' % kings)
-    logger.info('Pieces of pawns: %d' % pawns)
-    logger.info('Pieces of queens: %d' % queens)
-    logger.info('Pieces of rooks: %d' % rooks)
+    logger.info('Pieces of bishops: %s' % len([piece for piece in pieces if str(piece) == 'bishop']))
+    logger.info('Pieces of kinights: %s' % len([piece for piece in pieces if str(piece) == 'kinight']))
+    logger.info('Pieces of kings: %s' % len([piece for piece in pieces if str(piece) == 'king']))
+    logger.info('Pieces of pawns: %s' % len([piece for piece in pieces if str(piece) == 'pawn']))
+    logger.info('Pieces of queens: %s' % len([piece for piece in pieces if str(piece) == 'queen']))
+    logger.info('Pieces of rooks: %s' % len([piece for piece in pieces if str(piece) == 'rook']))
+
+    while True:
+        board = chess.Board()
 
 
 def main():
@@ -108,25 +111,16 @@ def main():
 
     args = parser.parse_args()
 
-    pieces = sum([
-        args.bishops,
-        args.kinights,
-        args.kings,
-        args.pawns,
-        args.queens,
-        args.rooks]
-    )
+    pieces = []
+    pieces += [chess.Bishop() for x in range(args.bishops)]
+    pieces += [chess.Kinight() for x in range(args.kinights)]
+    pieces += [chess.King() for x in range(args.kings)]
+    pieces += [chess.Pawn() for x in range(args.pawns)]
+    pieces += [chess.Queen() for x in range(args.queens)]
+    pieces += [chess.Rook() for x in range(args.rooks)]
 
-    if pieces <= 1:
+    if len(pieces) <= 1:
         logger.error('You must select at least 2 pieces')
         exit()
 
-    run(
-        args.board_size,
-        args.bishops,
-        args.kinights,
-        args.kings,
-        args.pawns,
-        args.queens,
-        args.rooks
-    )
+    run(args.board_size, pieces)

@@ -278,7 +278,6 @@ class TestsChessMasterPiece(unittest.TestCase):
             sorted(piece._sw_positions(8)), sorted(expected)
         )
 
-
     def test_bishop_threatening_zone(self):
         """
         Testing gather the bishop allowed moves
@@ -1189,9 +1188,10 @@ class TestsChessMasterPiece(unittest.TestCase):
             sorted(king.threatening_zone(8)), sorted(expected)
         )
 
+
 class TestsChessMasterBoard(unittest.TestCase):
 
-    def test_put_1_piece(self):
+    def test_place_1_piece(self):
 
         pawn = chess.Pawn()
 
@@ -1207,7 +1207,7 @@ class TestsChessMasterBoard(unittest.TestCase):
 
         self.assertEqual(board.picture, expected)
 
-    def test_put_2_pieces(self):
+    def test_place_2_pieces(self):
 
         pawn = chess.Pawn()
         king = chess.King((1, 2))
@@ -1225,13 +1225,117 @@ class TestsChessMasterBoard(unittest.TestCase):
 
         self.assertEqual(board.picture, expected)
 
+    def test_place_2_pieces(self):
+
+        pawn = chess.Pawn()
+        king = chess.King((1, 2))
+
+        board = chess.Board(3)
+
+        board.place_piece(pawn)
+        board.place_piece(king)
+
+        expected = [
+            ['pawn', None, None],
+            [None, None, 'king'],
+            [None, None, None]
+        ]
+
+        self.assertEqual(board.picture, expected)
+
+    def test_replace_1_piece(self):
+        """
+        Chanfe the position of a piece in a different position if it is already
+        in the table.
+        """
+        king = chess.King((1, 0))
+        board = chess.Board(3)
+        board.place_piece(king)
+
+        expected = [
+            [None, None, None],
+            ['king', None, None],
+            [None, None, None]
+        ]
+
+        self.assertEqual(board.picture, expected)
+
+        king.set_position((1, 1))
+        board.place_piece(king)
+
+        expected = [
+            [None, None, None],
+            [None, 'king', None],
+            [None, None, None]
+        ]
+
+        self.assertEqual(board.picture, expected)
+
+    def test_replace_2_piece(self):
+        """
+        Change the position of a piece to a threatened position in different.
+        """
+        king1 = chess.King((1, 0))
+        king2 = chess.King((1, 2))
+        board = chess.Board(3)
+        board.place_piece(king1)
+        board.place_piece(king2)
+
+        expected = [
+            [None, None, None],
+            ['king', None, 'king'],
+            [None, None, None]
+        ]
+
+        # Creating table with 2 kings
+        self.assertEqual(board.picture, expected)
+
+        # Moving king to a threatend area raises a Threatened execption
+        king1.set_position((1, 1))
+        with self.assertRaises(chess.Threatened):
+            board.place_piece(king1)
+
+        # Board is the same before moving attempt
+        self.assertEqual(board.picture, expected)
+
+    def test_replace_3_piece(self):
+        """
+        Change the position of a piece to a available position.
+        """
+        king1 = chess.King((1, 0))
+        king2 = chess.King((1, 2))
+        board = chess.Board(3)
+        board.place_piece(king1)
+        board.place_piece(king2)
+
+        expected = [
+            [None, None, None],
+            ['king', None, 'king'],
+            [None, None, None]
+        ]
+
+        # Creating table with 2 kings
+        self.assertEqual(board.picture, expected)
+
+        # Moving king to a threatend area raises a Threatened execption
+        king1.set_position((0, 0))
+        board.place_piece(king1)
+
+        expected = [
+            ['king', None, None],
+            [None, None, 'king'],
+            [None, None, None]
+        ]
+
+        self.assertEqual(board.picture, expected)
+
     def test_picture_threat_1(self):
 
         board = chess.Board(8)
         king = chess.King((1, 2))
         board.place_piece(king)
 
-        expected =[
+        expected = [
             [None, 'T', 'T', 'T', None, None, None, None],
             [None, 'T', 'king', 'T', None, None, None, None],
             [None, 'T', 'T', 'T', None, None, None, None],
