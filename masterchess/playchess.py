@@ -57,6 +57,7 @@ def voala(board_size, pieces, reverse=False, show_threatening=False):
                     yield(board.picture(pretty_print=True))
             board.remove_pieces()
 
+
 def run(board_size, pieces, show_threatening=False):
 
     logger.info('Playing Chess')
@@ -74,14 +75,17 @@ def run(board_size, pieces, show_threatening=False):
     logger.info('Pieces of rooks: %s' % len(
         [piece for piece in pieces if str(piece) == 'rook']))
 
-    games = [i for i in voala(board_size, pieces, reverse=False, show_threatening=show_threatening)]
-    games += [i for i in voala(board_size, pieces, reverse=True, show_threatening=show_threatening)]
+    games = [i for i in voala(
+        board_size, pieces, reverse=False, show_threatening=show_threatening)]
+    games += [i for i in voala(
+        board_size, pieces, reverse=True, show_threatening=show_threatening)]
     games = set(games)
     print('Number of possibilities: %s' % len(games))
     for ndx, game in enumerate(games):
         print('')
         print('Game %d:' % (ndx+1))
         print(game)
+
 
 def main():
 
