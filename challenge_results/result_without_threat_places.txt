@@ -1,0 +1,2408 @@
+(chessmaster)MacBook-Pro:chess_master fabiobatalha$ time playchess -s 7 -k 2 -q 2 -b 2 -i 1
+2016-08-12 01:43:15,673 - masterchess.playchess - INFO - Playing Chess
+2016-08-12 01:43:15,673 - masterchess.playchess - INFO - Board size: 7
+2016-08-12 01:43:15,673 - masterchess.playchess - INFO - Pieces of bishops: 2
+2016-08-12 01:43:15,673 - masterchess.playchess - INFO - Pieces of kinights: 1
+2016-08-12 01:43:15,673 - masterchess.playchess - INFO - Pieces of kings: 2
+2016-08-12 01:43:15,674 - masterchess.playchess - INFO - Pieces of pawns: 0
+2016-08-12 01:43:15,674 - masterchess.playchess - INFO - Pieces of queens: 2
+2016-08-12 01:43:15,674 - masterchess.playchess - INFO - Pieces of rooks: 0
+Number of possibilities: 266
+
+Game 1:
+king	None	None	None	None	None	None
+None	None	king	None	None	None	None
+None	None	None	None	None	queen	None
+kinight	None	None	None	None	None	None
+bishop	None	None	None	None	None	None
+None	None	None	None	queen	None	None
+bishop	None	None	None	None	None	None
+
+Game 2:
+king	None	king	None	None	None	None
+None	None	None	None	None	None	None
+None	queen	None	None	None	None	None
+None	None	None	None	queen	None	None
+None	None	None	None	None	None	None
+bishop	None	None	None	None	None	None
+bishop	None	None	kinight	None	None	None
+
+Game 3:
+None	queen	None	None	None	None	None
+None	None	None	None	None	None	None
+king	None	None	None	None	None	None
+None	None	None	None	None	None	queen
+kinight	None	None	None	None	None	None
+bishop	None	None	None	None	None	None
+bishop	None	None	None	None	king	None
+
+Game 4:
+None	None	None	None	queen	None	None
+king	None	None	None	None	None	None
+None	None	None	None	None	None	None
+kinight	None	None	None	None	None	None
+None	None	None	None	None	queen	None
+bishop	None	None	None	None	None	None
+bishop	None	king	None	None	None	None
+
+Game 5:
+None	queen	None	None	None	None	None
+None	None	None	None	None	None	queen
+king	None	None	None	None	None	None
+None	None	king	None	None	None	None
+bishop	None	None	None	None	None	None
+kinight	None	None	None	None	None	None
+bishop	None	None	None	None	None	None
+
+Game 6:
+None	None	None	None	king	None	bishop
+None	None	None	None	None	None	bishop
+None	None	None	queen	None	None	None
+None	None	None	None	None	queen	None
+None	None	None	None	None	None	None
+None	None	None	None	None	None	None
+None	None	None	None	king	None	kinight
+
+Game 7:
+None	None	king	None	None	None	bishop
+None	None	None	None	None	None	bishop
+None	None	None	None	None	None	kinight
+None	queen	None	None	None	None	None
+None	None	None	None	None	None	king
+None	None	None	None	None	None	None
+None	None	None	None	None	queen	None
+
+Game 8:
+None	queen	None	None	None	None	None
+None	None	None	None	None	None	None
+king	None	None	None	None	None	None
+None	None	None	None	None	queen	None
+bishop	None	king	None	None	None	None
+bishop	None	None	None	None	None	None
+kinight	None	None	None	None	None	None
+
+Game 9:
+None	None	None	None	None	None	None
+None	kinight	None	None	None	None	None
+None	bishop	None	None	None	None	None
+None	bishop	None	king	None	None	None
+None	None	None	None	None	queen	None
+queen	None	None	None	None	None	None
+None	None	king	None	None	None	None
+
+Game 10:
+None	None	None	None	None	None	None
+king	None	None	None	None	None	None
+None	None	None	None	None	None	queen
+kinight	None	None	None	None	None	None
+bishop	None	None	None	None	None	None
+bishop	None	king	None	None	None	None
+None	None	None	None	queen	None	None
+
+Game 11:
+None	None	None	None	king	None	bishop
+None	queen	None	None	None	None	None
+None	None	None	None	None	None	None
+None	None	None	None	None	bishop	kinight
+None	None	None	queen	None	None	None
+None	None	None	None	None	None	king
+None	None	None	None	None	None	None
+
+Game 12:
+None	None	None	None	None	None	None
+kinight	None	None	king	None	None	None
+None	None	None	None	None	queen	None
+bishop	None	None	None	None	None	None
+None	None	queen	None	None	None	None
+bishop	None	None	None	king	None	None
+None	None	None	None	None	None	None
+
+Game 13:
+None	None	bishop	None	None	None	None
+king	None	None	None	None	None	None
+None	None	None	None	None	queen	None
+king	None	None	None	None	None	None
+None	None	None	None	queen	None	None
+kinight	None	None	None	None	None	None
+bishop	None	None	None	None	None	None
+
+Game 14:
+None	None	None	None	king	None	bishop
+None	None	None	None	None	None	bishop
+None	None	None	None	None	None	kinight
+queen	None	None	None	None	None	None
+None	None	None	None	None	None	king
+None	None	None	None	None	None	None
+None	None	None	None	None	queen	None
+
+Game 15:
+None	None	None	None	None	None	None
+king	None	None	None	None	None	None
+None	None	None	None	None	queen	None
+bishop	None	king	None	None	None	None
+None	None	None	None	queen	None	None
+kinight	None	None	None	None	None	None
+bishop	None	None	None	None	None	None
+
+Game 16:
+None	None	None	None	None	None	bishop
+None	None	None	None	king	None	kinight
+None	queen	None	None	None	None	None
+None	None	None	None	None	None	king
+None	None	None	None	None	None	None
+None	None	None	queen	None	None	None
+None	None	None	None	None	None	bishop
+
+Game 17:
+None	None	None	None	None	None	None
+king	None	kinight	None	None	None	None
+None	None	None	None	None	queen	None
+king	None	None	None	None	None	None
+None	None	None	None	queen	None	None
+bishop	None	None	None	None	None	None
+bishop	None	None	None	None	None	None
+
+Game 18:
+None	None	None	None	None	None	bishop
+None	None	None	None	bishop	None	kinight
+None	queen	None	None	None	None	None
+None	None	None	None	None	None	None
+None	None	None	None	None	None	king
+None	None	None	queen	None	None	None
+None	None	None	None	None	None	king
+
+Game 19:
+None	None	None	king	None	bishop	None
+None	None	None	None	None	bishop	None
+None	None	None	None	None	kinight	None
+None	queen	None	None	None	None	None
+None	None	None	None	None	king	None
+None	None	None	None	None	None	None
+None	None	None	None	None	None	queen
+
+Game 20:
+king	None	None	None	None	None	None
+None	None	None	queen	None	None	None
+None	None	None	None	None	None	None
+kinight	None	bishop	None	None	None	None
+None	None	None	None	None	queen	None
+None	None	None	None	None	None	None
+bishop	None	king	None	None	None	None
+
+Game 21:
+None	None	queen	None	None	None	None
+king	None	None	None	None	None	None
+None	None	None	None	None	queen	None
+king	None	None	None	None	None	None
+None	None	None	None	None	None	None
+bishop	None	None	None	None	None	None
+bishop	None	None	None	None	None	kinight
+
+Game 22:
+None	None	None	None	None	None	None
+king	None	None	None	None	None	kinight
+None	None	queen	None	None	None	None
+king	None	None	None	None	None	None
+None	None	None	None	None	queen	None
+bishop	None	None	None	None	None	None
+bishop	None	None	None	None	None	None
+
+Game 23:
+king	None	None	None	None	None	None
+None	None	None	None	None	queen	None
+None	None	None	None	None	None	None
+kinight	None	None	None	None	None	None
+bishop	None	None	None	None	None	None
+bishop	None	king	None	None	None	None
+None	None	None	None	queen	None	None
+
+Game 24:
+None	None	None	None	None	None	bishop
+None	None	None	None	queen	None	None
+None	None	None	None	None	None	bishop
+None	queen	None	None	None	None	None
+None	None	None	king	None	None	kinight
+None	None	None	None	None	None	None
+None	None	None	None	None	None	king
+
+Game 25:
+None	queen	None	None	None	None	None
+None	None	None	None	None	None	None
+king	None	None	None	None	None	None
+None	None	None	None	None	None	queen
+kinight	None	None	None	king	None	None
+bishop	None	None	None	None	None	None
+bishop	None	None	None	None	None	None
+
+Game 26:
+None	queen	None	None	None	None	None
+None	None	None	None	None	None	None
+king	None	None	None	None	None	None
+None	None	None	None	None	queen	None
+kinight	None	None	None	None	None	None
+bishop	None	None	None	None	None	None
+bishop	None	None	king	None	None	None
+
+Game 27:
+None	None	None	None	None	None	bishop
+None	None	queen	None	None	None	None
+None	None	None	None	None	None	kinight
+None	None	None	None	None	None	None
+None	None	None	None	None	None	king
+None	None	None	None	queen	None	None
+None	bishop	None	None	None	None	king
+
+Game 28:
+None	None	bishop	None	None	None	bishop
+None	None	None	None	None	None	kinight
+None	queen	None	None	None	None	None
+None	None	None	None	None	None	king
+None	None	None	None	queen	None	None
+None	None	None	None	None	None	king
+None	None	None	None	None	None	None
+
+Game 29:
+None	None	None	None	None	None	bishop
+None	None	None	None	None	None	bishop
+None	None	None	None	None	None	kinight
+None	queen	None	None	None	None	None
+None	None	None	None	None	None	king
+queen	None	None	None	None	None	None
+None	None	None	None	None	None	king
+
+Game 30:
+king	None	None	None	None	None	None
+None	None	None	None	None	None	None
+None	None	None	None	queen	None	None
+kinight	None	None	None	None	None	None
+bishop	None	None	None	None	None	None
+bishop	None	king	None	None	None	None
+None	None	None	None	None	queen	None
+
+Game 31:
+None	None	None	queen	None	None	None
+None	None	None	None	None	None	bishop
+None	None	None	None	None	None	bishop
+None	None	None	None	None	None	None
+None	None	None	None	None	None	king
+None	None	None	None	queen	None	None
+kinight	None	None	None	None	None	king
+
+Game 32:
+king	None	None	None	None	None	None
+None	None	queen	None	None	None	None
+king	None	None	None	None	None	None
+None	None	None	None	None	None	queen
+kinight	None	None	None	None	None	None
+bishop	None	None	None	None	None	None
+bishop	None	None	None	None	None	None
+
+Game 33:
+None	bishop	None	None	None	None	None
+None	None	None	queen	None	None	None
+None	None	None	None	None	None	None
+king	None	None	None	None	None	None
+None	None	None	None	queen	None	None
+kinight	None	king	None	None	None	None
+bishop	None	None	None	None	None	None
+
+Game 34:
+None	queen	None	None	None	None	None
+None	None	None	None	None	None	king
+king	None	None	None	None	None	None
+None	None	None	None	None	queen	None
+kinight	None	None	None	None	None	None
+bishop	None	None	None	None	None	None
+bishop	None	None	None	None	None	None
+
+Game 35:
+None	None	None	None	None	None	bishop
+None	None	queen	None	None	None	None
+None	None	None	None	None	bishop	kinight
+None	None	None	None	None	None	None
+None	None	None	None	None	None	king
+None	None	None	None	queen	None	None
+None	None	None	None	None	None	king
+
+Game 36:
+king	None	None	None	None	None	None
+None	None	None	None	None	None	None
+kinight	None	king	None	None	None	None
+None	None	None	None	queen	None	None
+None	None	None	None	None	None	None
+bishop	bishop	None	None	None	None	None
+None	None	None	queen	None	None	None
+
+Game 37:
+None	None	None	None	king	None	None
+None	None	queen	None	None	None	None
+king	None	None	None	None	None	None
+None	None	None	None	None	queen	None
+kinight	None	None	None	None	None	None
+bishop	None	None	None	None	None	None
+bishop	None	None	None	None	None	None
+
+Game 38:
+None	None	None	None	king	None	bishop
+None	None	None	None	None	None	bishop
+None	queen	None	None	None	None	None
+None	None	None	None	None	None	king
+None	None	None	None	None	None	None
+None	None	None	None	None	None	kinight
+None	None	queen	None	None	None	None
+
+Game 39:
+king	None	None	None	None	None	None
+None	None	bishop	None	None	None	None
+king	None	None	None	None	None	None
+None	None	None	None	None	queen	None
+None	None	None	queen	None	None	None
+kinight	None	None	None	None	None	None
+bishop	None	None	None	None	None	None
+
+Game 40:
+None	None	None	None	king	None	bishop
+None	None	None	None	None	None	bishop
+None	queen	None	None	None	None	None
+None	None	None	None	None	None	kinight
+None	None	None	None	None	None	None
+None	None	None	None	None	None	king
+None	None	queen	None	None	None	None
+
+Game 41:
+None	None	None	None	king	None	None
+None	None	None	None	None	None	queen
+None	queen	None	None	None	None	None
+None	None	None	king	None	bishop	None
+None	None	None	None	None	bishop	None
+None	None	None	None	None	kinight	None
+None	None	None	None	None	None	None
+
+Game 42:
+None	None	None	None	None	None	bishop
+None	None	None	None	None	None	bishop
+None	None	None	None	None	None	kinight
+None	queen	None	None	None	None	None
+None	None	None	None	king	None	king
+None	None	None	None	None	None	None
+None	None	None	None	None	queen	None
+
+Game 43:
+None	None	None	None	None	None	bishop
+None	None	queen	None	None	None	None
+None	None	None	None	None	None	bishop
+None	None	None	None	None	None	kinight
+None	queen	None	None	None	None	None
+None	None	None	None	king	None	None
+None	None	None	None	None	None	king
+
+Game 44:
+None	None	None	None	None	None	bishop
+None	None	None	None	king	None	None
+None	None	None	None	None	None	bishop
+None	None	None	None	None	None	kinight
+queen	None	None	None	None	None	None
+None	None	None	None	None	None	king
+None	queen	None	None	None	None	None
+
+Game 45:
+king	None	None	None	None	None	bishop
+None	None	None	None	None	None	bishop
+None	None	None	None	None	None	kinight
+None	queen	None	None	None	None	None
+None	None	None	None	None	None	king
+None	None	None	None	None	None	None
+None	None	None	None	None	queen	None
+
+Game 46:
+None	None	None	None	None	None	bishop
+None	None	None	None	None	None	kinight
+None	None	None	queen	None	None	None
+None	queen	None	None	None	None	None
+None	None	None	None	None	None	king
+None	None	None	None	bishop	None	None
+None	None	None	None	None	None	king
+
+Game 47:
+None	queen	None	None	None	None	None
+None	None	None	None	None	None	queen
+king	None	None	None	None	None	None
+None	None	None	None	None	king	None
+kinight	None	None	None	None	None	None
+bishop	None	None	None	None	None	None
+bishop	None	None	None	None	None	None
+
+Game 48:
+None	king	None	None	None	None	bishop
+None	None	None	None	None	None	bishop
+None	None	None	None	None	None	kinight
+queen	None	None	None	None	None	None
+None	None	None	None	None	None	king
+None	None	None	None	None	None	None
+None	None	None	None	None	queen	None
+
+Game 49:
+None	None	None	None	None	None	None
+king	None	None	None	None	None	None
+None	None	None	None	None	queen	None
+kinight	None	king	None	None	None	None
+bishop	None	None	None	None	None	None
+None	None	None	None	None	None	queen
+bishop	None	None	None	None	None	None
+
+Game 50:
+None	None	queen	None	None	None	None
+king	None	None	None	None	None	None
+None	None	None	None	None	None	queen
+king	None	None	None	None	None	None
+None	None	None	kinight	None	None	None
+bishop	None	None	None	None	None	None
+bishop	None	None	None	None	None	None
+
+Game 51:
+king	None	None	None	None	None	None
+None	None	None	None	None	None	None
+king	None	None	bishop	None	None	None
+None	None	None	None	None	queen	None
+kinight	None	None	None	None	None	None
+None	None	None	None	queen	None	None
+bishop	None	None	None	None	None	None
+
+Game 52:
+None	None	None	None	None	None	None
+king	None	None	None	None	None	None
+None	None	None	None	None	None	None
+bishop	None	king	None	None	None	None
+None	None	None	None	queen	None	None
+None	None	None	None	None	None	queen
+bishop	kinight	None	None	None	None	None
+
+Game 53:
+None	queen	None	None	None	None	None
+None	None	None	None	None	None	bishop
+None	None	None	None	None	None	kinight
+None	None	None	bishop	None	None	None
+None	None	None	None	None	None	king
+queen	None	None	None	None	None	None
+None	None	None	None	None	king	None
+
+Game 54:
+None	None	None	None	None	None	None
+None	None	king	None	None	None	bishop
+None	None	None	None	queen	None	None
+None	None	None	None	None	None	bishop
+None	queen	None	None	None	None	None
+None	None	None	king	None	None	kinight
+None	None	None	None	None	None	None
+
+Game 55:
+None	queen	None	None	None	None	None
+None	None	None	None	king	None	bishop
+None	None	None	None	None	None	bishop
+None	None	None	queen	None	None	None
+None	None	None	None	None	None	kinight
+None	None	None	None	None	None	None
+None	None	None	None	king	None	None
+
+Game 56:
+king	None	None	None	None	bishop	None
+None	None	queen	None	None	None	None
+king	None	None	None	None	None	None
+None	None	None	None	None	None	None
+kinight	None	None	None	None	None	None
+None	None	None	None	queen	None	None
+bishop	None	None	None	None	None	None
+
+Game 57:
+None	None	None	None	None	queen	None
+None	None	queen	None	None	None	None
+None	None	None	None	king	None	bishop
+None	None	None	None	None	None	bishop
+None	None	None	None	None	None	kinight
+None	None	None	None	None	None	None
+None	None	None	None	None	None	king
+
+Game 58:
+None	None	None	None	queen	None	None
+None	None	None	None	None	None	bishop
+None	None	None	king	None	None	None
+None	None	None	None	None	None	bishop
+None	None	None	None	None	None	kinight
+None	queen	None	None	None	None	None
+None	None	None	None	None	None	king
+
+Game 59:
+kinight	None	None	None	None	None	None
+None	None	None	None	None	None	None
+king	None	None	None	None	None	None
+None	None	queen	None	None	None	None
+bishop	None	None	None	None	None	None
+None	None	None	None	None	None	queen
+bishop	None	None	king	None	None	None
+
+Game 60:
+None	None	None	None	None	None	bishop
+None	None	None	None	None	None	kinight
+None	None	queen	None	None	None	None
+None	None	None	None	None	None	king
+None	queen	None	None	None	None	None
+None	None	None	bishop	None	None	king
+None	None	None	None	None	None	None
+
+Game 61:
+None	None	None	None	None	None	None
+None	None	None	None	None	None	queen
+king	None	None	king	None	None	None
+None	None	None	None	None	queen	None
+bishop	None	None	None	None	None	None
+kinight	None	None	None	None	None	None
+bishop	None	None	None	None	None	None
+
+Game 62:
+None	None	None	queen	None	None	None
+None	None	None	None	None	None	bishop
+None	None	None	None	king	None	bishop
+None	None	queen	None	None	None	None
+None	None	None	None	None	None	kinight
+None	None	None	None	None	None	None
+None	None	None	None	None	None	king
+
+Game 63:
+king	None	None	None	None	None	None
+None	None	None	None	bishop	None	None
+king	None	None	None	None	None	None
+None	None	None	None	None	queen	None
+kinight	None	None	None	None	None	None
+None	None	None	None	None	None	queen
+bishop	None	None	None	None	None	None
+
+Game 64:
+None	None	None	None	king	None	bishop
+None	None	None	None	None	None	bishop
+None	None	None	None	None	None	kinight
+None	None	queen	None	None	None	None
+None	None	None	None	None	None	king
+None	None	None	None	None	None	None
+None	None	None	queen	None	None	None
+
+Game 65:
+None	queen	None	None	None	None	None
+None	None	None	None	None	None	None
+king	None	None	None	None	None	None
+None	None	None	None	None	queen	None
+kinight	None	None	None	None	None	None
+bishop	None	None	None	king	None	None
+bishop	None	None	None	None	None	None
+
+Game 66:
+None	None	None	None	None	None	bishop
+None	None	None	None	None	None	kinight
+None	None	bishop	None	None	None	None
+None	None	None	None	None	None	king
+None	queen	None	None	None	None	None
+None	None	None	None	None	None	king
+None	None	None	None	queen	None	None
+
+Game 67:
+None	None	None	None	None	None	bishop
+None	None	None	None	king	None	kinight
+None	queen	None	None	None	None	None
+None	None	None	None	None	None	None
+None	None	None	None	None	None	bishop
+None	None	None	queen	None	None	None
+None	None	None	None	None	None	king
+
+Game 68:
+None	None	None	None	king	None	None
+None	None	None	None	None	None	king
+None	queen	None	None	None	None	None
+None	None	None	None	None	None	bishop
+None	None	None	None	None	None	bishop
+None	None	None	None	None	None	kinight
+None	None	queen	None	None	None	None
+
+Game 69:
+None	queen	None	None	None	None	None
+None	None	None	None	None	king	None
+king	None	None	None	None	None	None
+None	None	None	None	None	None	queen
+bishop	None	None	None	None	None	None
+bishop	None	None	None	None	None	None
+kinight	None	None	None	None	None	None
+
+Game 70:
+king	None	None	None	None	None	None
+None	None	None	None	queen	None	None
+None	None	None	None	None	None	queen
+kinight	None	None	None	None	None	None
+bishop	None	None	None	None	None	None
+None	None	king	None	None	None	None
+bishop	None	None	None	None	None	None
+
+Game 71:
+None	None	None	kinight	None	None	bishop
+None	None	None	None	None	None	bishop
+None	None	None	None	None	None	None
+None	None	queen	None	None	None	None
+None	None	None	None	None	queen	None
+None	None	None	None	None	None	None
+None	None	None	None	king	None	king
+
+Game 72:
+None	queen	None	None	None	None	None
+None	None	None	None	kinight	None	bishop
+queen	None	None	None	None	None	None
+None	None	None	None	None	None	None
+None	None	None	None	king	None	bishop
+None	None	None	None	None	None	None
+None	None	None	None	None	None	king
+
+Game 73:
+None	None	None	None	king	None	bishop
+None	queen	None	None	None	None	None
+None	None	None	None	None	None	None
+None	None	None	None	kinight	None	bishop
+None	None	None	None	None	None	None
+None	None	None	None	None	None	king
+None	None	queen	None	None	None	None
+
+Game 74:
+None	bishop	None	None	None	None	bishop
+None	None	None	None	None	None	kinight
+None	None	None	None	None	None	None
+None	None	None	None	None	None	king
+queen	None	None	None	None	None	None
+None	None	None	queen	None	None	None
+None	None	None	None	None	None	king
+
+Game 75:
+king	None	None	None	None	None	None
+None	None	None	None	None	bishop	None
+king	None	None	None	None	None	None
+None	None	None	None	queen	None	None
+kinight	None	None	None	None	None	None
+bishop	None	None	None	None	None	None
+None	None	None	queen	None	None	None
+
+Game 76:
+None	None	None	king	None	None	bishop
+None	None	None	None	None	None	bishop
+None	None	None	None	None	None	kinight
+None	queen	None	None	None	None	None
+None	None	None	None	None	None	king
+None	None	None	None	None	None	None
+None	None	None	None	None	queen	None
+
+Game 77:
+None	None	None	None	None	None	None
+king	None	None	None	None	None	None
+None	None	None	None	None	queen	None
+kinight	None	king	None	None	None	None
+bishop	None	None	None	None	None	None
+None	None	None	queen	None	None	None
+bishop	None	None	None	None	None	None
+
+Game 78:
+king	None	None	None	None	None	None
+None	None	queen	None	None	None	None
+king	None	None	None	None	None	None
+None	None	None	None	None	queen	None
+bishop	None	None	None	None	None	None
+bishop	None	None	None	None	None	None
+kinight	None	None	None	None	None	None
+
+Game 79:
+None	None	None	None	queen	None	None
+king	None	None	None	None	None	None
+None	None	None	None	None	None	None
+bishop	None	kinight	None	None	None	None
+None	None	None	None	None	None	None
+None	None	None	None	None	queen	None
+bishop	None	king	None	None	None	None
+
+Game 80:
+None	None	None	None	None	None	bishop
+None	None	None	None	king	None	kinight
+None	queen	None	None	None	None	None
+None	None	None	None	None	None	None
+None	None	None	None	None	bishop	None
+None	None	None	queen	None	None	None
+None	None	None	None	None	None	king
+
+Game 81:
+None	None	None	None	queen	None	None
+king	None	None	None	None	None	None
+None	None	None	None	None	None	None
+kinight	None	king	None	None	None	None
+None	None	None	None	None	None	None
+None	None	None	queen	None	None	None
+bishop	bishop	None	None	None	None	None
+
+Game 82:
+None	None	None	None	None	None	bishop
+None	None	None	None	None	None	bishop
+None	queen	None	None	None	None	None
+None	None	None	None	None	None	None
+None	None	None	None	kinight	None	king
+queen	None	None	None	None	None	None
+None	None	None	None	None	None	king
+
+Game 83:
+None	None	None	None	None	None	None
+bishop	None	king	None	None	None	None
+None	None	None	None	queen	None	None
+None	None	None	None	None	None	None
+bishop	kinight	None	None	None	None	None
+None	None	None	None	None	queen	None
+None	king	None	None	None	None	None
+
+Game 84:
+king	None	None	None	None	None	None
+None	None	None	queen	None	None	None
+None	bishop	None	None	None	None	None
+None	None	None	None	None	None	None
+None	None	None	None	None	queen	None
+kinight	None	king	None	None	None	None
+bishop	None	None	None	None	None	None
+
+Game 85:
+None	None	None	None	king	None	bishop
+None	None	None	None	None	None	bishop
+None	None	None	None	None	None	kinight
+None	None	queen	None	None	None	None
+None	None	None	None	None	None	None
+None	None	None	None	None	king	None
+None	None	None	queen	None	None	None
+
+Game 86:
+king	None	None	None	None	None	None
+None	None	None	None	None	None	None
+king	None	None	kinight	None	None	None
+None	None	None	None	None	None	queen
+bishop	None	None	None	None	None	None
+None	None	queen	None	None	None	None
+bishop	None	None	None	None	None	None
+
+Game 87:
+None	None	None	None	king	None	bishop
+None	None	None	None	None	None	bishop
+None	None	None	king	None	None	kinight
+queen	None	None	None	None	None	None
+None	None	None	None	None	None	None
+None	None	None	None	None	queen	None
+None	None	None	None	None	None	None
+
+Game 88:
+None	None	None	None	None	None	None
+bishop	None	king	None	None	None	None
+None	None	None	None	None	None	None
+None	None	None	None	None	None	queen
+bishop	None	kinight	None	None	None	None
+None	None	None	None	None	queen	None
+king	None	None	None	None	None	None
+
+Game 89:
+None	None	None	None	None	None	bishop
+None	None	None	None	None	None	bishop
+None	queen	None	None	None	None	None
+None	None	None	None	None	None	king
+None	None	None	None	queen	None	None
+kinight	None	None	None	None	None	king
+None	None	None	None	None	None	None
+
+Game 90:
+None	None	None	None	None	None	None
+king	None	None	None	None	None	bishop
+None	None	queen	None	None	None	None
+king	None	None	None	None	None	None
+None	None	None	None	None	queen	None
+kinight	None	None	None	None	None	None
+bishop	None	None	None	None	None	None
+
+Game 91:
+None	None	None	None	None	king	None
+None	None	queen	None	None	None	None
+king	None	None	None	None	None	None
+None	None	None	None	None	None	queen
+bishop	None	None	None	None	None	None
+kinight	None	None	None	None	None	None
+bishop	None	None	None	None	None	None
+
+Game 92:
+None	queen	None	None	None	None	None
+None	None	None	None	None	None	None
+king	None	None	None	None	None	None
+None	None	None	None	None	None	queen
+kinight	None	None	None	None	None	None
+bishop	None	None	None	None	king	None
+bishop	None	None	None	None	None	None
+
+Game 93:
+None	None	None	None	None	None	bishop
+None	None	None	None	None	None	kinight
+None	None	None	None	None	None	bishop
+queen	None	None	None	None	None	None
+None	None	None	None	None	None	king
+None	None	None	None	queen	None	None
+None	king	None	None	None	None	None
+
+Game 94:
+None	None	None	None	king	None	bishop
+None	None	None	None	None	None	bishop
+queen	None	None	None	None	None	None
+None	None	None	None	None	None	kinight
+None	None	None	None	None	None	None
+None	None	None	None	None	None	king
+None	None	queen	None	None	None	None
+
+Game 95:
+None	None	None	None	None	None	bishop
+None	None	None	None	None	None	bishop
+None	None	None	king	None	None	kinight
+None	queen	None	None	None	None	None
+None	None	None	None	None	None	king
+None	None	None	None	None	None	None
+None	None	None	None	None	queen	None
+
+Game 96:
+None	None	None	None	None	None	None
+None	queen	None	None	None	None	None
+None	None	None	None	None	None	None
+None	None	None	None	None	None	queen
+kinight	None	None	king	None	None	None
+bishop	None	None	None	None	None	None
+bishop	None	king	None	None	None	None
+
+Game 97:
+None	queen	None	None	None	None	None
+None	None	None	None	None	None	None
+king	None	None	None	king	None	None
+None	None	None	None	None	None	queen
+bishop	None	None	None	None	None	None
+bishop	None	None	None	None	None	None
+kinight	None	None	None	None	None	None
+
+Game 98:
+None	None	None	None	None	None	None
+kinight	None	None	king	None	None	None
+bishop	None	None	None	None	None	None
+bishop	None	king	None	None	None	None
+None	None	None	None	queen	None	None
+None	queen	None	None	None	None	None
+None	None	None	None	None	None	None
+
+Game 99:
+None	None	None	None	None	None	bishop
+None	None	None	None	None	None	bishop
+None	None	queen	None	None	None	None
+None	None	None	None	None	None	king
+None	queen	None	None	None	None	None
+None	None	None	None	kinight	None	king
+None	None	None	None	None	None	None
+
+Game 100:
+None	None	None	None	None	None	bishop
+None	None	None	bishop	None	None	kinight
+None	queen	None	None	None	None	None
+None	None	None	None	None	None	king
+None	None	None	None	queen	None	None
+None	None	None	None	None	None	king
+None	None	None	None	None	None	None
+
+Game 101:
+None	None	None	None	None	queen	None
+king	None	None	None	None	None	None
+None	None	None	None	None	None	queen
+kinight	None	None	None	None	None	None
+bishop	None	None	None	None	None	None
+None	None	king	None	None	None	None
+bishop	None	None	None	None	None	None
+
+Game 102:
+None	None	queen	None	None	None	None
+king	None	None	None	None	None	None
+None	None	None	None	None	None	bishop
+king	None	None	None	None	None	None
+None	None	None	None	None	queen	None
+kinight	None	None	None	None	None	None
+bishop	None	None	None	None	None	None
+
+Game 103:
+None	None	None	None	None	king	None
+None	queen	None	None	None	None	None
+None	None	None	None	None	kinight	bishop
+None	None	None	None	None	None	None
+None	None	queen	None	None	None	None
+None	None	None	None	king	None	bishop
+None	None	None	None	None	None	None
+
+Game 104:
+king	None	None	None	None	None	None
+None	None	None	None	None	queen	None
+kinight	None	None	None	None	None	None
+bishop	None	None	None	None	None	None
+None	None	None	king	None	None	None
+bishop	None	None	None	None	None	None
+None	None	queen	None	None	None	None
+
+Game 105:
+None	None	None	None	queen	None	None
+kinight	None	None	None	None	None	None
+bishop	None	None	None	None	None	None
+bishop	None	None	None	None	None	None
+None	None	None	None	None	queen	None
+king	None	None	None	None	None	None
+None	None	king	None	None	None	None
+
+Game 106:
+None	None	None	None	None	None	bishop
+None	None	None	None	queen	None	None
+None	None	None	None	None	None	bishop
+queen	None	None	None	None	None	None
+None	None	None	None	None	None	king
+None	None	None	None	None	None	None
+None	kinight	None	None	None	None	king
+
+Game 107:
+None	None	None	None	None	None	king
+None	None	queen	None	None	None	None
+king	None	None	None	None	None	None
+None	None	None	None	None	queen	None
+bishop	None	None	None	None	None	None
+bishop	None	None	None	None	None	None
+kinight	None	None	None	None	None	None
+
+Game 108:
+None	None	None	None	None	None	bishop
+None	None	bishop	None	None	None	kinight
+None	None	None	None	None	None	None
+None	None	None	None	None	None	king
+None	queen	None	None	None	None	None
+None	None	None	queen	None	None	None
+None	None	None	None	None	None	king
+
+Game 109:
+None	None	king	None	None	None	None
+None	None	None	None	None	None	None
+kinight	None	None	None	None	None	None
+None	None	None	queen	None	None	None
+bishop	None	None	None	None	None	None
+bishop	None	king	None	None	None	None
+None	None	None	None	None	queen	None
+
+Game 110:
+None	None	None	None	king	None	bishop
+None	None	None	None	None	None	bishop
+None	None	None	queen	None	None	None
+queen	None	None	None	None	None	None
+None	None	None	None	None	None	kinight
+None	None	None	None	None	None	None
+None	None	None	None	None	None	king
+
+Game 111:
+kinight	None	None	None	None	None	bishop
+None	None	None	None	None	None	bishop
+None	None	None	None	None	None	None
+None	None	None	None	None	None	king
+None	queen	None	None	None	None	None
+None	None	None	None	None	None	king
+None	None	None	None	queen	None	None
+
+Game 112:
+None	None	None	None	None	None	bishop
+None	None	None	None	king	None	kinight
+None	None	queen	None	None	None	None
+None	None	None	None	None	None	king
+None	None	None	None	None	None	None
+None	None	None	queen	None	None	None
+None	None	None	None	None	bishop	None
+
+Game 113:
+None	queen	None	None	None	None	None
+None	None	None	None	king	None	None
+king	None	None	None	None	None	None
+None	None	None	None	None	queen	None
+bishop	None	None	None	None	None	None
+kinight	None	None	None	None	None	None
+bishop	None	None	None	None	None	None
+
+Game 114:
+None	None	None	None	None	None	bishop
+None	None	None	None	None	None	bishop
+None	None	king	None	None	None	kinight
+queen	None	None	None	None	None	None
+None	None	None	None	None	None	king
+None	None	None	None	None	None	None
+None	None	None	None	None	queen	None
+
+Game 115:
+None	None	None	None	queen	None	None
+kinight	None	king	None	None	None	None
+bishop	None	None	None	None	None	None
+None	None	None	None	None	None	None
+None	queen	None	None	None	None	None
+None	None	None	None	None	None	None
+bishop	None	king	None	None	None	None
+
+Game 116:
+None	None	queen	None	None	None	None
+None	None	None	None	king	None	bishop
+None	None	None	None	None	None	bishop
+None	None	None	None	None	None	kinight
+None	None	None	None	None	None	None
+None	None	None	None	None	None	king
+queen	None	None	None	None	None	None
+
+Game 117:
+None	None	None	queen	None	None	None
+king	None	None	None	None	None	None
+None	None	None	None	None	None	None
+None	None	None	None	queen	None	None
+kinight	None	None	None	None	None	None
+bishop	None	None	None	None	None	None
+bishop	None	king	None	None	None	None
+
+Game 118:
+None	queen	None	None	None	None	None
+None	None	None	None	None	None	None
+king	None	None	None	None	None	None
+None	None	None	None	None	None	queen
+kinight	None	None	None	None	None	None
+bishop	None	None	king	None	None	None
+bishop	None	None	None	None	None	None
+
+Game 119:
+None	None	None	None	None	None	bishop
+None	None	None	None	None	None	bishop
+None	None	None	None	None	None	kinight
+None	queen	None	None	None	None	None
+None	None	None	None	None	None	king
+king	None	None	None	None	None	None
+None	None	None	None	None	queen	None
+
+Game 120:
+None	None	None	None	king	None	bishop
+None	None	None	None	None	None	None
+None	None	None	None	None	king	None
+None	None	queen	None	None	None	None
+None	None	None	None	None	None	bishop
+None	None	None	None	None	None	kinight
+None	None	None	queen	None	None	None
+
+Game 121:
+king	None	None	None	None	None	None
+None	None	None	None	None	None	None
+kinight	None	None	None	None	None	None
+None	None	None	None	None	None	queen
+None	None	None	queen	None	None	None
+bishop	None	None	None	None	None	None
+bishop	None	king	None	None	None	None
+
+Game 122:
+None	None	None	None	None	None	bishop
+None	None	None	None	None	None	bishop
+None	None	None	None	None	None	kinight
+None	queen	None	None	None	None	None
+None	None	None	None	None	None	king
+queen	None	None	None	None	None	None
+None	None	None	None	None	king	None
+
+Game 123:
+king	None	None	None	None	None	None
+None	None	queen	None	None	None	None
+king	None	None	None	None	None	None
+None	None	None	None	None	queen	None
+None	None	None	None	None	None	None
+kinight	None	None	None	None	None	None
+bishop	None	None	bishop	None	None	None
+
+Game 124:
+None	None	None	king	None	bishop	None
+None	None	None	None	None	None	None
+None	None	None	None	None	None	queen
+None	None	None	king	None	None	None
+None	None	None	None	None	bishop	None
+None	None	None	None	None	kinight	None
+None	queen	None	None	None	None	None
+
+Game 125:
+None	None	None	king	None	None	bishop
+None	None	None	None	None	None	bishop
+None	None	None	None	None	None	kinight
+None	None	queen	None	None	None	None
+None	None	None	None	None	None	None
+None	None	None	None	None	None	king
+None	None	None	None	queen	None	None
+
+Game 126:
+None	None	None	None	None	None	None
+king	None	None	None	None	None	None
+None	None	None	queen	None	None	None
+kinight	bishop	None	None	None	None	None
+None	None	None	None	None	None	None
+None	None	None	None	None	queen	None
+bishop	None	king	None	None	None	None
+
+Game 127:
+king	None	None	None	None	None	None
+None	None	queen	None	None	None	None
+king	None	None	None	None	None	None
+None	None	None	None	None	queen	None
+bishop	None	None	None	None	None	None
+kinight	None	None	None	None	None	None
+bishop	None	None	None	None	None	None
+
+Game 128:
+None	None	None	None	None	None	kinight
+None	None	None	None	None	None	bishop
+None	None	None	None	None	None	bishop
+None	queen	None	None	None	None	None
+None	None	None	None	None	None	king
+None	None	None	None	queen	None	None
+None	None	None	None	None	None	king
+
+Game 129:
+None	None	None	None	None	None	bishop
+None	None	None	None	None	None	kinight
+None	None	None	None	None	None	bishop
+None	None	None	None	king	None	None
+None	None	None	None	None	None	king
+queen	None	None	None	None	None	None
+None	None	None	None	None	queen	None
+
+Game 130:
+None	None	None	None	None	None	bishop
+None	None	None	None	None	None	kinight
+None	None	None	None	None	None	bishop
+None	queen	None	None	None	None	None
+None	None	None	None	None	None	king
+None	None	king	None	None	None	None
+None	None	None	None	None	queen	None
+
+Game 131:
+None	None	None	None	bishop	None	bishop
+None	queen	None	None	None	None	None
+None	None	None	None	None	None	None
+None	None	None	None	king	None	kinight
+None	None	None	None	None	None	None
+None	None	None	None	None	None	king
+None	None	queen	None	None	None	None
+
+Game 132:
+None	None	None	None	None	bishop	None
+None	None	None	king	None	bishop	None
+queen	None	None	None	None	None	None
+None	None	None	None	None	None	queen
+None	None	None	king	None	None	None
+None	None	None	None	None	None	None
+None	None	None	None	None	kinight	None
+
+Game 133:
+None	None	queen	None	None	None	None
+None	None	None	None	king	None	bishop
+None	None	None	None	None	None	bishop
+None	None	None	None	None	None	kinight
+None	None	None	None	None	None	None
+None	queen	None	None	None	None	None
+None	None	None	None	None	None	king
+
+Game 134:
+king	None	None	None	None	None	None
+None	None	queen	None	None	None	None
+king	None	None	None	None	None	None
+None	None	None	None	None	queen	None
+kinight	None	None	None	None	None	None
+bishop	None	None	None	None	None	None
+bishop	None	None	None	None	None	None
+
+Game 135:
+None	queen	None	None	None	None	None
+None	None	None	None	None	None	None
+king	None	king	None	None	None	None
+None	None	None	None	None	queen	None
+kinight	None	None	None	None	None	None
+bishop	None	None	None	None	None	None
+bishop	None	None	None	None	None	None
+
+Game 136:
+None	queen	None	None	None	None	None
+None	None	None	None	None	None	None
+king	None	None	None	None	None	None
+None	None	None	None	None	None	queen
+kinight	None	None	None	None	None	None
+bishop	None	None	None	None	None	None
+bishop	None	king	None	None	None	None
+
+Game 137:
+king	None	None	None	None	None	None
+None	None	None	queen	None	None	None
+None	None	None	None	None	None	None
+kinight	None	None	None	None	None	None
+None	None	None	None	None	queen	None
+bishop	None	None	None	None	None	None
+bishop	None	king	None	None	None	None
+
+Game 138:
+None	None	None	None	None	None	bishop
+None	None	None	None	None	None	kinight
+None	queen	None	None	None	None	None
+None	None	None	None	None	None	king
+bishop	None	None	None	None	None	None
+None	None	None	None	None	None	king
+None	None	None	None	queen	None	None
+
+Game 139:
+None	None	None	queen	None	None	None
+None	None	None	None	None	None	bishop
+None	None	None	None	None	None	kinight
+None	None	queen	None	None	None	None
+None	None	None	None	None	None	king
+None	bishop	None	None	None	None	None
+None	None	None	None	None	None	king
+
+Game 140:
+None	None	None	None	king	None	bishop
+None	None	None	None	None	None	None
+None	None	None	None	None	None	king
+None	None	queen	None	None	None	None
+None	None	None	None	None	None	bishop
+None	None	None	None	None	None	kinight
+None	None	None	queen	None	None	None
+
+Game 141:
+king	None	None	None	None	None	None
+None	None	None	queen	None	None	None
+bishop	None	None	None	None	None	None
+None	None	None	None	None	None	None
+None	None	None	None	None	queen	None
+kinight	None	king	None	None	None	None
+bishop	None	None	None	None	None	None
+
+Game 142:
+None	None	None	None	None	None	bishop
+None	None	None	king	None	None	bishop
+None	None	None	None	None	None	kinight
+queen	None	None	None	None	None	None
+None	None	None	None	None	None	king
+None	None	None	None	None	None	None
+None	None	None	None	None	queen	None
+
+Game 143:
+None	None	queen	None	None	None	None
+king	None	None	None	None	None	None
+None	None	None	None	None	bishop	None
+king	None	None	None	None	None	None
+None	None	None	None	queen	None	None
+kinight	None	None	None	None	None	None
+bishop	None	None	None	None	None	None
+
+Game 144:
+king	None	None	None	None	None	None
+None	None	None	None	None	None	queen
+king	None	kinight	None	None	None	None
+None	None	None	None	None	None	None
+None	None	None	None	None	queen	None
+bishop	None	None	None	None	None	None
+bishop	None	None	None	None	None	None
+
+Game 145:
+None	None	None	None	None	None	bishop
+queen	None	None	None	None	None	None
+None	None	None	None	None	None	kinight
+None	queen	None	None	None	None	None
+None	None	None	None	None	None	king
+None	None	bishop	None	None	None	None
+None	None	None	None	None	None	king
+
+Game 146:
+None	None	None	None	None	None	bishop
+None	None	None	None	None	None	bishop
+None	None	None	None	None	None	kinight
+queen	None	None	None	None	None	None
+None	None	None	None	None	None	king
+None	None	None	king	None	None	None
+None	None	None	None	None	queen	None
+
+Game 147:
+None	None	None	None	None	None	bishop
+None	None	None	None	None	None	bishop
+None	None	None	None	None	None	kinight
+None	queen	None	None	None	None	None
+None	None	None	None	None	None	king
+None	None	None	None	queen	None	None
+None	None	None	None	None	None	king
+
+Game 148:
+None	None	None	king	None	bishop	None
+None	None	None	None	None	bishop	None
+None	None	None	None	None	kinight	None
+None	None	None	None	None	None	None
+queen	None	None	None	None	None	None
+None	None	None	None	None	None	queen
+None	None	None	None	king	None	None
+
+Game 149:
+None	None	None	None	None	None	bishop
+None	None	None	None	None	None	bishop
+None	None	None	None	None	None	kinight
+None	king	None	None	None	None	None
+None	None	None	None	None	None	king
+queen	None	None	None	None	None	None
+None	None	None	None	None	queen	None
+
+Game 150:
+None	None	None	None	None	None	None
+None	None	None	None	None	queen	None
+None	None	queen	None	None	None	None
+None	None	None	None	king	None	bishop
+None	None	None	None	None	None	bishop
+None	None	None	king	None	None	kinight
+None	None	None	None	None	None	None
+
+Game 151:
+queen	None	None	None	None	None	None
+None	None	None	None	None	None	None
+None	king	None	None	None	None	None
+None	None	None	None	None	queen	None
+None	kinight	None	None	None	None	None
+None	bishop	None	None	None	None	None
+None	bishop	None	king	None	None	None
+
+Game 152:
+None	None	None	None	queen	None	None
+king	None	None	None	None	None	None
+None	None	None	None	None	None	None
+kinight	None	None	None	None	None	None
+None	None	None	None	None	None	queen
+bishop	None	None	None	None	None	None
+bishop	None	king	None	None	None	None
+
+Game 153:
+None	None	None	None	None	kinight	bishop
+queen	None	None	None	None	None	None
+None	None	queen	None	None	None	None
+None	None	None	None	king	None	bishop
+None	None	None	None	None	None	None
+None	None	None	None	None	None	king
+None	None	None	None	None	None	None
+
+Game 154:
+None	None	None	kinight	None	None	bishop
+None	None	None	None	None	None	bishop
+queen	None	None	None	None	None	None
+None	None	None	None	None	None	king
+None	None	None	None	queen	None	None
+None	None	None	None	None	None	king
+None	None	None	None	None	None	None
+
+Game 155:
+None	kinight	None	None	None	None	None
+None	None	None	None	None	None	None
+None	None	None	king	None	None	None
+queen	None	None	None	None	None	None
+None	None	None	None	None	None	queen
+None	bishop	None	king	None	None	None
+None	bishop	None	None	None	None	None
+
+Game 156:
+None	None	None	queen	None	None	None
+None	None	None	None	None	bishop	bishop
+None	None	None	None	None	None	None
+None	None	queen	None	None	None	None
+None	None	None	None	king	None	kinight
+None	None	None	None	None	None	None
+None	None	None	None	None	None	king
+
+Game 157:
+None	None	queen	None	None	None	None
+king	None	None	None	None	None	None
+None	None	None	None	None	None	queen
+king	None	None	None	None	None	None
+None	None	None	None	None	None	None
+bishop	None	None	None	None	kinight	None
+bishop	None	None	None	None	None	None
+
+Game 158:
+None	None	None	None	kinight	None	bishop
+None	queen	None	None	None	None	None
+None	None	None	None	None	None	None
+None	None	None	None	king	None	bishop
+None	None	None	None	None	None	None
+None	None	None	None	None	None	king
+None	None	queen	None	None	None	None
+
+Game 159:
+None	None	queen	None	None	None	None
+king	None	None	None	None	None	None
+None	None	None	None	None	None	None
+king	None	None	None	None	None	None
+None	None	None	None	None	queen	None
+kinight	None	None	None	None	None	None
+bishop	None	None	None	None	None	bishop
+
+Game 160:
+None	None	king	None	None	None	None
+queen	None	None	None	None	None	None
+None	None	None	None	None	None	queen
+None	None	None	None	None	None	None
+None	kinight	None	None	None	None	None
+None	bishop	None	None	None	None	None
+None	bishop	None	king	None	None	None
+
+Game 161:
+king	None	None	bishop	None	None	None
+None	None	None	None	None	None	None
+king	None	None	None	None	None	None
+None	None	None	None	queen	None	None
+None	None	None	None	None	None	queen
+kinight	None	None	None	None	None	None
+bishop	None	None	None	None	None	None
+
+Game 162:
+None	None	None	None	None	None	king
+None	None	queen	None	None	None	None
+None	None	None	None	None	None	bishop
+None	None	None	None	None	None	bishop
+None	None	None	None	None	None	kinight
+queen	None	None	None	None	None	None
+None	None	None	None	None	None	king
+
+Game 163:
+None	None	None	None	None	None	bishop
+None	None	None	None	king	None	kinight
+None	queen	None	None	None	None	None
+None	None	None	None	None	None	king
+None	None	None	None	None	None	None
+None	None	None	None	None	bishop	None
+None	None	queen	None	None	None	None
+
+Game 164:
+None	None	None	None	None	None	bishop
+None	None	None	None	king	None	None
+None	None	None	None	None	None	bishop
+None	None	None	None	None	None	kinight
+queen	None	None	None	None	None	None
+None	None	queen	None	None	None	None
+None	None	None	None	None	None	king
+
+Game 165:
+None	None	None	None	None	None	None
+king	None	None	None	None	None	None
+None	None	queen	None	None	None	None
+king	None	None	None	None	None	None
+None	None	None	None	None	None	queen
+bishop	None	None	kinight	None	None	None
+bishop	None	None	None	None	None	None
+
+Game 166:
+None	None	None	queen	None	None	None
+kinight	None	None	None	None	None	None
+bishop	None	None	None	None	None	None
+None	None	None	None	queen	None	None
+king	None	None	None	None	None	None
+None	None	None	None	None	None	None
+bishop	None	king	None	None	None	None
+
+Game 167:
+None	None	None	None	None	None	kinight
+None	None	None	None	None	None	bishop
+None	None	None	None	king	None	bishop
+None	queen	None	None	None	None	None
+None	None	None	None	None	None	king
+None	None	None	None	None	None	None
+None	None	None	None	None	queen	None
+
+Game 168:
+None	None	None	None	None	None	bishop
+None	None	None	None	None	None	kinight
+None	None	None	None	None	None	bishop
+None	queen	None	None	None	None	None
+None	None	None	king	None	None	king
+queen	None	None	None	None	None	None
+None	None	None	None	None	None	None
+
+Game 169:
+king	None	None	None	None	None	None
+None	None	None	None	None	None	None
+kinight	None	None	None	None	None	None
+bishop	None	None	None	None	None	None
+bishop	None	king	None	None	None	None
+None	None	None	None	queen	None	None
+None	queen	None	None	None	None	None
+
+Game 170:
+None	None	None	None	None	None	bishop
+None	None	None	None	None	None	bishop
+None	None	None	None	None	None	kinight
+None	queen	None	None	None	None	None
+None	None	None	None	None	None	king
+None	None	None	None	queen	None	None
+None	None	king	None	None	None	None
+
+Game 171:
+None	None	None	None	None	None	bishop
+None	None	None	None	None	None	kinight
+queen	None	None	None	None	None	None
+None	None	bishop	None	None	None	king
+None	None	None	None	queen	None	None
+None	None	None	None	None	None	king
+None	None	None	None	None	None	None
+
+Game 172:
+None	None	None	None	None	None	bishop
+None	None	None	None	None	None	kinight
+queen	None	None	None	None	None	None
+None	None	queen	None	None	None	None
+None	None	None	None	None	None	king
+None	None	None	None	None	None	None
+None	None	None	bishop	None	None	king
+
+Game 173:
+None	None	None	queen	None	None	None
+None	None	None	None	None	None	bishop
+None	None	None	None	None	None	kinight
+None	None	None	None	None	None	None
+None	None	bishop	None	None	None	king
+None	None	None	None	queen	None	None
+None	None	None	None	None	None	king
+
+Game 174:
+None	None	None	None	None	None	kinight
+None	None	None	None	None	None	bishop
+None	None	None	None	None	None	bishop
+queen	None	None	None	None	None	None
+None	None	None	None	None	None	king
+None	king	None	None	None	None	None
+None	None	None	None	None	queen	None
+
+Game 175:
+None	None	None	None	king	None	bishop
+None	None	None	None	None	None	bishop
+None	queen	None	None	None	None	None
+None	None	None	None	None	None	kinight
+None	None	None	None	None	None	None
+None	None	None	queen	None	None	None
+None	None	None	None	None	None	king
+
+Game 176:
+king	None	None	None	None	kinight	None
+None	None	None	None	None	None	None
+king	None	None	None	None	None	None
+None	None	None	None	None	None	queen
+bishop	None	None	None	None	None	None
+None	None	queen	None	None	None	None
+bishop	None	None	None	None	None	None
+
+Game 177:
+king	None	None	None	None	None	None
+None	None	None	None	None	None	None
+bishop	None	king	None	None	None	None
+None	None	None	None	queen	None	None
+None	None	None	None	None	None	None
+bishop	kinight	None	None	None	None	None
+None	None	None	None	None	queen	None
+
+Game 178:
+None	None	None	None	None	None	bishop
+None	None	None	None	None	None	kinight
+None	None	queen	None	None	None	None
+None	None	None	None	None	None	king
+None	bishop	None	None	None	None	None
+None	None	None	None	None	None	king
+None	None	None	None	queen	None	None
+
+Game 179:
+None	queen	None	None	None	None	None
+None	None	None	None	None	kinight	bishop
+None	None	None	None	None	None	None
+None	None	queen	None	None	None	None
+None	None	None	None	king	None	bishop
+None	None	None	None	None	None	None
+None	None	None	None	None	None	king
+
+Game 180:
+king	None	None	None	None	None	None
+None	None	queen	None	None	None	None
+king	None	None	None	None	None	None
+None	None	None	None	None	None	None
+kinight	bishop	None	None	None	None	None
+None	None	None	None	queen	None	None
+bishop	None	None	None	None	None	None
+
+Game 181:
+None	None	None	queen	None	None	None
+None	None	None	None	None	None	None
+king	None	None	None	None	None	None
+None	None	None	None	queen	None	None
+kinight	None	None	None	None	None	None
+bishop	None	None	None	None	None	None
+bishop	None	king	None	None	None	None
+
+Game 182:
+king	None	None	None	None	None	None
+None	None	None	None	None	None	None
+bishop	None	king	None	None	None	None
+None	None	None	None	None	None	None
+None	None	None	None	None	None	queen
+bishop	None	kinight	None	None	None	None
+None	None	None	None	None	queen	None
+
+Game 183:
+None	queen	None	None	None	None	None
+None	None	None	king	None	None	None
+king	None	None	None	None	None	None
+None	None	None	None	None	None	queen
+kinight	None	None	None	None	None	None
+bishop	None	None	None	None	None	None
+bishop	None	None	None	None	None	None
+
+Game 184:
+None	None	None	None	None	None	kinight
+None	None	None	None	None	None	bishop
+None	None	None	None	None	None	bishop
+None	None	None	king	None	None	None
+None	None	None	None	None	None	king
+queen	None	None	None	None	None	None
+None	None	None	None	None	queen	None
+
+Game 185:
+kinight	None	king	None	None	None	None
+None	None	None	None	None	None	None
+None	None	None	None	None	None	None
+None	queen	None	None	None	None	None
+None	None	None	queen	None	None	None
+bishop	None	None	None	None	None	None
+bishop	None	king	None	None	None	None
+
+Game 186:
+None	None	None	None	king	None	None
+None	None	None	None	None	None	bishop
+None	None	None	None	bishop	None	kinight
+None	None	queen	None	None	None	None
+None	None	None	None	None	None	None
+None	None	None	None	None	None	king
+None	None	None	queen	None	None	None
+
+Game 187:
+None	None	None	None	king	None	bishop
+None	None	queen	None	None	None	None
+None	None	None	None	None	None	None
+None	None	None	None	None	kinight	bishop
+None	queen	None	None	None	None	None
+None	None	None	None	None	None	None
+None	None	None	None	None	None	king
+
+Game 188:
+None	None	None	bishop	None	None	bishop
+None	None	None	None	None	None	kinight
+None	None	None	None	None	None	None
+None	queen	None	None	None	None	None
+None	None	None	None	None	None	king
+None	None	None	None	queen	None	None
+None	None	None	None	None	None	king
+
+Game 189:
+None	None	None	None	None	None	bishop
+None	king	None	None	None	None	bishop
+None	None	None	None	None	None	kinight
+queen	None	None	None	None	None	None
+None	None	None	None	None	None	king
+None	None	None	None	None	None	None
+None	None	None	None	None	queen	None
+
+Game 190:
+None	None	None	None	king	None	bishop
+None	None	None	None	None	None	None
+None	None	None	None	None	queen	None
+None	None	None	None	None	None	None
+None	None	None	None	None	None	bishop
+None	None	None	None	king	None	kinight
+None	None	queen	None	None	None	None
+
+Game 191:
+king	None	None	None	None	None	None
+None	None	None	None	None	None	None
+kinight	None	None	None	None	None	None
+None	None	None	None	queen	None	None
+bishop	None	king	None	None	None	None
+bishop	None	None	None	None	None	None
+None	None	None	queen	None	None	None
+
+Game 192:
+None	None	None	None	None	None	None
+king	None	None	None	None	None	None
+None	None	None	None	None	None	queen
+kinight	None	king	None	None	None	None
+bishop	None	None	None	None	None	None
+None	None	None	None	None	queen	None
+bishop	None	None	None	None	None	None
+
+Game 193:
+None	None	None	None	None	None	bishop
+None	None	None	None	None	None	kinight
+None	queen	None	None	None	None	None
+None	None	None	None	None	None	king
+None	None	None	None	queen	None	None
+bishop	None	None	None	None	None	king
+None	None	None	None	None	None	None
+
+Game 194:
+None	None	None	None	king	None	bishop
+None	None	None	None	None	None	bishop
+None	None	None	None	None	None	kinight
+None	None	queen	None	None	None	None
+None	None	None	None	None	None	None
+None	None	None	None	None	None	king
+None	None	None	queen	None	None	None
+
+Game 195:
+king	None	None	None	None	None	None
+None	None	None	queen	None	None	None
+None	None	None	None	None	None	queen
+king	None	None	None	None	None	None
+None	None	None	None	None	None	None
+kinight	None	None	None	None	None	None
+bishop	None	None	None	None	bishop	None
+
+Game 196:
+queen	None	None	None	None	None	None
+None	None	None	None	king	None	bishop
+None	None	None	None	None	None	bishop
+None	None	None	None	None	None	kinight
+None	None	queen	None	None	None	None
+None	None	None	None	None	None	king
+None	None	None	None	None	None	None
+
+Game 197:
+None	queen	None	None	None	None	None
+None	None	None	None	None	None	None
+king	None	None	None	None	None	None
+None	None	None	None	None	queen	None
+kinight	None	None	king	None	None	None
+bishop	None	None	None	None	None	None
+bishop	None	None	None	None	None	None
+
+Game 198:
+None	None	None	None	queen	None	None
+king	None	None	None	None	None	None
+None	None	None	None	None	None	None
+kinight	None	king	None	None	None	None
+None	None	None	None	None	None	None
+None	None	None	None	None	queen	None
+bishop	None	bishop	None	None	None	None
+
+Game 199:
+king	None	None	None	None	None	bishop
+None	None	queen	None	None	None	None
+king	None	None	None	None	None	None
+None	None	None	None	None	None	None
+kinight	None	None	None	None	None	None
+bishop	None	None	None	None	None	None
+None	None	None	queen	None	None	None
+
+Game 200:
+None	None	None	None	None	None	bishop
+None	None	None	None	None	None	kinight
+None	None	queen	None	None	None	None
+None	None	None	None	None	None	king
+None	queen	None	None	None	None	None
+None	None	None	None	None	None	king
+None	None	None	None	bishop	None	None
+
+Game 201:
+None	None	queen	None	None	None	None
+king	None	None	None	None	None	None
+None	None	None	None	None	None	None
+None	None	None	None	queen	None	None
+kinight	None	None	None	None	None	None
+bishop	None	None	None	None	None	None
+bishop	None	None	king	None	None	None
+
+Game 202:
+None	None	None	None	None	None	bishop
+None	None	None	None	None	None	bishop
+None	king	None	None	None	None	kinight
+None	None	None	None	None	None	None
+None	None	None	None	None	None	king
+queen	None	None	None	None	None	None
+None	None	None	queen	None	None	None
+
+Game 203:
+None	None	queen	None	None	None	None
+king	None	None	None	None	None	None
+None	None	None	None	None	None	queen
+king	None	None	None	None	None	None
+None	None	None	None	None	None	None
+kinight	None	None	None	None	bishop	None
+bishop	None	None	None	None	None	None
+
+Game 204:
+None	None	None	None	king	None	bishop
+None	None	None	None	None	None	None
+None	queen	None	None	None	None	None
+None	None	None	None	bishop	None	kinight
+None	None	None	None	None	None	None
+None	None	None	queen	None	None	None
+None	None	None	None	None	None	king
+
+Game 205:
+None	None	None	None	None	None	None
+king	None	None	None	None	None	None
+None	None	queen	None	None	None	None
+king	None	None	None	None	None	None
+None	None	None	None	None	queen	None
+kinight	None	None	bishop	None	None	None
+bishop	None	None	None	None	None	None
+
+Game 206:
+None	None	None	None	None	None	None
+king	None	None	None	None	None	None
+None	None	queen	None	None	None	None
+king	None	None	None	bishop	None	None
+None	None	None	None	None	None	queen
+kinight	None	None	None	None	None	None
+bishop	None	None	None	None	None	None
+
+Game 207:
+None	None	None	None	None	None	queen
+None	queen	None	None	None	None	None
+None	None	None	king	None	bishop	None
+None	None	None	None	None	bishop	None
+None	None	None	None	None	kinight	None
+None	None	None	None	None	None	None
+None	None	None	None	None	king	None
+
+Game 208:
+king	None	kinight	None	None	None	None
+None	None	None	None	None	None	None
+None	None	None	None	None	None	queen
+king	None	None	None	None	None	None
+None	None	None	queen	None	None	None
+bishop	None	None	None	None	None	None
+bishop	None	None	None	None	None	None
+
+Game 209:
+None	None	None	None	None	None	bishop
+None	bishop	None	None	None	None	kinight
+None	None	None	None	None	None	None
+None	None	None	None	None	None	king
+queen	None	None	None	None	None	None
+None	None	None	None	None	None	king
+None	None	None	None	queen	None	None
+
+Game 210:
+None	None	None	None	None	None	bishop
+None	queen	None	None	None	None	None
+None	None	None	None	None	None	bishop
+None	None	None	None	king	None	kinight
+queen	None	None	None	None	None	None
+None	None	None	None	None	None	king
+None	None	None	None	None	None	None
+
+Game 211:
+None	None	None	None	queen	None	None
+kinight	None	None	None	None	None	None
+None	None	None	None	None	None	None
+king	None	None	None	None	None	None
+None	None	None	None	None	queen	None
+bishop	None	None	None	None	None	None
+bishop	None	king	None	None	None	None
+
+Game 212:
+None	None	None	queen	None	None	None
+kinight	None	None	None	None	None	None
+bishop	None	None	None	None	None	None
+None	None	None	None	queen	None	None
+None	king	None	None	None	None	None
+None	None	None	None	None	None	None
+bishop	None	king	None	None	None	None
+
+Game 213:
+None	None	None	None	None	None	None
+king	None	None	bishop	None	None	None
+None	None	None	None	None	queen	None
+king	None	None	None	None	None	None
+None	None	None	None	queen	None	None
+kinight	None	None	None	None	None	None
+bishop	None	None	None	None	None	None
+
+Game 214:
+None	None	None	None	None	None	king
+None	queen	None	None	None	None	None
+None	None	None	None	kinight	None	bishop
+queen	None	None	None	None	None	None
+None	None	None	None	None	None	None
+None	None	None	None	king	None	bishop
+None	None	None	None	None	None	None
+
+Game 215:
+None	None	None	None	None	None	bishop
+None	None	king	None	None	None	bishop
+None	None	None	None	None	None	kinight
+None	queen	None	None	None	None	None
+None	None	None	None	None	None	king
+None	None	None	None	None	None	None
+None	None	None	None	None	queen	None
+
+Game 216:
+None	None	None	None	None	None	bishop
+None	None	None	None	None	None	kinight
+None	None	queen	None	None	None	None
+None	None	None	None	king	None	bishop
+None	queen	None	None	None	None	None
+None	None	None	None	None	None	king
+None	None	None	None	None	None	None
+
+Game 217:
+None	None	None	None	None	None	bishop
+king	None	None	None	None	None	bishop
+None	None	None	None	None	None	kinight
+None	queen	None	None	None	None	None
+None	None	None	None	None	None	king
+None	None	None	None	None	None	None
+None	None	None	queen	None	None	None
+
+Game 218:
+None	None	None	None	None	None	bishop
+None	kinight	None	None	None	None	bishop
+None	None	None	None	None	None	None
+None	None	None	None	None	None	king
+queen	None	None	None	None	None	None
+None	None	None	None	None	None	king
+None	None	None	None	queen	None	None
+
+Game 219:
+None	None	None	queen	None	None	None
+king	None	None	None	None	None	None
+None	None	None	None	None	None	None
+None	None	None	None	queen	None	None
+kinight	None	bishop	None	None	None	None
+bishop	None	None	None	None	None	None
+None	None	king	None	None	None	None
+
+Game 220:
+king	None	None	None	None	None	None
+None	None	None	queen	None	None	None
+king	None	None	None	None	None	None
+None	None	None	None	None	None	None
+None	None	None	None	None	queen	None
+kinight	None	bishop	None	None	None	None
+bishop	None	None	None	None	None	None
+
+Game 221:
+None	king	None	None	None	None	None
+None	None	None	None	None	None	None
+None	kinight	None	None	None	None	None
+None	bishop	None	None	None	None	None
+None	bishop	None	king	None	None	None
+None	None	None	None	None	queen	None
+queen	None	None	None	None	None	None
+
+Game 222:
+king	None	None	None	None	None	None
+None	None	None	None	None	None	queen
+king	None	None	None	None	None	None
+None	None	None	kinight	None	None	None
+bishop	None	None	None	None	None	None
+bishop	None	None	None	None	None	None
+None	None	None	None	None	queen	None
+
+Game 223:
+king	None	None	None	None	None	None
+None	None	None	None	None	None	None
+None	None	None	None	None	queen	None
+bishop	kinight	None	None	None	None	None
+None	None	None	None	None	None	None
+None	None	None	None	queen	None	None
+bishop	None	king	None	None	None	None
+
+Game 224:
+None	None	None	king	None	None	bishop
+queen	None	None	None	None	None	None
+None	None	None	None	None	None	bishop
+None	None	None	None	queen	None	None
+None	None	None	None	None	None	king
+None	None	None	None	None	None	None
+None	None	None	None	None	None	kinight
+
+Game 225:
+None	None	None	None	None	None	None
+king	None	None	None	None	None	None
+None	None	queen	None	None	None	None
+king	None	None	None	None	None	None
+None	None	None	None	None	queen	None
+kinight	None	None	None	None	None	None
+bishop	None	None	None	bishop	None	None
+
+Game 226:
+None	queen	None	None	None	None	None
+None	None	None	None	None	None	None
+king	None	None	None	None	None	None
+None	None	None	None	None	queen	None
+kinight	None	None	None	None	None	None
+bishop	None	None	None	None	None	None
+bishop	None	None	None	king	None	None
+
+Game 227:
+None	queen	None	None	None	None	None
+None	None	None	None	None	None	None
+king	None	None	None	None	None	None
+None	None	None	None	None	queen	None
+kinight	None	None	None	None	None	None
+bishop	None	None	None	None	None	None
+bishop	None	None	None	None	None	king
+
+Game 228:
+None	None	None	queen	None	None	None
+None	None	None	None	None	None	None
+king	None	None	None	None	None	None
+None	None	None	None	None	queen	None
+kinight	None	None	None	None	None	None
+bishop	None	None	None	None	None	king
+bishop	None	None	None	None	None	None
+
+Game 229:
+None	None	None	None	None	None	bishop
+None	None	None	None	None	None	bishop
+None	None	None	kinight	None	None	None
+None	None	None	None	None	None	king
+queen	None	None	None	None	None	None
+None	None	None	None	None	None	king
+None	None	None	None	queen	None	None
+
+Game 230:
+None	None	None	None	None	None	queen
+king	None	None	None	None	None	None
+None	None	None	None	None	None	None
+kinight	None	None	None	None	None	None
+bishop	None	None	None	None	None	None
+bishop	None	king	None	None	None	None
+None	None	None	None	queen	None	None
+
+Game 231:
+None	None	None	None	None	None	bishop
+None	None	None	None	None	None	kinight
+None	None	None	None	None	None	bishop
+None	queen	None	None	None	None	None
+None	None	None	None	None	None	king
+None	None	None	None	queen	None	None
+None	None	None	None	None	None	king
+
+Game 232:
+None	None	None	None	None	None	kinight
+None	None	None	None	None	None	bishop
+None	None	None	None	None	None	bishop
+None	queen	None	None	None	None	None
+None	None	None	None	None	None	king
+None	None	None	None	queen	None	None
+king	None	None	None	None	None	None
+
+Game 233:
+None	None	queen	None	None	None	None
+None	None	None	None	king	None	bishop
+None	None	None	None	None	None	bishop
+None	None	None	None	None	None	kinight
+queen	None	None	None	None	None	None
+None	None	None	None	None	None	king
+None	None	None	None	None	None	None
+
+Game 234:
+None	None	None	None	None	None	bishop
+None	None	None	queen	None	None	None
+None	None	None	None	None	None	bishop
+None	None	None	None	king	None	kinight
+None	queen	None	None	None	None	None
+None	None	None	None	None	None	king
+None	None	None	None	None	None	None
+
+Game 235:
+None	None	None	queen	None	None	None
+None	king	None	None	None	None	None
+None	None	None	None	None	None	None
+None	None	None	None	queen	None	None
+kinight	None	None	None	None	None	None
+bishop	None	None	None	None	None	None
+bishop	None	king	None	None	None	None
+
+Game 236:
+None	queen	None	None	None	None	None
+None	None	None	None	None	None	bishop
+None	None	None	None	None	None	bishop
+None	None	None	kinight	None	None	None
+None	None	None	None	None	None	king
+queen	None	None	None	None	None	None
+None	None	None	None	None	None	king
+
+Game 237:
+bishop	None	None	None	None	None	bishop
+None	None	None	None	None	None	kinight
+None	queen	None	None	None	None	None
+None	None	None	None	None	None	king
+None	None	None	None	None	None	None
+None	None	None	None	None	None	king
+None	None	None	None	queen	None	None
+
+Game 238:
+None	None	None	queen	None	None	None
+None	None	None	None	None	None	bishop
+None	None	None	None	None	None	kinight
+None	None	None	None	None	None	None
+None	None	None	None	None	None	king
+None	None	None	None	queen	None	None
+bishop	None	None	None	None	None	king
+
+Game 239:
+None	None	None	None	None	king	None
+None	None	queen	None	None	None	None
+None	None	None	None	None	None	bishop
+None	None	None	None	None	None	bishop
+None	None	None	None	None	None	kinight
+None	queen	None	None	None	None	None
+None	None	None	None	None	None	king
+
+Game 240:
+None	queen	None	None	None	None	None
+None	None	None	None	king	None	bishop
+None	None	None	None	None	None	bishop
+None	None	None	None	None	None	kinight
+None	None	queen	None	None	None	None
+None	None	None	None	None	None	None
+None	None	None	None	None	None	king
+
+Game 241:
+king	None	None	None	None	None	None
+None	None	None	None	None	None	queen
+king	None	None	None	None	None	None
+None	None	None	None	None	queen	None
+kinight	None	None	None	None	None	None
+bishop	None	None	None	None	None	None
+bishop	None	None	None	None	None	None
+
+Game 242:
+None	king	None	None	None	None	None
+None	None	None	None	None	None	queen
+king	None	None	None	None	None	None
+None	None	None	None	None	queen	None
+kinight	None	None	None	None	None	None
+bishop	None	None	None	None	None	None
+bishop	None	None	None	None	None	None
+
+Game 243:
+None	None	None	None	None	None	bishop
+None	None	None	None	None	None	bishop
+None	None	None	queen	None	None	None
+None	None	None	None	None	None	king
+queen	None	None	None	None	None	None
+None	None	None	None	None	None	None
+None	None	None	None	kinight	None	king
+
+Game 244:
+None	None	None	None	None	None	bishop
+None	None	None	None	None	None	bishop
+None	None	None	None	None	None	kinight
+queen	None	None	None	None	None	None
+None	None	None	None	None	None	king
+None	None	None	None	queen	None	None
+None	None	None	None	None	None	king
+
+Game 245:
+king	None	None	None	None	None	None
+None	None	None	None	None	queen	None
+kinight	None	None	None	None	None	None
+bishop	None	None	None	None	None	None
+bishop	None	None	None	None	None	None
+None	None	None	None	queen	None	None
+None	king	None	None	None	None	None
+
+Game 246:
+None	None	None	queen	None	None	None
+None	None	None	None	None	None	queen
+king	None	None	None	None	None	None
+None	None	None	None	None	None	None
+kinight	None	None	None	None	king	None
+bishop	None	None	None	None	None	None
+bishop	None	None	None	None	None	None
+
+Game 247:
+None	None	None	None	None	bishop	bishop
+None	None	None	queen	None	None	None
+None	None	None	None	None	None	None
+None	None	None	None	king	None	kinight
+None	None	None	None	None	None	None
+None	None	None	None	None	None	king
+None	None	queen	None	None	None	None
+
+Game 248:
+None	None	None	None	None	queen	None
+None	kinight	None	None	None	None	None
+None	bishop	None	None	None	None	None
+None	None	None	king	None	None	None
+queen	None	None	None	None	None	None
+None	None	None	None	None	None	None
+None	bishop	None	king	None	None	None
+
+Game 249:
+None	None	None	None	None	None	bishop
+None	None	queen	None	None	None	None
+None	None	None	None	None	None	kinight
+None	queen	None	None	None	None	None
+None	None	None	bishop	None	None	king
+None	None	None	None	None	None	None
+None	None	None	None	None	None	king
+
+Game 250:
+None	queen	None	None	None	None	None
+None	None	None	None	None	None	queen
+king	None	None	None	None	None	None
+None	None	None	king	None	None	None
+bishop	None	None	None	None	None	None
+bishop	None	None	None	None	None	None
+kinight	None	None	None	None	None	None
+
+Game 251:
+king	None	None	None	None	None	None
+None	None	None	None	None	None	None
+kinight	None	None	king	None	None	None
+None	None	None	None	None	queen	None
+bishop	None	None	None	None	None	None
+None	None	queen	None	None	None	None
+bishop	None	None	None	None	None	None
+
+Game 252:
+None	None	None	None	queen	None	None
+king	None	None	None	None	None	None
+None	None	None	None	None	None	None
+bishop	None	king	None	None	None	None
+None	None	None	None	None	None	None
+None	None	None	None	None	queen	None
+bishop	None	kinight	None	None	None	None
+
+Game 253:
+None	None	None	None	None	None	None
+king	None	None	None	None	None	None
+None	None	queen	None	None	None	None
+king	None	None	None	None	None	None
+None	None	None	None	None	None	queen
+bishop	None	None	None	None	None	None
+bishop	None	None	kinight	None	None	None
+
+Game 254:
+king	None	None	None	None	None	None
+None	None	None	None	None	None	queen
+kinight	None	None	None	None	None	None
+bishop	None	None	None	None	None	None
+bishop	None	None	None	None	None	None
+None	None	None	None	queen	None	None
+king	None	None	None	None	None	None
+
+Game 255:
+king	None	None	None	None	None	None
+None	None	None	queen	None	None	None
+None	None	None	None	None	queen	None
+king	None	None	None	None	None	None
+None	None	None	None	None	None	None
+kinight	None	None	None	bishop	None	None
+bishop	None	None	None	None	None	None
+
+Game 256:
+None	None	None	None	queen	None	None
+None	bishop	None	None	None	None	None
+None	None	None	None	None	None	None
+king	None	None	None	None	None	None
+None	None	None	None	None	queen	None
+kinight	None	king	None	None	None	None
+bishop	None	None	None	None	None	None
+
+Game 257:
+None	None	None	None	None	None	bishop
+None	None	None	kinight	None	None	bishop
+queen	None	None	None	None	None	None
+None	None	None	None	None	None	king
+None	None	None	None	queen	None	None
+None	None	None	None	None	None	king
+None	None	None	None	None	None	None
+
+Game 258:
+None	None	queen	None	None	None	None
+king	None	None	None	None	None	None
+None	None	None	None	None	queen	None
+king	None	None	None	None	None	None
+None	None	None	None	bishop	None	None
+kinight	None	None	None	None	None	None
+bishop	None	None	None	None	None	None
+
+Game 259:
+None	king	None	None	None	None	None
+None	None	None	None	None	None	queen
+king	None	None	None	None	None	None
+None	None	None	bishop	None	None	None
+kinight	None	None	None	None	None	None
+bishop	None	None	None	None	None	None
+None	None	None	None	None	queen	None
+
+Game 260:
+king	None	None	None	None	None	kinight
+None	None	queen	None	None	None	None
+king	None	None	None	None	None	None
+None	None	None	None	None	None	None
+bishop	None	None	None	None	None	None
+bishop	None	None	None	None	None	None
+None	None	None	queen	None	None	None
+
+Game 261:
+bishop	None	None	None	None	None	None
+None	None	None	queen	None	None	None
+None	None	None	None	None	None	None
+king	None	None	None	None	None	None
+None	None	None	None	None	queen	None
+kinight	None	king	None	None	None	None
+bishop	None	None	None	None	None	None
+
+Game 262:
+None	None	None	None	None	None	bishop
+queen	None	None	None	None	None	None
+None	None	None	None	None	None	bishop
+None	None	None	None	king	None	kinight
+None	queen	None	None	None	None	None
+None	None	None	None	None	None	king
+None	None	None	None	None	None	None
+
+Game 263:
+king	None	None	None	None	None	None
+None	None	queen	None	None	None	None
+king	None	None	None	bishop	None	None
+None	None	None	None	None	None	None
+kinight	None	None	None	None	None	None
+bishop	None	None	None	None	None	None
+None	None	None	queen	None	None	None
+
+Game 264:
+None	None	None	None	None	None	bishop
+None	None	None	None	queen	None	None
+None	None	None	None	None	None	bishop
+queen	None	None	None	None	None	None
+None	None	None	kinight	None	None	king
+None	None	None	None	None	None	None
+None	None	None	None	None	None	king
+
+Game 265:
+None	None	None	None	None	None	kinight
+None	None	None	None	None	None	bishop
+None	None	None	None	None	None	bishop
+queen	None	None	None	None	None	None
+None	None	king	None	None	None	king
+None	None	None	None	None	None	None
+None	None	None	None	None	queen	None
+
+Game 266:
+None	None	None	None	None	None	None
+king	None	None	None	None	None	None
+None	None	None	None	queen	None	None
+kinight	None	None	None	None	None	None
+bishop	None	None	None	None	None	None
+bishop	None	king	None	None	None	None
+None	None	None	None	None	None	queen
+
+real    0m13.328s
+user    0m12.967s
+sys 0m0.091s

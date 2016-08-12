@@ -1,0 +1,2408 @@
+(chessmaster)MacBook-Pro:chess_master fabiobatalha$ time playchess -s 7 -k 2 -q 2 -b 2 -i 1 -t
+2016-08-12 01:41:23,040 - masterchess.playchess - INFO - Playing Chess
+2016-08-12 01:41:23,040 - masterchess.playchess - INFO - Board size: 7
+2016-08-12 01:41:23,040 - masterchess.playchess - INFO - Pieces of bishops: 2
+2016-08-12 01:41:23,040 - masterchess.playchess - INFO - Pieces of kinights: 1
+2016-08-12 01:41:23,040 - masterchess.playchess - INFO - Pieces of kings: 2
+2016-08-12 01:41:23,040 - masterchess.playchess - INFO - Pieces of pawns: 0
+2016-08-12 01:41:23,041 - masterchess.playchess - INFO - Pieces of queens: 2
+2016-08-12 01:41:23,041 - masterchess.playchess - INFO - Pieces of rooks: 0
+Number of possibilities: 266
+
+Game 1:
+T	None	T	T	T	T	bishop
+T	T	T	T	king	T	kinight
+T	T	queen	T	T	T	T
+None	T	T	T	None	T	king
+T	None	T	T	T	T	T
+T	T	T	queen	T	T	T
+T	None	T	T	T	bishop	T
+
+Game 2:
+T	T	T	T	T	kinight	bishop
+queen	T	T	T	T	T	T
+T	T	queen	T	T	T	T
+T	T	T	T	king	T	bishop
+T	None	T	T	T	T	T
+T	T	T	None	T	T	king
+T	None	T	T	None	T	T
+
+Game 3:
+king	T	T	None	None	T	T
+T	T	T	T	T	T	T
+bishop	T	king	T	T	T	T
+None	T	T	T	None	T	T
+T	T	T	T	T	T	queen
+bishop	None	kinight	T	T	T	T
+T	T	T	T	T	queen	T
+
+Game 4:
+T	T	T	None	T	T	bishop
+T	T	None	kinight	T	T	bishop
+queen	T	T	T	T	T	T
+T	T	T	T	T	T	king
+T	T	T	T	queen	T	T
+T	T	T	T	T	T	king
+T	T	T	None	T	T	T
+
+Game 5:
+T	T	None	None	T	T	T
+king	T	None	T	T	T	T
+T	T	T	T	T	T	queen
+kinight	T	T	None	T	T	T
+bishop	T	T	T	T	None	T
+bishop	T	king	T	T	T	T
+T	T	T	T	queen	T	T
+
+Game 6:
+kinight	T	None	None	T	T	bishop
+None	T	T	None	T	T	bishop
+T	T	None	T	T	T	T
+T	T	T	T	T	T	king
+T	queen	T	T	T	T	T
+T	T	T	T	T	T	king
+T	T	T	T	queen	T	T
+
+Game 7:
+king	T	None	T	T	T	T
+T	T	T	T	T	T	T
+kinight	T	king	T	T	T	None
+T	T	T	T	queen	T	T
+T	T	T	T	T	T	None
+bishop	bishop	T	T	T	None	T
+T	T	T	queen	T	T	T
+
+Game 8:
+None	T	T	T	T	T	bishop
+T	T	queen	T	T	T	T
+None	T	T	T	T	None	bishop
+T	T	T	T	T	T	kinight
+T	queen	T	T	T	T	T
+T	T	T	T	king	T	T
+T	T	T	T	T	T	king
+
+Game 9:
+None	T	None	T	T	T	bishop
+T	T	T	T	queen	T	T
+T	T	T	T	T	T	bishop
+T	queen	T	T	T	T	T
+T	T	T	king	T	None	kinight
+T	T	T	T	T	T	T
+T	T	T	None	T	T	king
+
+Game 10:
+T	None	None	T	T	T	kinight
+T	None	T	None	T	T	bishop
+T	T	None	None	None	T	bishop
+queen	T	T	T	T	T	T
+T	T	king	T	T	T	king
+T	T	T	T	T	T	T
+T	T	T	T	T	queen	T
+
+Game 11:
+T	T	None	T	T	T	T
+king	T	T	T	T	T	T
+T	T	T	T	T	queen	T
+kinight	T	king	T	T	T	T
+bishop	T	T	T	None	T	T
+T	T	T	T	T	T	queen
+bishop	T	T	None	None	T	T
+
+Game 12:
+king	T	T	T	T	T	T
+T	T	T	queen	T	T	T
+None	bishop	T	T	T	T	None
+T	T	T	T	T	T	T
+T	T	T	T	T	queen	T
+kinight	T	king	T	T	T	T
+bishop	T	T	T	None	T	None
+
+Game 13:
+T	king	T	None	None	T	T
+T	T	T	T	T	T	queen
+king	T	None	T	T	T	T
+T	T	T	T	T	queen	T
+kinight	T	T	T	T	T	T
+bishop	T	T	T	None	T	T
+bishop	T	T	None	None	T	T
+
+Game 14:
+T	T	queen	T	T	T	T
+king	T	T	T	T	T	T
+T	T	T	T	T	T	None
+T	T	T	T	queen	T	T
+kinight	T	T	T	T	T	T
+bishop	T	T	T	T	None	T
+bishop	T	T	king	T	None	None
+
+Game 15:
+bishop	T	None	T	T	None	bishop
+T	T	T	None	T	T	kinight
+T	queen	T	T	T	T	T
+T	T	T	T	T	T	king
+None	T	T	T	T	T	T
+None	T	None	T	T	T	king
+T	T	T	T	queen	T	T
+
+Game 16:
+king	T	None	None	T	T	T
+T	T	T	T	T	queen	T
+T	None	T	T	T	T	T
+kinight	T	T	T	T	T	None
+bishop	T	T	T	T	T	T
+bishop	T	king	T	T	T	None
+T	T	T	T	queen	T	T
+
+Game 17:
+None	T	T	T	T	T	bishop
+T	T	T	queen	T	T	T
+None	T	T	T	T	T	bishop
+T	T	T	T	king	T	kinight
+T	queen	T	T	T	T	T
+T	T	T	T	None	T	king
+T	T	T	T	None	T	T
+
+Game 18:
+king	T	T	bishop	T	None	T
+T	T	T	T	T	T	T
+king	T	None	T	T	T	T
+T	T	T	T	queen	T	T
+T	T	T	T	T	T	queen
+kinight	T	T	None	T	T	T
+bishop	T	T	None	T	None	T
+
+Game 19:
+kinight	T	king	T	T	T	T
+T	T	T	T	T	T	T
+T	T	T	T	T	T	None
+T	queen	T	T	T	T	T
+T	T	T	queen	T	T	T
+bishop	T	T	T	T	None	None
+bishop	T	king	T	T	T	None
+
+Game 20:
+T	T	None	T	T	T	bishop
+king	T	None	T	T	T	bishop
+T	T	T	T	T	T	kinight
+T	queen	T	T	T	T	T
+T	T	T	T	None	T	king
+None	T	T	T	T	T	T
+T	T	T	queen	T	T	T
+
+Game 21:
+None	T	None	None	T	T	bishop
+T	T	None	T	T	T	bishop
+T	T	T	None	T	T	kinight
+T	queen	T	T	T	T	T
+T	T	T	T	T	T	king
+T	T	T	T	queen	T	T
+T	T	None	T	T	T	king
+
+Game 22:
+None	T	None	None	T	None	bishop
+T	T	None	T	T	T	kinight
+T	T	T	None	T	None	bishop
+T	queen	T	T	T	T	T
+T	T	T	T	T	T	king
+T	T	T	T	queen	T	T
+T	T	T	T	T	T	king
+
+Game 23:
+None	None	T	T	king	T	bishop
+T	None	T	T	T	T	bishop
+None	T	T	T	T	T	kinight
+T	T	queen	T	T	T	T
+None	T	T	T	T	T	T
+T	T	T	T	T	king	T
+T	T	T	queen	T	T	T
+
+Game 24:
+T	T	None	None	T	T	bishop
+queen	T	T	T	T	T	T
+T	T	None	T	T	T	bishop
+T	T	T	T	king	T	kinight
+T	queen	T	T	T	T	T
+T	T	T	T	T	T	king
+T	T	T	T	None	T	T
+
+Game 25:
+T	T	T	T	queen	T	T
+None	bishop	T	T	T	T	None
+T	T	T	T	T	T	T
+king	T	None	T	T	T	T
+T	T	T	T	T	queen	T
+kinight	T	king	T	T	T	T
+bishop	T	T	T	T	T	T
+
+Game 26:
+king	T	T	T	T	T	T
+T	T	T	queen	T	T	T
+king	T	T	T	T	T	None
+T	T	None	T	T	T	T
+T	T	T	T	T	queen	T
+kinight	T	bishop	T	T	T	T
+bishop	T	T	T	None	T	None
+
+Game 27:
+T	T	T	T	queen	T	T
+king	T	None	T	T	T	T
+T	T	T	T	T	T	T
+kinight	T	king	T	T	T	None
+T	T	T	T	T	None	None
+T	T	T	queen	T	T	T
+bishop	bishop	T	T	T	None	None
+
+Game 28:
+T	T	None	T	T	T	bishop
+T	T	T	None	T	T	bishop
+T	queen	T	T	T	T	T
+T	T	T	T	T	T	king
+T	T	T	T	queen	T	T
+kinight	T	T	T	T	T	king
+T	T	T	None	T	T	T
+
+Game 29:
+T	queen	T	T	T	T	T
+T	T	T	T	king	T	bishop
+T	T	T	T	T	T	bishop
+None	T	T	T	T	T	kinight
+T	T	queen	T	T	T	T
+None	T	T	T	None	T	T
+T	T	T	None	T	T	king
+
+Game 30:
+T	None	None	T	None	T	bishop
+T	T	T	T	T	T	bishop
+T	king	T	T	T	T	kinight
+T	T	T	T	T	T	T
+T	T	T	T	None	T	king
+queen	T	T	T	T	T	T
+T	T	T	queen	T	T	T
+
+Game 31:
+T	T	queen	T	T	T	T
+king	T	T	T	T	T	T
+T	T	T	None	T	bishop	T
+king	T	T	T	T	T	T
+T	T	T	T	queen	T	T
+kinight	T	T	T	T	T	None
+bishop	T	T	None	T	None	T
+
+Game 32:
+T	None	None	None	None	T	bishop
+T	None	None	None	T	T	bishop
+T	T	T	T	T	T	kinight
+T	king	T	T	T	T	T
+T	T	T	T	None	T	king
+queen	T	T	T	T	T	T
+T	T	T	T	T	queen	T
+
+Game 33:
+T	T	T	None	T	T	T
+king	T	T	T	T	T	T
+T	T	queen	T	T	T	T
+king	T	T	T	T	T	T
+T	T	T	T	T	T	queen
+bishop	T	T	kinight	None	T	T
+bishop	T	T	None	T	T	T
+
+Game 34:
+king	T	T	T	T	T	T
+T	T	queen	T	T	T	T
+king	T	T	T	T	T	T
+T	T	T	T	T	queen	T
+bishop	None	T	None	T	T	T
+kinight	T	T	T	None	T	T
+bishop	None	T	None	None	T	None
+
+Game 35:
+king	T	T	T	None	T	T
+T	T	T	T	bishop	T	T
+king	T	None	T	T	T	T
+T	T	T	T	T	queen	T
+kinight	T	T	None	T	T	T
+T	T	T	T	T	T	queen
+bishop	T	T	None	None	T	T
+
+Game 36:
+None	T	T	T	king	T	T
+T	T	T	T	T	T	queen
+T	queen	T	T	T	T	T
+T	T	T	king	T	bishop	T
+None	T	T	T	T	bishop	T
+None	T	T	T	T	kinight	T
+None	T	T	T	None	T	T
+
+Game 37:
+T	None	T	T	T	T	bishop
+T	None	T	T	king	T	T
+T	None	T	T	T	T	bishop
+T	T	T	T	T	T	kinight
+queen	T	T	T	T	T	T
+T	T	queen	T	T	T	T
+T	T	T	T	None	T	king
+
+Game 38:
+king	T	king	T	T	T	T
+T	T	T	T	T	T	T
+T	queen	T	T	T	T	T
+T	T	T	T	queen	T	T
+None	T	T	T	T	T	None
+bishop	T	T	None	T	T	T
+bishop	T	None	kinight	T	T	None
+
+Game 39:
+None	T	None	None	T	T	bishop
+T	T	T	T	T	T	bishop
+T	T	T	king	T	T	kinight
+T	queen	T	T	T	T	T
+T	T	T	T	None	T	king
+None	T	T	T	T	T	T
+T	T	T	T	T	queen	T
+
+Game 40:
+king	T	None	T	None	T	T
+T	T	T	T	T	T	T
+kinight	T	None	T	T	T	T
+T	T	T	T	T	T	queen
+T	T	T	queen	T	T	T
+bishop	T	T	T	T	None	T
+bishop	T	king	T	None	T	T
+
+Game 41:
+T	None	None	T	king	T	bishop
+T	T	T	T	T	T	bishop
+T	T	T	king	T	T	kinight
+queen	T	T	T	T	T	T
+T	T	T	T	T	T	T
+T	T	T	T	T	queen	T
+T	T	None	T	T	T	T
+
+Game 42:
+T	T	T	queen	T	T	T
+T	T	T	T	T	T	queen
+king	T	None	T	T	T	T
+T	T	T	T	T	T	T
+kinight	T	T	T	T	king	T
+bishop	T	T	T	T	T	T
+bishop	T	None	T	None	None	T
+
+Game 43:
+T	kinight	T	T	None	None	T
+T	None	T	T	T	T	T
+T	T	T	king	T	T	T
+queen	T	T	T	T	T	T
+T	T	T	T	T	T	queen
+T	bishop	T	king	T	T	T
+T	bishop	T	T	T	None	T
+
+Game 44:
+T	T	T	T	T	T	king
+T	T	queen	T	T	T	T
+T	T	T	T	None	T	bishop
+T	None	T	None	T	T	bishop
+T	T	T	None	T	T	kinight
+queen	T	T	T	T	T	T
+T	T	T	T	None	T	king
+
+Game 45:
+None	T	None	bishop	T	None	bishop
+T	T	T	T	T	T	kinight
+T	T	T	None	T	T	None
+T	queen	T	T	T	T	T
+T	T	T	T	T	T	king
+T	T	T	T	queen	T	T
+T	T	None	T	T	T	king
+
+Game 46:
+None	T	T	T	T	king	T
+T	T	queen	T	T	T	T
+None	T	T	T	T	T	bishop
+T	T	T	T	T	T	bishop
+T	T	T	None	T	T	kinight
+T	queen	T	T	T	T	T
+T	T	T	T	None	T	king
+
+Game 47:
+None	None	T	T	king	T	bishop
+None	None	T	T	T	T	T
+T	T	T	T	T	queen	T
+None	None	T	T	T	T	T
+T	None	T	T	T	T	bishop
+None	T	T	T	king	T	kinight
+T	T	queen	T	T	T	T
+
+Game 48:
+T	T	None	T	T	T	T
+king	T	T	T	T	T	None
+T	T	T	queen	T	T	T
+kinight	bishop	T	T	T	T	None
+T	T	T	T	T	T	T
+T	T	T	T	T	queen	T
+bishop	T	king	T	T	T	T
+
+Game 49:
+king	T	T	T	T	kinight	T
+T	T	T	T	T	T	T
+king	T	T	None	T	T	T
+T	T	T	T	T	T	queen
+bishop	T	T	T	None	T	T
+T	T	queen	T	T	T	T
+bishop	T	T	T	None	None	T
+
+Game 50:
+None	T	T	T	T	king	T
+T	T	queen	T	T	T	T
+king	T	T	T	T	T	T
+T	T	T	T	T	T	queen
+bishop	None	T	None	None	T	T
+kinight	T	T	None	T	None	T
+bishop	None	T	T	None	None	T
+
+Game 51:
+T	T	T	king	T	bishop	T
+None	T	T	T	T	bishop	T
+T	T	T	T	T	kinight	T
+T	queen	T	T	T	T	T
+T	T	T	None	T	king	T
+T	T	None	T	T	T	T
+T	T	T	T	T	T	queen
+
+Game 52:
+T	bishop	None	T	T	None	bishop
+T	None	T	T	None	T	kinight
+T	None	T	T	T	T	T
+T	T	None	T	T	T	king
+queen	T	T	T	T	T	T
+T	T	T	queen	T	T	T
+T	None	T	T	T	T	king
+
+Game 53:
+king	T	T	T	T	T	T
+T	T	T	T	T	queen	T
+kinight	T	T	T	T	T	T
+bishop	None	T	T	T	T	None
+T	T	T	king	T	T	None
+bishop	T	T	T	T	T	None
+T	T	queen	T	T	T	T
+
+Game 54:
+None	T	T	kinight	None	T	bishop
+T	T	T	None	T	T	bishop
+None	T	T	T	T	T	None
+T	T	queen	T	T	T	T
+T	T	T	T	T	queen	T
+T	T	T	T	T	T	T
+T	T	T	T	king	T	king
+
+Game 55:
+None	T	None	T	king	T	bishop
+T	T	T	T	T	T	bishop
+T	queen	T	T	T	T	T
+T	T	T	T	T	T	kinight
+None	T	T	T	T	None	None
+T	T	T	queen	T	T	T
+T	T	T	T	T	T	king
+
+Game 56:
+king	T	None	T	T	T	T
+T	T	T	T	T	T	queen
+kinight	T	T	None	T	T	T
+bishop	T	T	None	T	None	T
+bishop	T	None	T	T	T	T
+T	T	T	T	queen	T	T
+king	T	T	T	T	T	T
+
+Game 57:
+T	T	queen	T	T	T	T
+None	T	T	T	king	T	bishop
+T	T	T	T	T	T	bishop
+None	T	T	T	T	T	kinight
+T	T	T	T	T	None	T
+T	queen	T	T	T	T	T
+T	T	T	None	None	T	king
+
+Game 58:
+T	queen	T	T	T	T	T
+T	T	T	T	T	T	queen
+king	T	None	T	T	T	T
+T	T	T	T	T	king	T
+kinight	T	T	T	T	T	T
+bishop	T	T	None	None	None	T
+bishop	T	None	None	None	None	T
+
+Game 59:
+T	T	T	T	queen	T	T
+king	T	None	T	T	T	None
+T	T	T	T	T	T	T
+kinight	T	king	T	T	T	None
+T	T	T	T	T	T	T
+T	T	T	T	T	queen	T
+bishop	None	bishop	None	T	T	T
+
+Game 60:
+T	T	T	queen	T	T	T
+T	None	T	T	T	bishop	bishop
+None	T	T	T	T	T	T
+T	T	queen	T	T	T	T
+None	T	T	T	king	T	kinight
+T	T	T	T	T	T	T
+T	T	T	T	None	T	king
+
+Game 61:
+king	T	None	T	None	T	T
+T	T	T	T	T	T	queen
+king	T	kinight	T	T	T	T
+T	T	T	T	T	T	T
+T	T	T	T	T	queen	T
+bishop	T	T	None	T	T	T
+bishop	T	None	T	None	T	T
+
+Game 62:
+T	T	T	T	queen	T	T
+kinight	T	T	T	T	T	None
+bishop	T	T	T	T	T	T
+bishop	T	None	None	T	T	T
+T	T	T	T	T	queen	T
+king	T	T	T	T	T	T
+T	T	king	T	T	T	None
+
+Game 63:
+T	T	None	T	T	T	T
+king	T	None	T	T	T	T
+T	T	T	T	T	queen	T
+kinight	T	king	T	T	T	T
+bishop	T	T	T	T	T	None
+T	T	T	queen	T	T	T
+bishop	T	T	T	T	T	None
+
+Game 64:
+T	queen	T	T	T	T	T
+T	T	T	T	T	king	T
+king	T	T	T	T	T	T
+T	T	T	T	T	T	queen
+bishop	T	None	None	None	T	T
+bishop	T	T	None	T	None	T
+kinight	T	T	T	None	None	T
+
+Game 65:
+T	None	T	kinight	T	T	bishop
+T	T	None	None	T	T	bishop
+queen	T	T	T	T	T	T
+T	T	None	T	T	T	king
+T	T	T	T	queen	T	T
+T	T	T	T	T	T	king
+T	T	T	None	T	T	T
+
+Game 66:
+king	T	None	None	T	T	T
+T	T	T	T	T	T	queen
+king	T	T	T	None	T	T
+T	T	T	kinight	T	T	T
+bishop	T	None	T	None	T	T
+bishop	T	T	None	T	T	T
+T	T	T	T	T	queen	T
+
+Game 67:
+T	queen	T	T	T	T	T
+T	T	T	T	T	T	queen
+king	T	T	T	T	T	T
+T	T	king	T	T	None	T
+bishop	T	T	T	None	T	T
+kinight	T	T	None	None	None	T
+bishop	T	T	None	None	None	T
+
+Game 68:
+T	T	None	None	T	T	bishop
+queen	T	T	T	T	T	T
+T	T	T	None	T	T	kinight
+T	queen	T	T	T	T	T
+T	T	T	T	None	T	king
+T	T	bishop	T	T	T	T
+T	T	None	T	T	T	king
+
+Game 69:
+T	queen	T	T	T	T	T
+T	T	T	T	T	T	None
+king	T	None	T	T	T	T
+T	T	T	T	T	queen	T
+kinight	T	T	king	T	T	T
+bishop	T	T	T	T	T	T
+bishop	T	T	None	None	T	None
+
+Game 70:
+None	T	T	T	king	T	bishop
+None	None	T	T	T	T	bishop
+T	T	T	queen	T	T	T
+T	T	T	T	T	queen	T
+None	T	T	T	T	T	T
+T	T	T	T	T	T	T
+T	T	T	T	king	T	kinight
+
+Game 71:
+T	None	None	T	T	T	bishop
+T	None	T	None	T	T	bishop
+T	T	None	None	T	T	kinight
+queen	T	T	T	T	T	T
+T	T	T	T	T	T	king
+T	T	T	T	queen	T	T
+T	T	None	T	T	T	king
+
+Game 72:
+None	T	None	None	T	T	bishop
+T	T	None	T	None	T	kinight
+T	T	T	None	T	T	bishop
+T	queen	T	T	T	T	T
+T	T	T	T	T	T	king
+None	T	king	T	T	T	T
+T	T	T	T	T	queen	T
+
+Game 73:
+T	king	T	T	None	T	bishop
+T	T	T	None	T	T	bishop
+T	T	None	None	T	T	kinight
+queen	T	T	T	T	T	T
+T	T	T	T	None	T	king
+T	T	T	None	T	T	T
+T	T	T	T	T	queen	T
+
+Game 74:
+T	T	None	None	T	T	bishop
+None	T	None	T	T	T	kinight
+T	T	bishop	T	T	T	T
+T	T	T	T	T	T	king
+T	queen	T	T	T	T	T
+T	T	T	T	T	T	king
+T	T	T	T	queen	T	T
+
+Game 75:
+T	T	T	None	T	T	T
+king	T	T	T	T	T	kinight
+T	T	queen	T	T	T	T
+king	T	T	T	T	T	T
+T	T	T	T	T	queen	T
+bishop	T	T	None	T	T	T
+bishop	T	T	T	None	T	T
+
+Game 76:
+T	T	T	T	None	T	bishop
+T	king	T	None	T	T	bishop
+T	T	T	None	T	T	kinight
+queen	T	T	T	T	T	T
+T	T	T	T	None	T	king
+T	T	T	None	T	T	T
+T	T	T	T	T	queen	T
+
+Game 77:
+T	queen	T	T	T	T	T
+T	T	T	None	T	T	T
+king	T	None	T	T	T	T
+T	T	T	T	T	T	queen
+kinight	T	T	T	king	T	T
+bishop	T	T	T	T	T	T
+bishop	T	None	T	None	None	T
+
+Game 78:
+T	T	queen	T	T	T	T
+king	T	T	T	T	T	T
+T	T	T	T	T	queen	T
+king	T	T	T	T	T	T
+T	T	T	T	None	T	T
+bishop	T	T	None	T	T	None
+bishop	T	T	None	None	T	kinight
+
+Game 79:
+queen	T	T	T	T	T	T
+T	T	T	T	king	T	bishop
+T	None	T	T	T	T	bishop
+T	T	T	T	T	T	kinight
+T	T	queen	T	T	T	T
+T	T	T	T	None	T	king
+T	T	T	None	T	T	T
+
+Game 80:
+king	T	None	T	T	T	T
+T	T	T	T	T	queen	T
+kinight	T	T	None	T	T	T
+bishop	T	T	T	T	T	T
+bishop	T	T	T	T	T	None
+T	T	T	T	queen	T	T
+T	king	T	T	T	T	None
+
+Game 81:
+king	T	None	T	T	T	T
+T	T	T	None	T	T	T
+T	T	T	T	T	queen	T
+bishop	kinight	T	T	T	T	T
+None	T	T	T	T	T	None
+T	T	T	T	queen	T	T
+bishop	T	king	T	T	T	None
+
+Game 82:
+None	T	None	T	T	None	bishop
+T	T	T	T	T	T	kinight
+T	queen	T	T	T	T	T
+T	T	T	T	T	T	king
+bishop	T	T	T	T	T	T
+None	T	None	T	T	T	king
+T	T	T	T	queen	T	T
+
+Game 83:
+king	T	T	T	T	T	None
+T	T	queen	T	T	T	T
+king	T	T	T	T	T	T
+T	T	T	T	T	queen	T
+bishop	T	T	None	T	T	T
+bishop	T	T	T	None	T	T
+kinight	T	T	None	None	T	None
+
+Game 84:
+None	T	None	T	king	T	bishop
+T	T	T	T	T	T	T
+T	queen	T	T	T	T	T
+T	T	T	T	bishop	T	kinight
+None	T	T	T	T	T	None
+T	T	T	queen	T	T	T
+T	T	T	T	T	T	king
+
+Game 85:
+None	T	T	T	king	T	T
+T	T	T	T	T	T	king
+T	queen	T	T	T	T	T
+T	T	T	None	None	T	bishop
+T	T	T	T	T	T	bishop
+None	T	T	T	T	T	kinight
+T	T	queen	T	T	T	T
+
+Game 86:
+None	T	None	T	T	T	bishop
+None	T	bishop	T	T	T	kinight
+T	T	None	T	T	T	T
+T	T	T	T	T	T	king
+T	queen	T	T	T	T	T
+T	T	T	queen	T	T	T
+T	T	T	T	T	T	king
+
+Game 87:
+king	T	T	T	T	T	T
+T	T	T	queen	T	T	T
+bishop	None	T	T	T	T	None
+None	T	None	T	T	T	T
+T	T	T	T	T	queen	T
+kinight	T	king	T	T	T	T
+bishop	T	T	T	T	T	None
+
+Game 88:
+T	T	king	T	T	None	T
+queen	T	T	T	T	T	T
+T	T	T	T	T	T	queen
+T	None	T	T	T	T	T
+T	kinight	T	T	T	None	T
+T	bishop	T	T	T	None	T
+T	bishop	T	king	T	T	T
+
+Game 89:
+T	T	None	T	T	T	T
+king	T	kinight	None	T	T	T
+T	T	T	T	T	queen	T
+king	T	T	T	T	T	T
+T	T	T	T	queen	T	T
+bishop	T	T	T	T	T	None
+bishop	T	T	None	T	T	T
+
+Game 90:
+T	queen	T	T	T	T	T
+T	T	T	T	T	T	None
+king	T	None	T	T	T	T
+T	T	T	T	T	queen	T
+kinight	T	T	None	T	T	T
+bishop	T	T	T	None	T	T
+bishop	T	T	None	None	T	king
+
+Game 91:
+T	T	T	queen	T	T	T
+T	T	T	T	T	T	T
+king	T	None	T	T	T	None
+T	T	T	T	queen	T	T
+kinight	T	T	T	T	T	None
+bishop	T	T	T	T	None	T
+bishop	T	king	T	T	None	None
+
+Game 92:
+T	queen	T	T	T	T	T
+T	T	T	T	T	T	king
+king	T	None	T	T	T	T
+T	T	T	T	T	queen	T
+kinight	T	T	None	T	T	T
+bishop	T	T	T	None	T	T
+bishop	T	T	None	None	T	None
+
+Game 93:
+T	None	T	T	T	T	T
+T	T	T	T	T	queen	T
+T	T	queen	T	T	T	T
+None	T	T	T	king	T	bishop
+T	None	T	T	T	T	bishop
+None	T	T	king	T	T	kinight
+T	None	T	T	T	T	T
+
+Game 94:
+T	None	T	None	T	T	bishop
+None	T	T	T	T	T	kinight
+T	T	queen	T	T	T	T
+T	T	T	T	T	T	king
+T	bishop	T	None	T	T	T
+T	T	T	T	T	T	king
+T	T	T	T	queen	T	T
+
+Game 95:
+T	king	T	None	None	T	T
+T	T	T	T	T	T	queen
+king	T	T	T	T	T	T
+T	T	T	bishop	T	T	T
+kinight	T	T	T	T	T	T
+bishop	T	T	None	T	T	T
+T	T	T	T	T	queen	T
+
+Game 96:
+T	T	bishop	T	T	None	bishop
+T	T	T	T	T	T	kinight
+T	queen	T	T	T	T	T
+T	T	T	T	T	T	king
+T	T	T	T	queen	T	T
+None	T	None	T	T	T	king
+T	T	T	None	T	T	T
+
+Game 97:
+T	T	T	T	queen	T	T
+king	T	T	T	T	T	None
+T	T	T	None	T	T	T
+bishop	T	kinight	T	T	T	None
+T	T	T	None	T	T	T
+T	T	T	T	T	queen	T
+bishop	T	king	T	T	T	T
+
+Game 98:
+bishop	T	T	T	T	T	T
+T	T	T	queen	T	T	T
+T	T	T	T	T	T	None
+king	T	None	T	T	T	T
+T	T	T	T	T	queen	T
+kinight	T	king	T	T	T	T
+bishop	T	T	T	None	T	T
+
+Game 99:
+T	T	T	None	T	T	bishop
+None	T	T	T	T	T	bishop
+T	T	queen	T	T	T	T
+T	T	T	T	T	T	king
+T	queen	T	T	T	T	T
+T	T	T	None	kinight	T	king
+T	T	T	T	None	T	T
+
+Game 100:
+None	T	T	king	T	T	bishop
+T	T	T	T	T	T	bishop
+T	T	T	None	T	T	kinight
+T	queen	T	T	T	T	T
+T	T	T	T	None	T	king
+None	T	T	T	T	T	T
+T	T	T	T	T	queen	T
+
+Game 101:
+T	queen	T	T	T	T	T
+T	T	T	T	T	T	None
+king	T	None	T	T	T	T
+T	T	T	T	T	queen	T
+kinight	T	T	None	T	T	T
+bishop	T	T	T	T	T	T
+bishop	T	T	king	T	T	None
+
+Game 102:
+T	T	None	T	None	T	bishop
+T	T	T	None	T	T	bishop
+T	queen	T	T	T	T	T
+T	T	T	T	T	T	T
+T	T	T	T	kinight	T	king
+queen	T	T	T	T	T	T
+T	T	None	T	None	T	king
+
+Game 103:
+T	T	T	T	kinight	None	bishop
+T	queen	T	T	T	T	T
+T	T	T	T	T	T	T
+None	T	T	T	king	T	bishop
+T	T	T	T	T	T	T
+None	T	T	T	T	T	king
+T	T	queen	T	T	T	T
+
+Game 104:
+T	queen	T	T	T	T	T
+T	T	T	None	T	T	T
+king	T	None	T	T	T	T
+T	T	T	T	T	T	queen
+kinight	T	T	None	None	T	T
+bishop	T	T	None	T	T	T
+bishop	T	None	T	T	king	T
+
+Game 105:
+T	T	T	queen	T	T	T
+kinight	T	T	T	T	T	T
+bishop	T	T	T	T	T	None
+T	T	T	T	queen	T	T
+king	T	T	T	T	T	None
+T	T	T	T	T	None	T
+bishop	T	king	T	T	None	None
+
+Game 106:
+T	None	None	T	T	T	bishop
+T	T	T	T	queen	T	T
+T	T	T	T	T	T	bishop
+queen	T	T	T	T	T	T
+T	T	T	kinight	T	T	king
+T	T	T	T	T	T	T
+T	None	T	T	T	T	king
+
+Game 107:
+None	T	None	T	T	T	bishop
+T	T	T	T	bishop	T	kinight
+T	queen	T	T	T	T	T
+T	T	T	T	None	T	T
+None	T	T	T	T	T	king
+T	T	T	queen	T	T	T
+T	T	T	T	T	T	king
+
+Game 108:
+None	T	None	None	T	T	kinight
+T	T	None	T	T	T	bishop
+T	T	T	None	T	T	bishop
+T	queen	T	T	T	T	T
+T	T	T	T	T	T	king
+T	T	T	T	queen	T	T
+king	T	T	T	T	T	None
+
+Game 109:
+T	None	None	T	None	T	bishop
+T	None	T	None	T	T	bishop
+T	T	None	None	T	T	kinight
+queen	T	T	T	T	T	T
+T	T	T	T	T	T	king
+T	T	T	king	T	T	T
+T	T	T	T	T	queen	T
+
+Game 110:
+T	T	None	T	T	T	bishop
+T	T	T	None	T	T	kinight
+T	queen	T	T	T	T	T
+T	T	T	T	T	T	king
+T	T	T	T	queen	T	T
+bishop	T	None	T	T	T	king
+T	T	T	None	T	T	T
+
+Game 111:
+T	T	T	None	T	T	T
+king	T	T	T	None	T	None
+T	T	queen	T	T	T	T
+king	T	T	T	T	T	T
+T	T	T	T	T	queen	T
+kinight	T	T	bishop	T	T	T
+bishop	None	T	T	T	T	T
+
+Game 112:
+T	None	None	None	T	T	kinight
+T	None	None	None	T	T	bishop
+T	T	T	T	T	T	bishop
+T	None	T	king	T	T	T
+T	T	T	T	T	T	king
+queen	T	T	T	T	T	T
+T	T	T	T	T	queen	T
+
+Game 113:
+None	T	None	None	T	T	kinight
+T	T	None	T	T	T	bishop
+T	T	T	T	king	T	bishop
+T	queen	T	T	T	T	T
+T	T	T	T	T	T	king
+None	T	T	T	T	T	T
+T	T	T	T	T	queen	T
+
+Game 114:
+None	T	T	T	T	T	bishop
+T	T	T	T	king	T	kinight
+T	queen	T	T	T	T	T
+T	T	T	T	None	T	None
+None	T	T	T	T	None	bishop
+T	T	T	queen	T	T	T
+T	T	T	T	T	T	king
+
+Game 115:
+T	None	T	T	T	T	bishop
+T	None	T	king	T	T	bishop
+T	T	T	T	T	T	kinight
+queen	T	T	T	T	T	T
+T	T	T	T	None	T	king
+T	T	T	None	T	T	T
+T	T	T	T	T	queen	T
+
+Game 116:
+T	T	T	queen	T	T	T
+T	None	T	T	T	T	bishop
+None	T	None	T	T	T	bishop
+T	None	T	T	T	T	T
+None	T	None	T	T	T	king
+T	T	T	T	queen	T	T
+kinight	T	T	T	T	T	king
+
+Game 117:
+None	None	T	T	king	T	bishop
+T	None	T	T	T	T	T
+None	T	T	T	T	T	king
+T	T	queen	T	T	T	T
+None	T	T	T	T	T	bishop
+T	T	T	T	T	T	kinight
+T	T	T	queen	T	T	T
+
+Game 118:
+T	T	T	T	T	T	T
+king	T	None	bishop	T	T	T
+T	T	T	T	T	queen	T
+king	T	None	T	T	T	T
+T	T	T	T	queen	T	T
+kinight	T	T	T	T	T	None
+bishop	T	T	None	T	T	T
+
+Game 119:
+king	T	T	T	None	T	T
+T	T	queen	T	T	T	T
+king	T	T	T	T	T	T
+T	T	T	T	T	T	queen
+kinight	T	T	None	None	T	T
+bishop	T	T	None	T	None	T
+bishop	T	T	T	None	None	T
+
+Game 120:
+None	T	T	T	king	T	bishop
+T	T	T	T	T	T	bishop
+T	queen	T	T	T	T	T
+T	T	T	T	T	T	kinight
+T	T	T	T	T	T	T
+None	T	T	T	T	T	king
+T	T	queen	T	T	T	T
+
+Game 121:
+None	T	None	None	T	T	kinight
+T	T	None	T	T	T	bishop
+T	T	T	None	T	T	bishop
+T	queen	T	T	T	T	T
+T	T	T	T	T	T	king
+T	T	T	T	queen	T	T
+None	T	T	T	T	T	king
+
+Game 122:
+king	T	T	None	T	T	T
+T	T	None	T	T	T	None
+T	T	T	T	queen	T	T
+kinight	T	T	T	T	T	None
+bishop	T	T	T	T	T	T
+bishop	T	king	T	T	T	T
+T	T	T	T	T	queen	T
+
+Game 123:
+None	None	T	T	king	T	bishop
+T	None	T	T	T	T	T
+None	T	T	T	T	king	T
+T	T	queen	T	T	T	T
+None	T	T	T	T	T	bishop
+T	T	T	T	T	T	kinight
+T	T	T	queen	T	T	T
+
+Game 124:
+T	T	T	queen	T	T	T
+T	None	T	T	T	T	bishop
+T	T	None	T	T	T	kinight
+T	T	T	T	T	T	T
+None	None	bishop	T	T	T	king
+T	T	T	T	queen	T	T
+T	T	None	T	T	T	king
+
+Game 125:
+T	T	T	T	T	queen	T
+T	T	queen	T	T	T	T
+None	T	T	T	king	T	bishop
+T	None	T	T	T	T	bishop
+None	T	T	None	T	T	kinight
+T	None	T	T	T	T	T
+None	None	T	T	None	T	king
+
+Game 126:
+T	T	T	T	queen	T	T
+None	T	T	T	T	T	bishop
+None	T	T	king	T	T	T
+None	T	T	T	T	None	bishop
+T	T	T	T	T	T	kinight
+T	queen	T	T	T	T	T
+T	T	T	T	T	T	king
+
+Game 127:
+king	T	T	None	T	T	None
+T	T	T	T	T	T	T
+bishop	T	king	T	T	T	None
+T	T	T	T	queen	T	T
+None	T	T	T	T	T	None
+bishop	kinight	T	T	T	T	T
+T	T	T	T	T	queen	T
+
+Game 128:
+None	T	T	T	T	T	king
+T	T	queen	T	T	T	T
+king	T	T	T	T	T	T
+T	T	T	T	T	queen	T
+bishop	T	T	None	T	T	T
+bishop	T	T	T	None	T	T
+kinight	T	T	None	None	T	None
+
+Game 129:
+king	T	T	T	None	T	T
+T	T	queen	T	T	T	T
+king	T	T	T	T	T	T
+T	T	T	T	T	queen	T
+kinight	T	T	None	T	T	T
+bishop	T	T	T	None	T	T
+bishop	T	T	None	None	T	None
+
+Game 130:
+T	T	T	T	None	T	T
+T	queen	T	T	T	T	T
+T	T	T	T	T	T	T
+T	T	T	T	T	T	queen
+kinight	T	T	king	T	T	T
+bishop	T	T	T	T	T	T
+bishop	T	king	T	None	None	T
+
+Game 131:
+T	T	T	queen	T	T	T
+T	None	T	T	T	T	bishop
+None	T	T	T	T	T	kinight
+T	T	queen	T	T	T	T
+T	T	T	T	None	T	king
+T	bishop	T	T	T	T	T
+T	T	T	T	None	T	king
+
+Game 132:
+T	T	T	king	T	bishop	T
+T	None	T	T	T	bishop	T
+T	None	T	T	T	kinight	T
+T	T	T	T	T	None	T
+queen	T	T	T	T	T	T
+T	T	T	T	T	T	queen
+T	None	T	T	king	T	T
+
+Game 133:
+T	T	T	None	T	None	bishop
+T	queen	T	T	T	T	T
+T	T	T	T	T	T	bishop
+T	T	None	T	king	T	kinight
+queen	T	T	T	T	T	T
+T	T	None	T	None	T	king
+T	T	T	None	None	T	T
+
+Game 134:
+T	None	T	T	king	T	bishop
+T	T	T	T	T	T	bishop
+queen	T	T	T	T	T	T
+T	T	T	T	T	T	kinight
+T	None	T	T	T	T	T
+T	T	T	T	None	T	king
+T	T	queen	T	T	T	T
+
+Game 135:
+T	T	T	T	queen	T	T
+king	T	T	T	T	T	None
+T	T	T	T	T	T	T
+kinight	T	T	T	T	T	T
+T	T	T	T	T	queen	T
+bishop	T	T	T	T	T	T
+bishop	T	king	T	T	T	None
+
+Game 136:
+T	T	T	None	T	T	bishop
+None	T	T	T	T	T	kinight
+T	T	queen	T	T	T	T
+T	T	T	T	None	T	king
+T	queen	T	T	T	T	T
+T	T	T	T	None	T	king
+T	T	T	T	bishop	T	T
+
+Game 137:
+T	None	None	T	T	T	kinight
+T	None	T	None	T	T	bishop
+T	T	None	None	None	T	bishop
+queen	T	T	T	T	T	T
+T	T	T	T	T	T	king
+T	king	T	T	T	T	T
+T	T	T	T	T	queen	T
+
+Game 138:
+T	T	T	None	T	T	T
+king	T	None	T	T	T	T
+T	T	T	T	queen	T	T
+kinight	T	T	T	T	T	T
+bishop	T	T	T	T	None	T
+bishop	T	king	T	T	T	T
+T	T	T	T	T	T	queen
+
+Game 139:
+T	T	T	T	T	T	bishop
+None	T	T	T	T	T	kinight
+T	T	queen	T	T	T	T
+T	T	T	T	king	T	bishop
+T	queen	T	T	T	T	T
+T	T	T	None	T	T	king
+T	T	T	T	None	T	T
+
+Game 140:
+T	T	queen	T	T	T	T
+king	T	T	T	None	T	T
+T	T	T	T	T	T	queen
+king	T	T	T	None	T	T
+T	T	T	None	T	None	T
+kinight	T	T	T	None	bishop	T
+bishop	None	T	None	T	None	T
+
+Game 141:
+T	None	T	None	T	T	bishop
+T	T	None	T	T	T	bishop
+T	None	T	kinight	T	T	T
+T	T	None	T	T	T	king
+queen	T	T	T	T	T	T
+T	T	T	T	T	T	king
+T	T	T	T	queen	T	T
+
+Game 142:
+None	T	T	T	T	T	bishop
+T	T	queen	T	T	T	T
+None	T	T	T	T	T	kinight
+T	None	T	T	T	T	T
+None	None	T	T	T	T	king
+T	T	T	T	queen	T	T
+T	bishop	T	T	T	T	king
+
+Game 143:
+king	T	T	T	T	None	T
+T	T	T	T	T	T	T
+king	T	T	kinight	T	T	T
+T	T	T	T	T	T	queen
+bishop	T	T	T	T	T	T
+T	T	queen	T	T	T	T
+bishop	T	T	T	None	None	T
+
+Game 144:
+T	T	T	T	T	T	bishop
+T	T	T	T	king	T	kinight
+T	queen	T	T	T	T	T
+T	T	T	T	None	T	king
+T	T	T	T	T	T	T
+None	T	T	T	T	bishop	None
+T	T	queen	T	T	T	T
+
+Game 145:
+T	T	None	T	T	T	bishop
+T	T	None	T	king	T	T
+T	T	T	T	T	T	bishop
+T	T	None	T	T	T	kinight
+queen	T	T	T	T	T	T
+T	T	T	T	None	T	king
+T	queen	T	T	T	T	T
+
+Game 146:
+T	T	None	None	T	T	T
+king	T	None	T	None	T	T
+T	T	T	T	T	T	queen
+kinight	T	king	T	None	T	T
+bishop	T	T	T	T	T	T
+T	T	T	T	T	queen	T
+bishop	None	T	None	T	T	T
+
+Game 147:
+None	T	None	None	T	T	bishop
+T	T	None	T	T	T	bishop
+T	T	T	None	T	T	kinight
+T	queen	T	T	T	T	T
+T	T	T	T	None	T	king
+king	T	T	T	T	T	T
+T	T	T	T	T	queen	T
+
+Game 148:
+T	T	None	None	T	T	bishop
+T	T	None	T	T	T	bishop
+T	T	T	T	T	T	kinight
+T	queen	T	T	T	T	T
+T	T	T	T	None	T	king
+queen	T	T	T	T	T	T
+T	T	None	None	T	T	king
+
+Game 149:
+T	bishop	T	T	T	None	T
+T	T	T	queen	T	T	T
+T	T	T	T	T	None	T
+king	T	None	T	T	T	None
+T	T	T	T	queen	T	T
+kinight	T	king	T	T	T	T
+bishop	T	T	T	T	None	T
+
+Game 150:
+king	T	T	T	T	None	T
+T	T	T	queen	T	T	T
+T	T	T	T	T	T	queen
+king	T	T	T	None	T	T
+T	T	T	T	T	None	T
+kinight	T	None	T	T	None	T
+bishop	None	T	T	None	bishop	T
+
+Game 151:
+T	T	queen	T	T	T	T
+king	T	T	T	None	T	None
+T	T	T	T	T	T	bishop
+king	T	T	T	T	T	T
+T	T	T	T	T	queen	T
+kinight	T	T	T	T	T	T
+bishop	None	T	T	None	T	None
+
+Game 152:
+T	queen	T	T	T	T	T
+T	T	T	T	T	T	None
+king	T	king	T	T	T	T
+T	T	T	T	T	queen	T
+kinight	T	T	None	T	T	T
+bishop	T	T	T	None	T	T
+bishop	T	T	None	None	T	None
+
+Game 153:
+None	T	T	T	T	T	bishop
+T	T	king	T	T	T	bishop
+T	T	T	T	T	T	kinight
+T	queen	T	T	T	T	T
+T	T	T	T	None	T	king
+None	T	T	T	T	T	T
+T	T	T	T	T	queen	T
+
+Game 154:
+T	T	T	queen	T	T	T
+king	T	T	T	T	T	T
+T	T	None	T	T	T	None
+T	T	T	T	queen	T	T
+kinight	T	T	T	T	T	None
+bishop	T	T	T	T	None	T
+bishop	T	king	T	T	None	None
+
+Game 155:
+None	T	T	T	king	T	bishop
+T	T	T	T	T	T	bishop
+T	queen	T	T	T	T	T
+T	T	T	T	T	T	king
+T	T	T	T	T	T	T
+None	T	T	T	T	None	kinight
+T	T	queen	T	T	T	T
+
+Game 156:
+T	queen	T	T	T	T	T
+T	T	T	T	kinight	None	bishop
+queen	T	T	T	T	T	T
+T	T	None	T	T	T	None
+T	T	T	T	king	T	bishop
+T	T	T	T	T	T	T
+T	T	None	None	T	T	king
+
+Game 157:
+T	T	queen	T	T	T	T
+king	T	T	T	T	T	T
+T	T	T	T	T	T	queen
+king	T	T	T	None	T	T
+T	T	T	kinight	T	None	T
+bishop	T	T	T	None	T	T
+bishop	T	T	None	T	None	T
+
+Game 158:
+T	T	T	queen	T	T	T
+T	T	T	T	T	T	None
+king	T	None	T	T	T	T
+T	T	T	T	T	queen	T
+kinight	T	T	T	T	T	T
+bishop	T	T	T	None	T	king
+bishop	T	T	T	None	T	T
+
+Game 159:
+T	T	T	T	king	T	bishop
+T	queen	T	T	T	T	T
+T	T	T	T	T	T	T
+None	T	T	T	T	bishop	kinight
+T	T	T	queen	T	T	T
+None	T	T	T	T	T	king
+T	T	T	T	None	T	T
+
+Game 160:
+T	queen	T	T	T	T	T
+T	T	T	king	T	T	T
+king	T	T	T	T	T	T
+T	T	T	T	T	T	queen
+kinight	T	T	None	None	T	T
+bishop	T	T	None	T	None	T
+bishop	T	None	T	None	None	T
+
+Game 161:
+T	T	T	queen	T	T	T
+T	king	T	T	T	T	T
+T	T	T	T	T	T	None
+T	T	T	T	queen	T	T
+kinight	T	T	T	T	T	None
+bishop	T	T	T	T	None	T
+bishop	T	king	T	T	None	None
+
+Game 162:
+T	T	T	T	T	T	queen
+king	T	None	T	T	T	T
+T	T	T	T	T	None	T
+kinight	T	T	T	T	None	T
+bishop	T	T	T	T	None	T
+bishop	T	king	T	T	T	T
+T	T	T	T	queen	T	T
+
+Game 163:
+T	T	T	queen	T	T	T
+T	None	T	T	T	T	bishop
+None	T	None	T	T	T	kinight
+T	None	T	T	T	T	T
+None	None	T	T	T	T	king
+T	T	T	T	queen	T	T
+bishop	T	None	T	T	T	king
+
+Game 164:
+T	T	None	None	T	T	bishop
+T	T	None	T	T	T	bishop
+T	T	T	T	T	T	kinight
+T	queen	T	T	T	T	T
+T	T	T	T	None	T	king
+queen	T	T	T	T	T	T
+T	T	None	None	T	king	T
+
+Game 165:
+T	T	T	T	queen	T	T
+kinight	None	T	T	T	T	None
+T	T	T	T	T	T	T
+king	T	T	T	T	T	T
+T	T	T	T	T	queen	T
+bishop	T	T	T	T	T	T
+bishop	T	king	T	T	T	None
+
+Game 166:
+T	T	T	queen	T	T	T
+T	None	T	T	T	T	bishop
+None	T	T	T	king	T	bishop
+T	T	queen	T	T	T	T
+None	T	T	T	T	None	kinight
+T	None	T	T	T	T	T
+None	T	T	T	None	T	king
+
+Game 167:
+None	None	T	king	T	T	bishop
+T	None	T	T	T	T	bishop
+T	T	T	T	T	T	kinight
+T	T	queen	T	T	T	T
+None	T	T	T	T	T	T
+T	T	T	T	T	T	king
+T	T	T	T	queen	T	T
+
+Game 168:
+T	T	T	T	T	queen	T
+T	kinight	T	T	T	T	T
+T	bishop	T	T	T	T	None
+T	T	T	king	T	T	None
+queen	T	T	T	T	T	T
+T	T	T	T	T	T	None
+T	bishop	T	king	T	T	None
+
+Game 169:
+king	T	None	T	T	T	T
+T	T	T	T	T	bishop	T
+king	T	None	T	T	T	T
+T	T	T	T	queen	T	T
+kinight	T	T	T	T	T	None
+bishop	T	T	T	T	None	T
+T	T	T	queen	T	T	T
+
+Game 170:
+T	T	T	T	T	None	bishop
+T	T	T	bishop	T	T	kinight
+T	queen	T	T	T	T	T
+T	T	T	T	T	T	king
+T	T	T	T	queen	T	T
+None	T	None	T	T	T	king
+T	T	T	None	T	T	T
+
+Game 171:
+None	T	T	king	T	bishop	T
+None	T	T	T	T	T	T
+T	T	T	T	T	T	queen
+None	T	T	king	T	T	T
+None	T	T	T	T	bishop	T
+T	T	T	T	T	kinight	T
+T	queen	T	T	T	T	T
+
+Game 172:
+T	T	T	T	T	queen	T
+king	T	None	T	T	T	T
+T	T	T	T	T	T	queen
+kinight	T	T	T	None	T	T
+bishop	T	T	T	T	T	T
+T	T	king	T	None	T	T
+bishop	T	T	T	None	T	T
+
+Game 173:
+None	T	T	T	T	T	T
+None	T	king	T	T	T	bishop
+T	T	T	T	queen	T	T
+T	T	T	T	T	T	bishop
+T	queen	T	T	T	T	T
+T	T	T	king	T	None	kinight
+T	T	T	T	T	None	None
+
+Game 174:
+T	T	T	None	T	None	T
+king	T	T	T	None	T	T
+T	T	queen	T	T	T	T
+king	T	T	T	bishop	T	T
+T	T	T	T	T	T	queen
+kinight	T	T	None	None	T	T
+bishop	T	T	None	T	None	T
+
+Game 175:
+T	T	T	T	queen	T	T
+king	T	T	T	T	T	None
+T	T	T	T	T	T	T
+bishop	T	king	T	T	T	None
+T	T	T	T	T	T	T
+T	T	T	T	T	queen	T
+bishop	None	kinight	T	T	T	T
+
+Game 176:
+None	None	T	T	king	T	bishop
+T	None	T	T	T	T	bishop
+None	T	T	T	T	T	kinight
+T	T	queen	T	T	T	T
+None	T	T	T	None	T	king
+T	T	T	T	T	T	T
+T	T	T	queen	T	T	T
+
+Game 177:
+T	T	T	T	king	T	bishop
+T	queen	T	T	T	T	T
+T	T	T	None	T	T	T
+None	T	T	T	kinight	T	bishop
+T	T	T	None	T	T	T
+None	T	T	T	T	T	king
+T	T	queen	T	T	T	T
+
+Game 178:
+T	None	None	T	T	T	bishop
+T	kinight	None	T	T	T	bishop
+T	None	T	T	T	T	T
+T	T	T	T	T	T	king
+queen	T	T	T	T	T	T
+T	T	T	T	T	T	king
+T	T	T	T	queen	T	T
+
+Game 179:
+T	T	T	None	T	king	T
+T	queen	T	T	T	T	T
+T	T	T	T	T	kinight	bishop
+None	T	T	T	T	T	None
+T	T	queen	T	T	T	T
+None	T	T	T	king	T	bishop
+T	T	T	T	T	T	T
+
+Game 180:
+T	queen	T	T	T	T	T
+T	T	T	None	T	T	T
+king	T	None	T	T	T	T
+T	T	T	T	T	T	queen
+kinight	T	T	None	None	T	T
+bishop	T	T	T	T	None	T
+bishop	T	king	T	None	None	T
+
+Game 181:
+T	T	None	T	king	T	bishop
+T	None	T	T	T	T	bishop
+T	T	T	queen	T	T	T
+queen	T	T	T	T	T	T
+T	T	T	T	None	T	kinight
+T	T	T	T	T	T	T
+T	T	None	T	None	T	king
+
+Game 182:
+T	None	T	None	T	T	bishop
+T	T	T	None	T	T	kinight
+queen	T	T	T	T	T	T
+T	T	queen	T	T	T	T
+T	T	T	T	None	T	king
+T	T	T	T	T	T	T
+T	None	T	bishop	T	T	king
+
+Game 183:
+king	T	T	T	None	T	T
+T	T	bishop	T	None	T	T
+king	T	None	T	T	T	T
+T	T	T	T	T	queen	T
+T	T	T	queen	T	T	T
+kinight	T	T	T	T	T	T
+bishop	T	T	T	None	T	None
+
+Game 184:
+T	None	None	T	T	None	bishop
+T	None	T	None	T	T	kinight
+T	T	None	None	T	None	bishop
+queen	T	T	T	T	T	T
+T	T	T	T	T	T	king
+T	T	T	T	queen	T	T
+T	king	T	T	T	T	None
+
+Game 185:
+T	T	T	queen	T	T	T
+king	T	T	T	T	T	T
+T	T	None	T	T	T	None
+T	T	T	T	queen	T	T
+kinight	T	bishop	T	T	T	None
+bishop	T	T	T	T	None	T
+T	T	king	T	T	None	None
+
+Game 186:
+T	T	T	None	bishop	None	bishop
+T	queen	T	T	T	T	T
+T	T	T	T	T	T	T
+None	T	T	T	king	T	kinight
+T	T	T	T	T	T	T
+None	T	T	T	None	T	king
+T	T	queen	T	T	T	T
+
+Game 187:
+T	queen	T	T	T	T	T
+T	T	T	T	king	T	bishop
+None	T	T	T	T	T	bishop
+T	T	T	queen	T	T	T
+None	T	T	T	T	T	kinight
+None	T	T	T	T	T	T
+T	T	T	T	king	T	T
+
+Game 188:
+T	T	T	None	T	T	T
+king	T	T	T	None	T	None
+T	T	queen	T	T	T	T
+king	T	T	T	T	T	T
+T	T	T	T	T	queen	T
+kinight	T	T	T	T	T	T
+bishop	None	T	T	bishop	T	T
+
+Game 189:
+None	T	king	T	T	T	bishop
+T	T	T	T	T	T	bishop
+T	T	T	None	T	T	kinight
+T	queen	T	T	T	T	T
+T	T	T	T	None	T	king
+None	T	T	T	T	T	T
+T	T	T	T	T	queen	T
+
+Game 190:
+king	T	T	T	T	T	kinight
+T	T	queen	T	T	T	T
+king	T	T	T	None	T	None
+T	T	T	T	T	None	T
+bishop	T	T	T	None	T	None
+bishop	T	T	T	T	None	T
+T	T	T	queen	T	T	T
+
+Game 191:
+None	None	T	T	T	bishop	bishop
+T	T	T	queen	T	T	T
+None	None	T	T	T	T	T
+None	T	T	T	king	T	kinight
+T	T	T	T	T	T	T
+T	T	T	T	None	T	king
+T	T	queen	T	T	T	T
+
+Game 192:
+T	None	T	None	T	T	bishop
+T	T	None	None	T	T	kinight
+queen	T	T	T	T	T	T
+T	T	bishop	T	T	T	king
+T	T	T	T	queen	T	T
+T	T	None	T	T	T	king
+T	None	T	None	T	T	T
+
+Game 193:
+T	king	T	None	T	T	T
+T	T	T	T	T	T	None
+T	kinight	T	T	T	T	None
+T	bishop	T	T	T	T	None
+T	bishop	T	king	T	T	T
+T	T	T	T	T	queen	T
+queen	T	T	T	T	T	T
+
+Game 194:
+T	T	None	T	T	T	T
+king	T	T	None	T	T	T
+T	T	T	T	T	queen	T
+bishop	T	king	T	T	T	T
+T	T	T	T	queen	T	T
+kinight	T	T	T	T	T	None
+bishop	T	T	T	T	T	T
+
+Game 195:
+None	T	T	T	T	T	bishop
+T	T	queen	T	T	T	T
+T	T	T	T	T	T	kinight
+T	queen	T	T	T	T	T
+T	T	T	bishop	None	T	king
+None	T	T	T	T	T	T
+T	T	T	None	T	T	king
+
+Game 196:
+king	T	T	T	None	T	bishop
+T	T	queen	T	T	T	T
+king	T	T	T	T	None	None
+T	T	T	T	T	None	T
+kinight	T	T	T	None	T	None
+bishop	T	T	T	T	None	T
+T	T	T	queen	T	T	T
+
+Game 197:
+T	T	T	T	T	T	T
+bishop	T	king	T	T	T	T
+None	T	T	T	None	T	T
+T	T	T	T	T	T	queen
+bishop	None	kinight	T	T	T	T
+T	T	T	T	T	queen	T
+king	T	T	T	T	T	T
+
+Game 198:
+T	T	T	None	T	T	bishop
+None	T	T	T	T	T	kinight
+T	T	queen	T	T	T	T
+T	T	T	T	None	T	king
+T	queen	T	T	T	T	T
+T	T	T	bishop	None	T	king
+T	T	T	T	T	T	T
+
+Game 199:
+king	T	T	T	None	T	T
+T	T	queen	T	T	T	T
+king	T	T	T	T	T	T
+T	T	T	T	T	queen	T
+None	T	T	None	T	T	T
+kinight	T	T	T	T	T	T
+bishop	None	T	bishop	None	T	None
+
+Game 200:
+T	queen	T	T	T	T	T
+T	T	T	T	king	T	None
+king	T	T	T	T	T	T
+T	T	T	T	T	queen	T
+bishop	T	T	None	T	T	T
+kinight	T	None	T	None	T	T
+bishop	T	T	None	None	T	None
+
+Game 201:
+T	queen	T	T	T	T	T
+T	T	T	None	T	T	bishop
+T	T	T	T	T	T	kinight
+T	T	T	bishop	T	T	T
+T	T	T	T	T	T	king
+queen	T	T	T	T	T	T
+T	T	None	None	T	king	T
+
+Game 202:
+king	T	T	T	T	T	T
+T	T	queen	T	T	T	T
+king	T	T	T	T	None	None
+T	T	T	T	T	None	T
+kinight	bishop	T	T	T	T	None
+T	T	T	T	queen	T	T
+bishop	T	T	T	T	T	None
+
+Game 203:
+T	queen	T	T	T	T	T
+T	T	T	None	T	T	bishop
+T	T	None	T	None	T	bishop
+T	T	T	kinight	T	T	T
+T	T	None	T	T	T	king
+queen	T	T	T	T	T	T
+T	T	T	None	None	T	king
+
+Game 204:
+T	T	T	None	T	T	T
+king	T	T	T	T	T	T
+T	T	queen	T	T	T	T
+king	T	T	T	None	T	T
+T	T	T	T	T	T	queen
+bishop	T	T	None	None	T	T
+bishop	T	T	kinight	T	None	T
+
+Game 205:
+T	None	T	T	T	bishop	T
+T	T	T	king	T	bishop	T
+queen	T	T	T	T	T	T
+T	T	T	T	T	T	queen
+T	T	T	king	T	T	T
+T	T	T	T	T	None	T
+T	None	None	T	T	kinight	T
+
+Game 206:
+T	T	king	T	T	T	T
+T	T	T	T	T	T	None
+kinight	T	T	T	T	T	None
+T	T	T	queen	T	T	T
+bishop	T	T	T	T	T	None
+bishop	T	king	T	T	T	T
+T	T	T	T	T	queen	T
+
+Game 207:
+T	queen	T	T	T	T	T
+T	T	T	None	T	T	T
+king	T	None	T	T	T	T
+T	T	T	T	T	T	queen
+kinight	T	T	T	T	T	T
+bishop	T	T	king	T	None	T
+bishop	T	T	T	T	None	T
+
+Game 208:
+king	T	None	None	T	T	bishop
+T	T	None	T	T	T	bishop
+T	T	T	None	T	T	kinight
+T	queen	T	T	T	T	T
+T	T	T	T	None	T	king
+None	T	T	T	T	T	T
+T	T	T	T	T	queen	T
+
+Game 209:
+king	T	None	T	T	None	None
+T	T	T	T	T	None	T
+kinight	T	T	None	T	T	None
+bishop	T	T	T	T	None	T
+bishop	T	king	T	T	T	None
+T	T	T	T	queen	T	T
+T	queen	T	T	T	T	T
+
+Game 210:
+T	T	None	T	T	None	T
+king	T	T	None	T	T	T
+T	T	T	T	T	None	T
+bishop	T	king	T	T	T	T
+T	T	T	T	queen	T	T
+T	T	T	T	T	T	queen
+bishop	kinight	T	T	T	T	T
+
+Game 211:
+king	T	T	T	None	T	T
+T	T	queen	T	T	T	T
+king	T	T	T	bishop	None	None
+T	T	T	T	T	T	T
+kinight	T	T	T	None	T	T
+bishop	T	T	T	T	None	T
+T	T	T	queen	T	T	T
+
+Game 212:
+T	T	None	T	T	T	None
+T	kinight	T	T	T	T	None
+T	bishop	T	T	T	T	None
+T	bishop	T	king	T	T	T
+T	T	T	T	T	queen	T
+queen	T	T	T	T	T	T
+T	T	king	T	T	T	None
+
+Game 213:
+T	queen	T	T	T	T	T
+T	T	T	T	T	T	None
+king	T	None	T	T	T	T
+T	T	T	T	T	queen	T
+kinight	T	T	None	T	T	T
+bishop	T	T	T	T	T	T
+bishop	T	T	T	king	T	None
+
+Game 214:
+T	T	T	T	queen	T	T
+king	T	None	T	T	T	T
+T	T	T	T	T	None	T
+kinight	T	T	T	T	T	T
+T	T	T	T	T	T	queen
+bishop	T	T	T	T	T	T
+bishop	T	king	T	T	None	T
+
+Game 215:
+T	None	None	T	T	T	bishop
+T	T	T	T	queen	T	T
+T	T	None	T	T	T	bishop
+queen	T	T	T	T	T	T
+T	T	T	None	T	T	king
+T	T	T	T	T	T	T
+T	kinight	T	T	T	T	king
+
+Game 216:
+king	T	T	None	T	T	T
+T	T	T	T	T	T	None
+king	T	None	bishop	T	T	T
+T	T	T	T	T	queen	T
+kinight	T	T	T	T	T	T
+T	T	T	T	queen	T	T
+bishop	T	T	T	T	T	None
+
+Game 217:
+None	None	T	None	T	T	T
+T	T	T	T	T	T	queen
+king	T	T	king	T	T	T
+T	T	T	T	T	queen	T
+bishop	None	T	T	T	T	T
+kinight	T	T	T	None	T	T
+bishop	T	T	None	None	T	T
+
+Game 218:
+None	T	None	None	T	T	bishop
+T	T	None	T	T	T	bishop
+T	T	T	None	T	T	kinight
+T	queen	T	T	T	T	T
+T	T	T	T	T	T	king
+T	T	T	T	queen	T	T
+T	T	king	T	T	T	None
+
+Game 219:
+T	T	queen	T	T	T	T
+T	T	T	T	king	T	bishop
+T	None	T	T	T	T	bishop
+T	None	T	T	T	T	kinight
+T	None	T	T	T	T	T
+T	T	T	T	None	T	king
+queen	T	T	T	T	T	T
+
+Game 220:
+T	T	T	T	T	T	T
+bishop	T	king	T	T	T	None
+T	T	T	T	queen	T	T
+None	T	T	T	T	T	None
+bishop	kinight	T	T	T	T	T
+T	T	T	T	T	queen	T
+T	king	T	None	T	T	T
+
+Game 221:
+king	T	T	None	None	T	T
+T	T	T	T	T	T	queen
+king	T	None	T	T	T	T
+T	T	T	T	T	queen	T
+kinight	T	T	T	T	T	T
+bishop	T	T	T	None	T	T
+bishop	T	T	None	None	T	T
+
+Game 222:
+T	T	T	None	T	T	T
+king	T	T	T	None	T	bishop
+T	T	queen	T	T	T	T
+king	T	T	T	T	T	T
+T	T	T	T	T	queen	T
+kinight	T	T	None	T	T	T
+bishop	T	T	T	None	T	T
+
+Game 223:
+None	T	None	None	T	T	bishop
+T	T	None	T	T	T	bishop
+T	T	T	None	T	T	kinight
+T	queen	T	T	T	T	T
+T	T	T	T	king	T	king
+None	T	T	T	T	T	T
+T	T	T	T	T	queen	T
+
+Game 224:
+None	None	T	T	king	T	bishop
+T	None	T	T	T	T	bishop
+None	T	T	T	T	T	kinight
+T	T	queen	T	T	T	T
+None	T	T	T	None	T	T
+T	T	T	T	T	T	king
+T	T	T	queen	T	T	T
+
+Game 225:
+T	T	queen	T	T	T	T
+T	T	T	T	king	T	bishop
+T	None	T	T	T	T	bishop
+T	T	T	None	T	T	kinight
+queen	T	T	T	T	T	T
+T	T	T	T	None	T	king
+T	T	T	None	None	T	T
+
+Game 226:
+T	queen	T	T	T	T	T
+T	T	T	T	T	T	None
+king	T	T	T	T	T	T
+T	T	T	T	T	queen	T
+bishop	T	king	T	T	T	T
+bishop	T	T	T	None	T	T
+kinight	T	T	None	None	T	None
+
+Game 227:
+T	T	None	T	T	T	bishop
+T	T	T	T	king	T	kinight
+T	queen	T	T	T	T	T
+T	T	T	T	None	T	king
+None	T	T	T	T	T	T
+T	T	T	queen	T	T	T
+T	T	T	T	T	T	bishop
+
+Game 228:
+T	T	queen	T	T	T	T
+king	T	T	T	None	T	None
+T	T	T	T	T	T	None
+king	T	T	T	T	T	T
+T	T	T	T	T	queen	T
+kinight	T	T	None	T	T	T
+bishop	None	T	T	None	T	bishop
+
+Game 229:
+king	T	T	T	T	T	T
+T	T	T	queen	T	T	T
+None	None	T	T	T	T	None
+kinight	T	T	T	T	T	T
+T	T	T	T	T	queen	T
+bishop	T	T	T	T	T	T
+bishop	T	king	T	None	T	None
+
+Game 230:
+king	T	T	T	T	T	T
+T	T	T	queen	T	T	T
+T	T	T	T	T	queen	T
+king	T	T	T	T	T	T
+T	T	T	T	None	T	T
+kinight	T	T	T	bishop	T	None
+bishop	T	T	T	None	T	None
+
+Game 231:
+T	T	queen	T	T	T	T
+king	T	T	T	T	T	T
+T	T	T	T	T	T	queen
+king	T	T	T	T	T	T
+T	T	T	T	T	None	T
+bishop	T	T	T	None	kinight	T
+bishop	T	T	T	None	None	T
+
+Game 232:
+king	T	kinight	T	T	T	T
+T	T	None	T	T	T	T
+T	T	T	T	T	T	queen
+king	T	T	T	T	T	T
+T	T	T	queen	T	T	T
+bishop	T	T	T	T	None	T
+bishop	T	T	T	None	T	T
+
+Game 233:
+T	queen	T	T	T	T	T
+T	T	T	T	T	T	queen
+king	T	T	T	T	T	T
+T	T	T	king	T	None	T
+bishop	T	T	T	T	T	T
+bishop	T	T	None	None	None	T
+kinight	T	T	None	None	None	T
+
+Game 234:
+T	None	T	None	T	None	bishop
+T	bishop	None	T	T	T	kinight
+T	None	T	None	T	T	T
+T	T	None	T	T	T	king
+queen	T	T	T	T	T	T
+T	T	None	T	T	T	king
+T	T	T	T	queen	T	T
+
+Game 235:
+T	T	T	T	T	T	king
+T	queen	T	T	T	T	T
+T	T	T	T	kinight	None	bishop
+queen	T	T	T	T	T	T
+T	T	None	T	T	T	None
+T	T	T	T	king	T	bishop
+T	T	T	T	T	T	T
+
+Game 236:
+T	queen	T	T	T	T	T
+T	T	T	T	T	T	None
+king	T	None	T	T	T	T
+T	T	T	T	T	queen	T
+kinight	T	T	T	T	T	T
+bishop	T	T	T	king	T	T
+bishop	T	T	T	T	T	None
+
+Game 237:
+None	T	T	T	king	T	bishop
+T	T	queen	T	T	T	T
+None	T	T	T	T	T	None
+T	T	T	T	T	kinight	bishop
+T	queen	T	T	T	T	T
+T	T	T	None	T	T	T
+T	T	T	T	None	T	king
+
+Game 238:
+T	None	None	None	T	T	bishop
+T	None	None	None	T	T	kinight
+T	T	None	T	T	T	bishop
+T	None	T	T	king	T	T
+T	T	T	T	T	T	king
+queen	T	T	T	T	T	T
+T	T	T	T	T	queen	T
+
+Game 239:
+king	T	T	None	T	T	T
+T	T	T	T	T	T	T
+kinight	None	T	king	T	T	T
+T	T	T	T	T	queen	T
+bishop	T	T	T	T	T	T
+T	T	queen	T	T	T	T
+bishop	T	T	T	None	T	None
+
+Game 240:
+T	T	None	None	T	T	bishop
+T	T	None	T	T	T	kinight
+T	T	T	T	T	None	bishop
+T	queen	T	T	T	T	T
+T	T	T	king	T	T	king
+queen	T	T	T	T	T	T
+T	T	T	None	T	None	None
+
+Game 241:
+T	T	T	king	T	None	bishop
+queen	T	T	T	T	T	T
+T	T	None	T	T	T	bishop
+T	T	T	T	queen	T	T
+T	None	T	T	T	T	king
+T	T	T	T	T	T	T
+T	T	T	None	T	T	kinight
+
+Game 242:
+None	T	T	T	king	T	T
+T	T	queen	T	T	T	T
+king	T	T	T	T	T	T
+T	T	T	T	T	queen	T
+kinight	T	T	None	T	T	T
+bishop	T	T	T	None	T	T
+bishop	T	T	None	None	T	None
+
+Game 243:
+T	T	T	queen	T	T	T
+kinight	T	T	T	T	T	T
+bishop	T	T	T	T	T	None
+T	T	T	T	queen	T	T
+T	king	T	T	T	T	None
+T	T	T	T	T	None	T
+bishop	T	king	T	T	None	None
+
+Game 244:
+king	T	T	T	T	bishop	T
+T	T	queen	T	T	T	T
+king	T	T	T	T	None	None
+T	T	T	T	T	None	T
+kinight	T	T	T	T	T	None
+T	T	T	T	queen	T	T
+bishop	T	T	T	T	T	None
+
+Game 245:
+king	T	None	T	T	T	T
+T	T	T	T	queen	T	T
+T	T	T	T	T	T	queen
+kinight	T	T	T	T	T	T
+bishop	T	T	T	T	None	T
+T	T	king	T	T	None	T
+bishop	T	T	T	T	None	T
+
+Game 246:
+T	None	None	T	king	T	bishop
+T	None	T	T	T	T	bishop
+T	T	None	None	T	T	kinight
+queen	T	T	T	T	T	T
+T	T	T	T	None	T	king
+T	T	T	None	T	T	T
+T	T	T	T	T	queen	T
+
+Game 247:
+T	T	queen	T	T	T	T
+king	T	T	T	T	T	T
+T	T	T	T	T	queen	T
+king	T	T	T	T	T	T
+T	T	T	T	bishop	T	T
+kinight	T	T	T	None	T	None
+bishop	T	T	None	None	T	T
+
+Game 248:
+None	None	T	T	T	T	T
+kinight	None	T	king	T	T	T
+T	T	T	T	T	queen	T
+bishop	T	T	T	T	T	T
+T	T	queen	T	T	T	T
+bishop	T	T	T	king	T	None
+T	T	T	T	T	T	None
+
+Game 249:
+T	queen	T	T	T	T	T
+T	T	T	T	T	kinight	bishop
+None	T	T	T	T	T	None
+T	T	queen	T	T	T	T
+None	T	T	T	king	T	bishop
+T	T	T	T	T	T	T
+None	T	T	None	T	T	king
+
+Game 250:
+T	T	None	T	T	T	bishop
+T	None	T	T	T	T	bishop
+T	T	T	queen	T	T	T
+T	T	T	T	T	T	king
+queen	T	T	T	T	T	T
+T	T	T	T	None	T	T
+T	T	T	T	kinight	T	king
+
+Game 251:
+T	queen	T	T	T	T	T
+T	T	T	None	T	T	T
+king	T	None	T	T	T	T
+T	T	T	T	T	T	queen
+kinight	T	T	None	T	T	T
+bishop	T	T	None	T	king	T
+bishop	T	None	T	T	T	T
+
+Game 252:
+king	T	T	T	T	T	T
+T	T	king	T	T	T	T
+T	T	T	T	T	queen	T
+kinight	T	T	T	T	T	T
+bishop	None	T	T	T	T	None
+T	T	T	T	queen	T	T
+bishop	T	T	T	T	T	None
+
+Game 253:
+T	T	T	T	T	None	T
+kinight	T	T	king	T	T	None
+bishop	T	T	T	T	None	T
+bishop	T	king	T	T	T	None
+T	T	T	T	queen	T	T
+T	queen	T	T	T	T	T
+T	T	T	T	T	None	T
+
+Game 254:
+None	None	T	T	king	T	T
+T	None	T	T	T	T	bishop
+None	T	T	T	bishop	T	kinight
+T	T	queen	T	T	T	T
+None	T	T	T	None	T	T
+T	T	T	T	T	T	king
+T	T	T	queen	T	T	T
+
+Game 255:
+queen	T	T	T	T	T	T
+T	T	T	T	None	T	T
+T	king	T	None	T	T	T
+T	T	T	T	T	queen	T
+T	kinight	T	T	T	T	T
+T	bishop	T	T	T	T	None
+T	bishop	T	king	T	T	T
+
+Game 256:
+T	T	T	T	T	T	queen
+T	queen	T	T	T	T	T
+T	T	T	king	T	bishop	T
+None	T	T	T	T	bishop	T
+None	T	T	T	T	kinight	T
+None	T	T	T	T	T	T
+T	T	T	None	T	king	T
+
+Game 257:
+T	T	T	T	queen	T	T
+kinight	T	king	T	T	T	None
+bishop	T	T	T	T	None	T
+T	T	T	T	T	None	None
+T	queen	T	T	T	T	T
+T	T	T	T	T	None	None
+bishop	T	king	T	T	None	None
+
+Game 258:
+T	T	bishop	T	T	T	T
+king	T	None	T	T	T	T
+T	T	T	T	T	queen	T
+king	T	None	T	T	T	T
+T	T	T	T	queen	T	T
+kinight	T	T	T	T	T	None
+bishop	T	T	None	T	T	T
+
+Game 259:
+king	T	T	T	T	T	T
+T	T	T	queen	T	T	T
+None	T	T	T	T	T	None
+kinight	T	bishop	T	T	T	T
+T	T	T	T	T	queen	T
+T	T	T	T	T	T	T
+bishop	T	king	T	None	T	None
+
+Game 260:
+T	queen	T	T	T	T	T
+T	T	T	T	T	T	T
+king	T	T	T	king	T	T
+T	T	T	T	T	T	queen
+bishop	T	None	None	None	T	T
+bishop	T	T	None	T	None	T
+kinight	T	T	T	None	None	T
+
+Game 261:
+kinight	T	T	None	T	T	T
+T	T	T	T	T	T	T
+king	T	T	T	T	None	T
+T	T	queen	T	T	T	T
+bishop	T	T	T	None	T	T
+T	T	T	T	T	T	queen
+bishop	None	T	king	T	T	T
+
+Game 262:
+king	T	None	T	T	T	None
+T	T	T	T	T	None	T
+kinight	None	T	T	T	T	None
+T	T	T	T	queen	T	T
+bishop	T	king	T	T	T	None
+bishop	T	T	T	T	None	T
+T	T	T	queen	T	T	T
+
+Game 263:
+None	T	T	T	T	T	bishop
+T	T	queen	T	T	T	T
+None	T	T	T	T	bishop	kinight
+T	None	T	T	T	T	T
+None	None	T	T	T	T	king
+T	T	T	T	queen	T	T
+T	T	T	T	T	T	king
+
+Game 264:
+None	T	None	T	T	T	bishop
+T	T	T	T	king	T	kinight
+T	queen	T	T	T	T	T
+T	T	T	T	T	T	T
+None	T	T	T	T	bishop	None
+T	T	T	queen	T	T	T
+T	T	T	T	T	T	king
+
+Game 265:
+None	T	None	T	T	T	bishop
+T	T	T	T	T	T	kinight
+T	T	T	queen	T	T	T
+T	queen	T	T	T	T	T
+T	T	T	T	None	T	king
+T	T	None	T	bishop	T	T
+T	T	None	T	T	T	king
+
+Game 266:
+T	None	None	T	None	T	bishop
+T	T	T	T	T	T	bishop
+T	T	king	T	T	T	kinight
+queen	T	T	T	T	T	T
+T	T	T	T	None	T	king
+T	T	T	None	T	T	T
+T	T	T	T	T	queen	T
+
+real    0m12.958s
+user    0m12.772s
+sys 0m0.070s
