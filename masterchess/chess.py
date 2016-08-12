@@ -44,8 +44,16 @@ class Board(object):
         if not isinstance(self.size, int):
             raise ValueError('board size must be integer')
 
+        # setup board 2D
         rg = range(self.size)
         self.board = [[None for i in rg] for i in rg]
+
+        # setup bloard availlable places
+        self.places = []
+        for x in rg:
+            for y in rg:
+                self.places.append((x,y))
+
 
     def _update_board(self):
         """
@@ -57,6 +65,11 @@ class Board(object):
         for piece in self.pieces.values():
             x, y = piece.position
             self.board[x][y] = piece
+
+    def remove_pieces(self):
+
+        self.pieces = {}
+        self._update_board()
 
     def picture(self, pretty_print=False):
         """

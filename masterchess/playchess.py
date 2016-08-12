@@ -32,37 +32,53 @@ LOGGING = {
 logging.config.dictConfig(LOGGING)
 
 
-def find_place(board, piece):
+def voala(board_size, pieces, reverse=False):
+    board = chess.Board(board_size)
+    board_places = sorted(board.places, reverse=reverse)
 
-    for x in range(board.size):
-        for y in range(board.size):
-            try:
-                piece.set_position((x, y))
-                board.place_piece(piece)
-                return True
-            except chess.BoardExceptions:
-                continue
-
+    for piece_master in pieces:
+        for place_master in board_places:
+            piece_master.set_position(place_master)
+            board.place_piece(piece_master)
+            for piece in pieces:
+                if piece.__hash__() == piece_master.__hash__():
+                    continue
+                for place in board_places:
+                    try:
+                        piece.set_position(place)
+                        board.place_piece(piece)
+                        break
+                    except:
+                        continue
+            if len(board.pieces) == len(pieces):
+                yield(board.picture_threat(pretty_print=True))
+            board.remove_pieces()
 
 def run(board_size, pieces):
 
     logger.info('Playing Chess')
     logger.info('Board size: %d' % board_size)
-    logger.info('Pieces of bishops: %s' % len([piece for piece in pieces if str(piece) == 'bishop']))
-    logger.info('Pieces of kinights: %s' % len([piece for piece in pieces if str(piece) == 'kinight']))
-    logger.info('Pieces of kings: %s' % len([piece for piece in pieces if str(piece) == 'king']))
-    logger.info('Pieces of pawns: %s' % len([piece for piece in pieces if str(piece) == 'pawn']))
-    logger.info('Pieces of queens: %s' % len([piece for piece in pieces if str(piece) == 'queen']))
-    logger.info('Pieces of rooks: %s' % len([piece for piece in pieces if str(piece) == 'rook']))
+    logger.info('Pieces of bishops: %s' % len(
+        [piece for piece in pieces if str(piece) == 'bishop']))
+    logger.info('Pieces of kinights: %s' % len(
+        [piece for piece in pieces if str(piece) == 'kinight']))
+    logger.info('Pieces of kings: %s' % len(
+        [piece for piece in pieces if str(piece) == 'king']))
+    logger.info('Pieces of pawns: %s' % len(
+        [piece for piece in pieces if str(piece) == 'pawn']))
+    logger.info('Pieces of queens: %s' % len(
+        [piece for piece in pieces if str(piece) == 'queen']))
+    logger.info('Pieces of rooks: %s' % len(
+        [piece for piece in pieces if str(piece) == 'rook']))
 
-    total_pieces = len(pieces)
-    placed_pieces = 0
-    board = chess.Board(board_size)
-    for piece in pieces:
-        if find_place(board, piece):
-            continue
-
-    import pdb; pdb.set_trace()
+    games = [i for i in voala(board_size, pieces, reverse=False)]
+    games += [i for i in voala(board_size, pieces, reverse=True)]
+    games = set(games)
+    print('Number of possibilities: %s' % len(games))
+    for ndx, game in enumerate(games):
+        print('')
+        print('Game %d:' % (ndx+1))
+        print(game)
 
 def main():
 
