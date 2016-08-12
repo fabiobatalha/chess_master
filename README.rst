@@ -25,7 +25,7 @@ How to install
 PIPY
 ----
 
-pip install fbcs_chess_challenge
+pip install chessmaster
 
 Github
 ------
