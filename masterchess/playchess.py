@@ -32,7 +32,7 @@ LOGGING = {
 logging.config.dictConfig(LOGGING)
 
 
-def voala(board_size, pieces, reverse=False):
+def voala(board_size, pieces, reverse=False, show_threatening=False):
     board = chess.Board(board_size)
     board_places = sorted(board.places, reverse=reverse)
 
@@ -51,10 +51,13 @@ def voala(board_size, pieces, reverse=False):
                     except:
                         continue
             if len(board.pieces) == len(pieces):
-                yield(board.picture_threat(pretty_print=True))
+                if show_threatening:
+                    yield(board.picture_threat(pretty_print=True))
+                else:
+                    yield(board.picture(pretty_print=True))
             board.remove_pieces()
 
-def run(board_size, pieces):
+def run(board_size, pieces, show_threatening=False):
 
     logger.info('Playing Chess')
     logger.info('Board size: %d' % board_size)
@@ -71,8 +74,8 @@ def run(board_size, pieces):
     logger.info('Pieces of rooks: %s' % len(
         [piece for piece in pieces if str(piece) == 'rook']))
 
-    games = [i for i in voala(board_size, pieces, reverse=False)]
-    games += [i for i in voala(board_size, pieces, reverse=True)]
+    games = [i for i in voala(board_size, pieces, reverse=False, show_threatening=show_threatening)]
+    games += [i for i in voala(board_size, pieces, reverse=True, show_threatening=show_threatening)]
     games = set(games)
     print('Number of possibilities: %s' % len(games))
     for ndx, game in enumerate(games):
@@ -142,6 +145,12 @@ def main():
         help='Number of rooks'
     )
 
+    parser.add_argument(
+        '--show_threatening',
+        '-t',
+        action="store_true",
+        help='Show threatening places display T in the board when printing the results, otherwise None will be displayed'
+    )
     args = parser.parse_args()
 
     pieces = []
@@ -156,4 +165,4 @@ def main():
         logger.error('You must select at least 2 pieces')
         exit()
 
-    run(args.board_size, pieces)
+    run(args.board_size, pieces, show_threatening=args.show_threatening)
