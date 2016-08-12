@@ -1,22 +1,22 @@
-(chessmaster)MacBook-Pro:chess_master fabiobatalha$ python setup.py nosetests --with-coverage
+(chessmaster) Fabios-MacBook-Pro:chess_master fabiobatalha$ python setup.py nosetests --with-coverage
 running nosetests
 running egg_info
-writing entry points to chessmaster.egg-info/entry_points.txt
-writing dependency_links to chessmaster.egg-info/dependency_links.txt
 writing chessmaster.egg-info/PKG-INFO
-writing top-level names to chessmaster.egg-info/top_level.txt
+writing dependency_links to chessmaster.egg-info/dependency_links.txt
 writing requirements to chessmaster.egg-info/requires.txt
+writing entry points to chessmaster.egg-info/entry_points.txt
+writing top-level names to chessmaster.egg-info/top_level.txt
 reading manifest file 'chessmaster.egg-info/SOURCES.txt'
 writing manifest file 'chessmaster.egg-info/SOURCES.txt'
-.........................................................................................
+..........................................................................................
 Name                   Stmts   Miss  Cover
 ------------------------------------------
 masterchess.py             0      0   100%
-masterchess/chess.py     236      3    99%
-masterchess/utils.py       2      0   100%
+masterchess/chess.py     236      2    99%
+masterchess/utils.py      10      0   100%
 ------------------------------------------
-TOTAL                    238      3    99%
+TOTAL                    246      2    99%
 ----------------------------------------------------------------------
-Ran 89 tests in 0.092s
+Ran 90 tests in 0.030s
 
 OK

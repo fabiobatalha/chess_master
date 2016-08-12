@@ -13,7 +13,7 @@ tests_require = [
 
 setup(
     name="chessmaster",
-    version="1.0",
+    version="1.1.1",
     description="Chess Master Challenge",
     author="Fabio Batalha",
     author_email="scielo-dev@googlegroups.com",
