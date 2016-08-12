@@ -13,6 +13,12 @@ The number of pieces of each type (King, Queen, Bishop, Rook and Knight) to try 
 
 As output, the program should list all the unique configurations to the console for which all of the pieces can be placed on the board without threatening each other.
 
+Build status
+============
+
+.. image:: https://travis-ci.org/fabiobatalha/chess_master.svg?branch=master
+    :target: https://travis-ci.org/fabiobatalha/chess_master
+
 How to install
 ==============
 
@@ -199,9 +205,3 @@ Running Sample Displaying Threatening places
     kinight T   kinight T
     T   T   T   rook
     kinight T   kinight T
-
-Build status
-============
-
-.. image:: https://travis-ci.org/fabiobatalha/chess_master.svg?branch=master
-    :target: https://travis-ci.org/fabiobatalha/chess_master
