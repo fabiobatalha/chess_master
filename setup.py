@@ -14,11 +14,12 @@ tests_require = [
 setup(
     name="chessmaster",
     version="1.0",
-    description="Chess Master Test",
+    description="Chess Master Challenge",
     author="Fabio Batalha",
     author_email="scielo-dev@googlegroups.com",
     maintainer="Fabio Batalha",
     maintainer_email="fabiobatalha@gmail.com",
+    url = 'https://github.com/fabiobatalha/chess_master',
     packages=find_packages(),
     include_package_data=True,
     classifiers=[
