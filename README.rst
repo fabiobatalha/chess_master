@@ -42,8 +42,10 @@ Run Console Script
 For Help
 --------
 
-(chessmaster)MacBook-Pro:chess_master fabiobatalha$ playchess --help
+.. code-block:: shell
 
+    (chessmaster)MacBook-Pro:chess_master fabiobatalha$ playchess --help
+    
     usage: playchess [-h] [--board_size BOARD_SIZE] [--bishops BISHOPS]
                      [--kinights KINIGHTS] [--kings KINGS] [--pawns PAWNS]
                      [--queens QUEENS] [--rooks ROOKS] [--show_threatening]
@@ -73,8 +75,9 @@ For Help
 Running Sample
 --------------
 
-(chessmaster)MacBook-Pro:chess_master fabiobatalha$ playchess -s 4 -i 4 -r 2
+.. code-block:: shell
 
+    (chessmaster)MacBook-Pro:chess_master fabiobatalha$ playchess -s 4 -i 4 -r 2
     2016-08-12 01:22:11,660 - masterchess.playchess - INFO - Playing Chess
     2016-08-12 01:22:11,661 - masterchess.playchess - INFO - Board size: 4
     2016-08-12 01:22:11,661 - masterchess.playchess - INFO - Pieces of bishops: 0
@@ -136,8 +139,9 @@ Running Sample
 Running Sample Displaying Threatening places
 --------------------------------------------
 
-(chessmaster)MacBook-Pro:chess_master fabiobatalha$ playchess -s 4 -i 4 -r 2
+.. code-block::
 
+    (chessmaster)MacBook-Pro:chess_master fabiobatalha$ playchess -s 4 -i 4 -r 2
     2016-08-12 01:10:03,481 - masterchess.playchess - INFO - Playing Chess
     2016-08-12 01:10:03,481 - masterchess.playchess - INFO - Board size: 4
     2016-08-12 01:10:03,481 - masterchess.playchess - INFO - Pieces of bishops: 0
