@@ -48,7 +48,7 @@ Docker
 
 Running::
 
-    docker run --rm -it chessmaster playchess -s 4 -r 2 -i 4
+    docker run --rm -it fabiobatalha/chess_master playchess -s 4 -r 2 -i 4
 
 Run tests
 =========
