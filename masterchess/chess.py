@@ -181,7 +181,7 @@ class Pieces(object):
 
     def _n_positions(self, max_size):
         """
-            Retrieve the south positions of a given position
+            Retrieve the north positions of a given position
         """
         ne_positions = []
 
@@ -247,7 +247,7 @@ class Pieces(object):
 
     def _nw_positions(self, max_size):
         """
-            Retrieve the south weast positions of a given position
+            Retrieve the north weast positions of a given position
         """
         ne_positions = []
 
