@@ -7,6 +7,19 @@ from masterchess import utils
 
 class TestsUtils(unittest.TestCase):
 
+    def test_board_rotate(self):
+
+        data = utils.places_rotation([(0, 0), (0, 1), (0, 2), (0, 3)])
+
+        expected = [
+            [(0, 0), (0, 1), (0, 2), (0, 3)],
+            [(0, 1), (0, 2), (0, 3), (0, 0)],
+            [(0, 2), (0, 3), (0, 0), (0, 1)],
+            [(0, 3), (0, 0), (0, 1), (0, 2)]
+        ]
+
+        self.assertEqual(data, expected)
+
     def test_pretty_print_matrix_1(self):
 
         data = [

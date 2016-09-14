@@ -4,6 +4,7 @@ import logging
 import logging.config
 
 from masterchess import chess
+from masterchess import utils
 
 logger = logging.getLogger(__name__)
 
@@ -36,26 +37,29 @@ def voala(board_size, pieces, reverse=False, show_threatening=False):
     board = chess.Board(board_size)
     board_places = sorted(board.places, reverse=reverse)
 
-    for piece_master in pieces:
-        for place_master in board_places:
-            piece_master.set_position(place_master)
-            board.place_piece(piece_master)
-            for piece in pieces:
-                if piece.__hash__() == piece_master.__hash__():
-                    continue
-                for place in board_places:
-                    try:
-                        piece.set_position(place)
-                        board.place_piece(piece)
-                        break
-                    except:
+    for rplaces in utils.places_rotation(board_places):
+        for piece_master in pieces:
+            for place_master in rplaces:
+                piece_master.set_position(place_master)
+                board.place_piece(piece_master)
+                for piece in pieces:
+                    if piece.__hash__() == piece_master.__hash__():
                         continue
-            if len(board.pieces) == len(pieces):
-                if show_threatening:
-                    yield(board.picture_threat(pretty_print=True))
-                else:
-                    yield(board.picture(pretty_print=True))
+                    for place in rplaces:
+                        try:
+                            piece.set_position(place)
+                            board.place_piece(piece)
+                            break
+                        except:
+                            continue
+                if len(board.pieces) == len(pieces):
+                    if show_threatening:
+                        yield(board.picture_threat(pretty_print=True))
+                    else:
+                        yield(board.picture(pretty_print=True))
+                board.remove_pieces()
             board.remove_pieces()
+
 
 def run(board_size, pieces, show_threatening=False):
 
@@ -74,14 +78,17 @@ def run(board_size, pieces, show_threatening=False):
     logger.info('Pieces of rooks: %s' % len(
         [piece for piece in pieces if str(piece) == 'rook']))
 
-    games = [i for i in voala(board_size, pieces, reverse=False, show_threatening=show_threatening)]
-    games += [i for i in voala(board_size, pieces, reverse=True, show_threatening=show_threatening)]
+    games = [i for i in voala(
+        board_size, pieces, reverse=False, show_threatening=show_threatening)]
+    games += [i for i in voala(
+        board_size, pieces, reverse=True, show_threatening=show_threatening)]
     games = set(games)
     print('Number of possibilities: %s' % len(games))
     for ndx, game in enumerate(games):
         print('')
         print('Game %d:' % (ndx+1))
         print(game)
+
 
 def main():
 

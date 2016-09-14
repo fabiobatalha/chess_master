@@ -25,13 +25,30 @@ How to install
 PIPY
 ----
 
-pip install fbcs_chess_challenge
+pip install chessmaster
+
+Running::
+
+    playchess --help
 
 Github
 ------
 
 * Download the package from Github
 * python setup.py install
+
+Running::
+
+    playchess --help
+
+Docker
+------
+
+* docker pull fabiobatalha/chess_master
+
+Running::
+
+    docker run --rm -it fabiobatalha/chess_master playchess -s 4 -r 2 -i 4
 
 Run tests
 =========

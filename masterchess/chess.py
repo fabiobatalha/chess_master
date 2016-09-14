@@ -52,8 +52,7 @@ class Board(object):
         self.places = []
         for x in rg:
             for y in rg:
-                self.places.append((x,y))
-
+                self.places.append((x, y))
 
     def _update_board(self):
         """
@@ -166,7 +165,7 @@ class Pieces(object):
 
     def _e_positions(self, max_size):
         """
-            Retrieve the lest positions of a given position
+            Retrieve the east positions of a given position
         """
         ne_positions = []
 
@@ -182,7 +181,7 @@ class Pieces(object):
 
     def _n_positions(self, max_size):
         """
-            Retrieve the south positions of a given position
+            Retrieve the north positions of a given position
         """
         ne_positions = []
 
@@ -248,7 +247,7 @@ class Pieces(object):
 
     def _nw_positions(self, max_size):
         """
-            Retrieve the south weast positions of a given position
+            Retrieve the north weast positions of a given position
         """
         ne_positions = []
 
